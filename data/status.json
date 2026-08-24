@@ -1,12 +1,12 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-24T18:06:45Z",
+  "updated_at": "2026-08-24T18:12:31Z",
   "phase": {
-    "id": "bessent-class-b-ada-oco",
+    "id": "bessent-class-b-ada-oco-clean",
     "label": "BESSENT_CLASS_B",
     "live_orders": true,
-    "note": "ADA OCO reattached SL0.2108 TP0.2437 · CLASS B · zero nowych do 20:30"
+    "note": "ADA 1 OCO clean 3861858787948113920 SL0.2108 TP0.2437 sz26 · stare canceled"
   },
   "okx": {
     "flag": 0,
@@ -21,14 +21,14 @@
   "paper": {
     "label": "LIVE_OKX",
     "start_usd": 1000,
-    "equity_usd": 995.3958664999999,
+    "equity_usd": 995.3438664999999,
     "pnl_usd": 0.0,
     "pnl_pct": 0.0,
     "note": "Equity ~1000 USDC ale 0 USDT — SWAP potrzebuje USDT. API key: włącz trade na futures/market.",
     "equity_source": "okx_equity.json",
     "equity_live": true,
     "equity_updated_at": "2026-08-24T09:38:27.238683+00:00",
-    "available_usd": 989.6810664999999
+    "available_usd": 989.6342665
   },
   "agents": [
     {
@@ -81,11 +81,12 @@
         "side": "net",
         "size": 26.0,
         "avgPx": "0.2207538461538462",
-        "upl": -0.2480000000000104,
+        "upl": -0.3000000000000119,
         "lever": "10",
         "sl": 0.2108,
         "tp": 0.2437,
-        "algoId": "3861858787948113920"
+        "algoId": "3861858787948113920",
+        "algos": 1
       }
     ],
     "closed_trades": 0,
@@ -93,8 +94,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": -0.248,
-    "note": "ADA long 26ct OCO live SL0.2108 TP0.2437. No new entries."
+    "unrealized_pnl_usd": -0.3,
+    "note": "ADA only · 1 OCO live · old conditionals canceled"
   },
   "publication": {
     "enabled": true,
@@ -105,7 +106,7 @@
   },
   "strategy": {
     "name": "TC-PULL + MR-FADE",
-    "status": "BESSENT_CLASS_B_ADA_OCO",
+    "status": "BESSENT_CLASS_B_ADA_OCO_CLEAN",
     "active": [
       "TC-PULL"
     ],
@@ -126,9 +127,9 @@
     },
     "setup": {
       "tc_pull": {
-        "status": "IN_POSITION_OCO",
+        "status": "IN_POSITION_OCO_CLEAN",
         "signal": "ADA-USD_UM_XPERP-310404",
-        "detail": "OCO live SL 0.2108 TP 0.2437 sz26 algo 3861858787948113920"
+        "detail": "1 OCO 3861858787948113920 SL0.2108 TP0.2437 sz26; old canceled"
       },
       "mr_fade": {
         "status": "OFF",

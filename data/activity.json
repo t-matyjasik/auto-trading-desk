@@ -1,6 +1,23 @@
 {
-  "updated_at": "2026-08-24T18:06:45.368969+00:00",
+  "updated_at": "2026-08-24T18:12:31.329917+00:00",
   "items": [
+    {
+      "id": "2026-08-24T2012_ada_clean_oco",
+      "ts": "2026-08-24T20:12:00+02:00",
+      "actor": "Orkiestrator",
+      "action": "FIX",
+      "reason_code": "ADA_OCO_CLEAN",
+      "reason": "ADA CLEAN: 1 OCO live 3861858787948113920 SL 0.2108 TP 0.2437 sz26. Stare conditional canceled.",
+      "instrument": "ADA-USD_UM_XPERP-310404",
+      "context": {
+        "attachAlgoId": "3861858787948113920",
+        "sl": 0.2108,
+        "tp": 0.2437,
+        "sz": 26,
+        "algos": 1,
+        "old_conditional": "canceled"
+      }
+    },
     {
       "id": "2026-08-24T200601_ada_reattach",
       "ts": "2026-08-24T20:06:01+02:00",
