@@ -1,6 +1,19 @@
 {
-  "updated_at": "2026-08-24T09:20:36.315988+00:00",
+  "updated_at": "2026-08-24T09:30:13.612074+00:00",
   "items": [
+    {
+      "id": "act-20260824-112901-start",
+      "ts": "2026-08-24T11:29:01+0200",
+      "actor": "Orkiestrator",
+      "action": "START_LIVE_SMALL",
+      "reason_code": "OWNER_START",
+      "reason": "Tomasz: Start. LIVE_SMALL ON. Edge pod Bessent. Dashboard live equity. R 0.25–0.50%.",
+      "context": {
+        "bessent": "~20:00 CEST",
+        "risk": "0.25-0.50%",
+        "open_max": "2%"
+      }
+    },
     {
       "id": "act-20260824-111834-blocked-news",
       "ts": "2026-08-24T11:18:34+0200",

@@ -1,27 +1,28 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-24T07:35:18Z",
+  "updated_at": "2026-08-24T09:29:47Z",
   "phase": {
-    "id": "waiting-funds-live",
-    "label": "WAITING_FUNDS_LIVE_TOMORROW",
-    "live_orders": false,
-    "note": "Demo off · jutro live po 1k · zero publikacji"
+    "id": "live-small",
+    "label": "LIVE_SMALL",
+    "live_orders": true,
+    "note": "Live small ON · equity z data/okx_equity.json · publikacja Pages ON"
   },
   "okx": {
     "flag": 0,
-    "mode": "live_pending",
-    "label": "WAITING_FUNDS_LIVE_TOMORROW",
-    "executor": "STANDBY",
-    "live_trading": false
+    "mode": "live_small",
+    "label": "LIVE_SMALL",
+    "executor": "ARMED",
+    "live_trading": true
   },
   "paper": {
-    "label": "WAITING_FUNDS → LIVE",
+    "label": "LIVE_OKX",
     "start_usd": 1000,
     "equity_usd": 1000,
     "pnl_usd": 0,
     "pnl_pct": 0,
-    "note": "Demo off. Czekamy na 1k USD jutro, potem live. Historia: BLOCKED_no_demo_key."
+    "note": "Equity z data/okx_equity.json gdy Executor zapisze — do tego czasu KPI nie pokazuje sztywnego 1000 jako live.",
+    "equity_source": "okx_equity.json"
   },
   "agents": [
     {
@@ -56,15 +57,15 @@
       "id": "executor",
       "name": "Executor",
       "role": "Zlecenia OKX",
-      "status": "STANDBY",
-      "detail": "WAITING_FUNDS_LIVE_TOMORROW · demo off"
+      "status": "ARMED",
+      "detail": "LIVE_SMALL · pisz data/okx_equity.json"
     },
     {
       "id": "dashboard",
       "name": "Dashboard",
       "role": "War Room UI",
       "status": "ONLINE",
-      "detail": "daily_summary 2026-08-24 09:00 · STANDBY_NEWS_GATE · publikacja off"
+      "detail": "LIVE_SMALL · equity overlay okx_equity.json · Pages ON"
     }
   ],
   "performance": {
@@ -75,22 +76,22 @@
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
     "unrealized_pnl_usd": 0,
-    "note": "Brak fillów. Paper BLOCKED_no_demo_key. Live po 1k USD — metryki wypełnią się z logów Executor."
+    "note": "Live: performance/equity z okx_equity.json + logs/orders. Zero fikcji."
   },
   "publication": {
     "enabled": true,
-    "label": "OFF",
+    "label": "ON",
+    "mode": "public",
     "channel": "github-pages",
-    "url": "https://t-matyjasik.github.io/auto-trading-desk/",
-    "mode": "public"
+    "url": "https://t-matyjasik.github.io/auto-trading-desk/"
   },
   "strategy": {
     "name": "TC-PULL + MR-FADE",
-    "status": "STANDBY_NEWS_GATE",
+    "status": "LIVE_SMALL_BESSENT_WATCH",
     "active": [
       "TC-PULL"
     ],
-    "note": "09:00 research: TREND long ADX~48-59. BLOCKED_NEWS do Bessent~20:00. MR OFF. Zero live.",
+    "note": "START Tomasz. Szukamy edge pod Bessent ~20:00. R 0.25–0.50%. Desk → live equity ASAP.",
     "regime": {
       "label": "TREND",
       "bias": "long",
@@ -107,9 +108,9 @@
     },
     "setup": {
       "tc_pull": {
-        "status": "BLOCKED_NEWS",
-        "signal": "WAIT_PULLBACK_ZONES",
-        "detail": "Zones: BTC~76.0k EMA20; ETH 2390-2425; SOL 92.3-93.8. News FLAT do Bessent~20:00. No chase."
+        "status": "ARMED_EVENT",
+        "signal": "BESSENT_SCENARIOS",
+        "detail": "Owner START. Przed 20:00: research+armed; full size dopiero po scorecard/scenariuszu — nie blind chase."
       },
       "mr_fade": {
         "status": "OFF",

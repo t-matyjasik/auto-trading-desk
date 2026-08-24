@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T09:20:36.315806+00:00",
-  "note": "Static snapshot for GitHub Pages — no secrets. Refresh by re-running publish from dashboard.",
+  "generated_at": "2026-08-24T09:30:13.611840+00:00",
+  "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
       "path": "research/market/2026-08-23_1834_market.md",
@@ -112,6 +112,19 @@
     }
   ],
   "activity": [
+    {
+      "id": "act-20260824-112901-start",
+      "ts": "2026-08-24T11:29:01+0200",
+      "actor": "Orkiestrator",
+      "action": "START_LIVE_SMALL",
+      "reason_code": "OWNER_START",
+      "reason": "Tomasz: Start. LIVE_SMALL ON. Edge pod Bessent. Dashboard live equity. R 0.25–0.50%.",
+      "context": {
+        "bessent": "~20:00 CEST",
+        "risk": "0.25-0.50%",
+        "open_max": "2%"
+      }
+    },
     {
       "id": "act-20260824-111834-blocked-news",
       "ts": "2026-08-24T11:18:34+0200",

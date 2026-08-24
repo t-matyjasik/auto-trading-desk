@@ -102,6 +102,30 @@
     };
   }
 
+
+  function applyOkxEquity(status, eq) {
+    if (!eq || eq.equity_usd == null || eq.equity_usd === "") return status;
+    const s = status || defaultStatus();
+    const paper = { ...(s.paper || {}) };
+    const performance = { ...(s.performance || {}) };
+    const equity = Number(eq.equity_usd);
+    if (Number.isNaN(equity)) return s;
+    paper.equity_usd = equity;
+    paper.equity_live = true;
+    paper.equity_source = eq.source || "okx_equity.json";
+    paper.equity_updated_at = eq.updated_at || null;
+    if (eq.start_usd != null && eq.start_usd !== "") paper.start_usd = Number(eq.start_usd);
+    if (eq.pnl_usd != null && eq.pnl_usd !== "") paper.pnl_usd = Number(eq.pnl_usd);
+    if (eq.pnl_pct != null && eq.pnl_pct !== "") paper.pnl_pct = Number(eq.pnl_pct);
+    if (eq.realized_pnl_usd != null && eq.realized_pnl_usd !== "")
+      performance.realized_pnl_usd = Number(eq.realized_pnl_usd);
+    if (eq.unrealized_pnl_usd != null && eq.unrealized_pnl_usd !== "")
+      performance.unrealized_pnl_usd = Number(eq.unrealized_pnl_usd);
+    if (Array.isArray(eq.open_positions)) performance.open_positions = eq.open_positions;
+    if (eq.note) paper.note = eq.note;
+    return { ...s, paper, performance, okx_equity: eq };
+  }
+
   function perf(s) {
     return (
       s.performance || {
@@ -118,9 +142,13 @@
 
   async function loadAll() {
     try {
-      state.status = await tryFetch("./data/status.json");
+      state.status = await tryFetch("/api/status");
     } catch (_) {
-      state.status = defaultStatus();
+      try {
+        state.status = await tryFetch("./data/status.json");
+      } catch (__) {
+        state.status = defaultStatus();
+      }
     }
 
     try {
@@ -149,6 +177,14 @@
         const act = await tryFetch("./data/activity.json");
         state.activity = act.items || [];
       } catch (_) {}
+    }
+
+    try {
+      const eq = await tryFetch("./data/okx_equity.json");
+      state.status = applyOkxEquity(state.status, eq);
+      state.okx_equity = eq;
+    } catch (_) {
+      state.okx_equity = null;
     }
 
     try {
@@ -267,7 +303,10 @@
     const s = state.status || defaultStatus();
     const p = perf(s);
     const open = Array.isArray(p.open_positions) ? p.open_positions : [];
-    const equity = Number(s.paper?.equity_usd ?? 1000);
+    const liveEq = s.paper?.equity_live === true || (state.okx_equity && state.okx_equity.equity_usd != null);
+    const equityRaw = liveEq ? s.paper?.equity_usd : (state.okx_equity && state.okx_equity.equity_usd != null ? state.okx_equity.equity_usd : s.paper?.equity_usd);
+    const equityNum = equityRaw == null || equityRaw === "" ? null : Number(equityRaw);
+    const equity = equityNum != null && !Number.isNaN(equityNum) ? equityNum : null;
     const start = Number(s.paper?.start_usd ?? 1000);
     const pnl = Number(
       s.paper?.pnl_usd ?? Number(p.realized_pnl_usd || 0) + Number(p.unrealized_pnl_usd || 0)
@@ -283,7 +322,9 @@
           : null
         : Number(p.win_rate_pct);
 
-    $("#brand-sub").textContent = "OKX · lokalnie · publikacja OFF";
+    $("#brand-sub").textContent = s.publication?.enabled
+      ? "OKX · LIVE · publikacja ON"
+      : "OKX · lokalnie · publikacja OFF";
     renderStrategy(s);
     setPillText($("#chip-phase"), s.phase?.label || "—");
     setPillText($("#chip-okx"), s.okx?.label || s.okx?.mode || "OKX");
@@ -291,8 +332,17 @@
     $("#chip-live-lock").textContent =
       "live: " + (s.phase?.live_orders || s.okx?.live_trading ? "ON" : "OFF");
 
-    $("#kpi-equity").textContent = fmtMoney(equity);
-    $("#kpi-equity-hint").textContent = "start " + fmtMoney(start);
+    if (equity == null) {
+      $("#kpi-equity").textContent = s.okx?.live_trading ? "—" : fmtMoney(1000);
+      $("#kpi-equity-hint").textContent = s.okx?.live_trading
+        ? "czekam na okx_equity.json"
+        : "start " + fmtMoney(start);
+    } else {
+      $("#kpi-equity").textContent = fmtMoney(equity);
+      $("#kpi-equity-hint").textContent =
+        (liveEq || (state.okx_equity && state.okx_equity.equity_usd != null) ? "live OKX · " : "") +
+        "start " + fmtMoney(start);
+    }
 
     const pnlEl = $("#kpi-pnl");
     pnlEl.textContent =

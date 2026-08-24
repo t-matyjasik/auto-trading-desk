@@ -1,0 +1,14 @@
+{
+  "updated_at": null,
+  "source": "waiting_executor",
+  "equity_usd": null,
+  "start_usd": 1000,
+  "available_usd": null,
+  "pnl_usd": null,
+  "pnl_pct": null,
+  "realized_pnl_usd": null,
+  "unrealized_pnl_usd": null,
+  "open_positions": [],
+  "currency": "USD",
+  "note": "Czekam na pierwszy zapis Executora (live OKX). Zero fikcyjnych liczb."
+}
