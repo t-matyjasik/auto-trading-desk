@@ -179,12 +179,23 @@
       } catch (_) {}
     }
 
+    // Prefer live /api/equity locally; fallback static okx_equity.json (Pages)
     try {
-      const eq = await tryFetch("./data/okx_equity.json");
-      state.status = applyOkxEquity(state.status, eq);
-      state.okx_equity = eq;
+      const live = await tryFetch("/api/equity");
+      if (live && live.ok && live.equity_usd != null) {
+        state.okx_equity = live;
+        state.status = applyOkxEquity(state.status, live);
+      } else {
+        throw new Error("equity_api_empty");
+      }
     } catch (_) {
-      state.okx_equity = null;
+      try {
+        const eq = await tryFetch("./data/okx_equity.json");
+        state.status = applyOkxEquity(state.status, eq);
+        state.okx_equity = eq;
+      } catch (__) {
+        state.okx_equity = null;
+      }
     }
 
     try {

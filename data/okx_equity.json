@@ -1,14 +1,17 @@
 {
-  "updated_at": null,
-  "source": "waiting_executor",
-  "equity_usd": null,
-  "start_usd": 1000,
+  "updated_at": "2026-08-24T09:34:36.786361+00:00",
+  "source": "okx_api_ro",
+  "equity_usd": 1000.0,
+  "start_usd": 1000.0,
   "available_usd": null,
-  "pnl_usd": null,
-  "pnl_pct": null,
+  "pnl_usd": 0.0,
+  "pnl_pct": 0.0,
   "realized_pnl_usd": null,
-  "unrealized_pnl_usd": null,
+  "unrealized_pnl_usd": 0.0,
   "open_positions": [],
+  "positions_count": 0,
   "currency": "USD",
-  "note": "Czekam na pierwszy zapis Executora (live OKX). Zero fikcyjnych liczb."
+  "okx_flag": "0",
+  "mode": "live",
+  "note": "live OKX read-only snapshot"
 }
