@@ -1,51 +1,159 @@
 {
-  "generated_at": "2026-08-24T10:22:51.542442+00:00",
+  "generated_at": "2026-08-24T11:36:12.185082+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
-      "path": "research/market/2026-08-23_1834_market.md",
+      "path": "research/market/2026-08-24_xperp_aggressive_hunt.md",
       "kind": "market",
-      "title": "Market brief — 2026-08-23 18:35",
-      "mtime": "2026-08-23T16:35:00Z"
+      "title": "2026-08-24 xperp aggressive hunt",
+      "mtime": "2026-08-24T10:46:29Z"
     },
     {
-      "path": "research/news/2026-08-23_1835_news.md",
-      "kind": "news",
-      "title": "News research — 2026-08-23 ~18:35 CEST",
-      "mtime": "2026-08-23T16:36:00Z"
-    },
-    {
-      "path": "research/market/2026-08-24_okx_live_factors.md",
+      "path": "research/market/2026-08-24_1200_ada_recheck.md",
       "kind": "market",
-      "title": "OKX live factors — 2026-08-24",
-      "mtime": "2026-08-24T06:48:47Z"
+      "title": "2026-08-24 1200 ada recheck",
+      "mtime": "2026-08-24T10:12:55Z"
     },
     {
-      "path": "research/market/2026-08-24_tv_regime.md",
+      "path": "research/market/2026-08-24_1200_hunt.md",
       "kind": "market",
-      "title": "TV / OKX regime 4H — 2026-08-24",
-      "mtime": "2026-08-24T06:54:23Z"
+      "title": "2026-08-24 1200 hunt",
+      "mtime": "2026-08-24T10:09:37Z"
     },
     {
-      "path": "research/news/2026-08-24_strategy_news_factors.md",
-      "kind": "news",
-      "title": "Strategy news factors — 2026-08-24",
-      "mtime": "2026-08-24T06:53:10Z"
+      "path": "research/market/2026-08-24_1200_hunt_universe.md",
+      "kind": "market",
+      "title": "2026-08-24 1200 hunt universe",
+      "mtime": "2026-08-24T10:09:36Z"
     },
     {
-      "path": "research/news/2026-08-24_0900_news.md",
-      "kind": "news",
-      "title": "News research — 2026-08-24 ~09:00 CEST",
-      "mtime": "2026-08-24T07:04:57Z"
+      "path": "research/market/2026-08-24_bessent_market.md",
+      "kind": "market",
+      "title": "2026-08-24 bessent market",
+      "mtime": "2026-08-24T09:33:02Z"
     },
     {
       "path": "research/market/2026-08-24_0900_market.md",
       "kind": "market",
-      "title": "Market brief 09:00 — 2026-08-24",
+      "title": "2026-08-24 0900 market",
       "mtime": "2026-08-24T07:09:06Z"
+    },
+    {
+      "path": "research/market/2026-08-24_tv_regime.md",
+      "kind": "market",
+      "title": "2026-08-24 tv regime",
+      "mtime": "2026-08-24T06:54:23Z"
+    },
+    {
+      "path": "research/market/2026-08-24_multifactor_market.md",
+      "kind": "market",
+      "title": "2026-08-24 multifactor market",
+      "mtime": "2026-08-24T06:51:05Z"
+    },
+    {
+      "path": "research/market/2026-08-24_okx_live_factors.md",
+      "kind": "market",
+      "title": "2026-08-24 okx live factors",
+      "mtime": "2026-08-24T06:48:47Z"
+    },
+    {
+      "path": "research/market/2026-08-24_okx_oi_funding_enrich.md",
+      "kind": "market",
+      "title": "2026-08-24 okx oi funding enrich",
+      "mtime": "2026-08-24T06:48:04Z"
+    },
+    {
+      "path": "research/market/2026-08-23_1834_market.md",
+      "kind": "market",
+      "title": "2026-08-23 1834 market",
+      "mtime": "2026-08-23T16:37:55Z"
+    },
+    {
+      "path": "research/news/2026-08-24_1300_bessent_preposition.md",
+      "kind": "news",
+      "title": "2026-08-24 1300 bessent preposition",
+      "mtime": "2026-08-24T11:07:33Z"
+    },
+    {
+      "path": "research/news/2026-08-24_1200_hunt.md",
+      "kind": "news",
+      "title": "2026-08-24 1200 hunt",
+      "mtime": "2026-08-24T10:01:10Z"
+    },
+    {
+      "path": "research/news/2026-08-24_bessent_playbook.md",
+      "kind": "news",
+      "title": "2026-08-24 bessent playbook",
+      "mtime": "2026-08-24T09:33:28Z"
+    },
+    {
+      "path": "research/news/2026-08-24_0900_news.md",
+      "kind": "news",
+      "title": "2026-08-24 0900 news",
+      "mtime": "2026-08-24T07:04:57Z"
+    },
+    {
+      "path": "research/news/2026-08-24_strategy_news_factors.md",
+      "kind": "news",
+      "title": "2026-08-24 strategy news factors",
+      "mtime": "2026-08-24T06:53:10Z"
+    },
+    {
+      "path": "research/news/2026-08-23_1835_news.md",
+      "kind": "news",
+      "title": "2026-08-23 1835 news",
+      "mtime": "2026-08-23T16:36:00Z"
     }
   ],
   "orders": [
+    {
+      "name": "2026-08-24_131038_BTC-USD_UM_XPERP-310404_submitted_limit.json::BTC-USD_UM_XPERP-310404",
+      "kind": "order",
+      "mtime": "2026-08-24T11:10:38.267782+00:00",
+      "path": "logs/orders/2026-08-24_131038_BTC-USD_UM_XPERP-310404_submitted_limit.json",
+      "status": "submitted_limit",
+      "instId": "BTC-USD_UM_XPERP-310404",
+      "side": "—",
+      "action": "—",
+      "comment_pl": "TEZA: BASE pre-Bessent micro LONG | ADX4H~58 TREND | pull EMA20 | hawkish words priced | RISK: SL~75500 / R0.25% | INVALIDACJA: named China banks hawk OR break EMA50 | REGIME: event_vol_caution | SCORE: ARMED_pull_border",
+      "teza": "BASE pre-Bessent micro LONG",
+      "risk": "SL~75500 / R0.25%",
+      "invalidacja": "named China banks hawk OR break EMA50",
+      "sl": 75500.0,
+      "tp": 78300.0
+    },
+    {
+      "name": "2026-08-24_122747_ADA_XPERP_protect_fix.json::ADA-USD_UM_XPERP-310404",
+      "kind": "order",
+      "mtime": "2026-08-24T10:27:47.885509+00:00",
+      "path": "logs/orders/2026-08-24_122747_ADA_XPERP_protect_fix.json",
+      "status": "—",
+      "instId": "ADA-USD_UM_XPERP-310404",
+      "side": "—",
+      "action": "cancel_all_algos_place_clean_sl_tp",
+      "comment_pl": null,
+      "teza": "—",
+      "risk": "—",
+      "invalidacja": "—",
+      "sl": 0.2108,
+      "tp": 0.2437
+    },
+    {
+      "name": "2026-08-24_122316_ADA-USD_UM_XPERP-310404_FILL.json::ADA-USD_UM_XPERP-310404",
+      "kind": "order",
+      "mtime": "2026-08-24T10:23:16.387133+00:00",
+      "path": "logs/orders/2026-08-24_122316_ADA-USD_UM_XPERP-310404_FILL.json",
+      "status": "FILLED",
+      "instId": "ADA-USD_UM_XPERP-310404",
+      "side": "long",
+      "action": "—",
+      "comment_pl": "TEZA: TC-PULL long ADA X-perp USDC | RISK: SL 0.2108 / lev4 / 26 ct | INVALIDACJA: px < 0.2108 | REGIME: X-perp USDC universe",
+      "teza": "TC-PULL long ADA X-perp USDC",
+      "risk": "SL 0.2108 / lev4 / 26 ct",
+      "invalidacja": "px < 0.2108",
+      "sl": 0.2108,
+      "tp": null
+    },
     {
       "name": "2026-08-24_122210_ADA-USD_UM_XPERP_GO1.json::ADA-USD_UM_XPERP-310404",
       "kind": "order",
@@ -176,6 +284,52 @@
     }
   ],
   "activity": [
+    {
+      "id": "act-20260824-124213-xperp-aggressive-hunt",
+      "ts": "2026-08-24T12:42:13+0200",
+      "type": "decision",
+      "status": "HUNT",
+      "title": "XPERP aggressive hunt",
+      "detail": "XPERP aggressive: 146 live → top40 move×liq → ARMED=0+0 watch=1. Top: SKHYNIX, XPL, NES. ZERO orders.",
+      "actor": "Orkiestrator",
+      "action": "HUNT",
+      "reason_code": "XPERP_AGGRESSIVE_SCAN",
+      "reason": "XPERP aggressive: 146 live → top40 move×liq → ARMED=0+0 watch=1. Top: SKHYNIX, XPL, NES. ZERO orders.",
+      "context": {
+        "top3": [
+          {
+            "inst": "SKHYNIX-USD_UM_XPERP-310704",
+            "score": "armed_watch_short",
+            "dist_ema20": -2.43,
+            "atr_pct": 2.302
+          },
+          {
+            "inst": "XPL-USD_UM_XPERP-310711",
+            "score": "SKIP_chase",
+            "dist_ema20": 2.751,
+            "atr_pct": 6.098
+          },
+          {
+            "inst": "NES-USD_UM_XPERP-310627",
+            "score": "SKIP_chase",
+            "dist_ema20": 3.666,
+            "atr_pct": 3.098
+          }
+        ],
+        "lev_context": 10,
+        "R_pct": 0.35
+      },
+      "source": "xperp_aggressive_hunt.py"
+    },
+    {
+      "id": "2026-08-24T1228_fix_ada_protect",
+      "ts": "2026-08-24T12:28:02+02:00",
+      "actor": "Orkiestrator",
+      "action": "FIX",
+      "reason_code": "PROTECT",
+      "reason": "ADA X-perp: usunięto duplikat SL (sz1+sz26), brakowało TP. Postawiono czysty SL 0.2108 + TP 0.2437 na 26ct.",
+      "instrument": "ADA-USD_UM_XPERP-310404"
+    },
     {
       "id": "2026-08-24T1222_fill_ada_xperp",
       "ts": "2026-08-24T12:22:25+02:00",

@@ -1,6 +1,52 @@
 {
-  "updated_at": "2026-08-24T10:22:51.542713+00:00",
+  "updated_at": "2026-08-24T11:36:12.185418+00:00",
   "items": [
+    {
+      "id": "act-20260824-124213-xperp-aggressive-hunt",
+      "ts": "2026-08-24T12:42:13+0200",
+      "type": "decision",
+      "status": "HUNT",
+      "title": "XPERP aggressive hunt",
+      "detail": "XPERP aggressive: 146 live → top40 move×liq → ARMED=0+0 watch=1. Top: SKHYNIX, XPL, NES. ZERO orders.",
+      "actor": "Orkiestrator",
+      "action": "HUNT",
+      "reason_code": "XPERP_AGGRESSIVE_SCAN",
+      "reason": "XPERP aggressive: 146 live → top40 move×liq → ARMED=0+0 watch=1. Top: SKHYNIX, XPL, NES. ZERO orders.",
+      "context": {
+        "top3": [
+          {
+            "inst": "SKHYNIX-USD_UM_XPERP-310704",
+            "score": "armed_watch_short",
+            "dist_ema20": -2.43,
+            "atr_pct": 2.302
+          },
+          {
+            "inst": "XPL-USD_UM_XPERP-310711",
+            "score": "SKIP_chase",
+            "dist_ema20": 2.751,
+            "atr_pct": 6.098
+          },
+          {
+            "inst": "NES-USD_UM_XPERP-310627",
+            "score": "SKIP_chase",
+            "dist_ema20": 3.666,
+            "atr_pct": 3.098
+          }
+        ],
+        "lev_context": 10,
+        "R_pct": 0.35
+      },
+      "source": "xperp_aggressive_hunt.py"
+    },
+    {
+      "id": "2026-08-24T1228_fix_ada_protect",
+      "ts": "2026-08-24T12:28:02+02:00",
+      "actor": "Orkiestrator",
+      "action": "FIX",
+      "reason_code": "PROTECT",
+      "reason": "ADA X-perp: usunięto duplikat SL (sz1+sz26), brakowało TP. Postawiono czysty SL 0.2108 + TP 0.2437 na 26ct.",
+      "instrument": "ADA-USD_UM_XPERP-310404"
+    },
     {
       "id": "2026-08-24T1222_fill_ada_xperp",
       "ts": "2026-08-24T12:22:25+02:00",
