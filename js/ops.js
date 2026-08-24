@@ -103,6 +103,27 @@
   }
 
 
+
+  function normalizeActivity(list) {
+    const raw = Array.isArray(list) ? list : (list && list.items) || [];
+    return raw
+      .filter((a) => a && typeof a === "object")
+      .map((a) => {
+        const action = a.action || a.status || "NOTE";
+        const reason =
+          a.reason ||
+          [a.title, a.detail].filter(Boolean).join(" — ") ||
+          "—";
+        return {
+          ...a,
+          action,
+          reason,
+          actor: a.actor || a.source || "Orkiestrator",
+          id: a.id || a.ts || action + reason,
+        };
+      });
+  }
+
   function applyOkxEquity(status, eq) {
     if (!eq || eq.equity_usd == null || eq.equity_usd === "") return status;
     const s = status || defaultStatus();
@@ -155,14 +176,14 @@
       const api = await tryFetch("/api/files");
       state.research = api.research || [];
       state.orders = api.orders || [];
-      state.activity = api.activity || [];
+      state.activity = normalizeActivity(api.activity || []);
       state.mode = "api";
     } catch (_) {
       try {
         const f = await tryFetch("./data/files.json");
         state.research = f.research || [];
         state.orders = f.orders || [];
-        state.activity = f.activity || [];
+        state.activity = normalizeActivity(f.activity || []);
         state.mode = "static";
       } catch (__) {
         state.research = [];
@@ -175,7 +196,7 @@
     if (!state.activity.length) {
       try {
         const act = await tryFetch("./data/activity.json");
-        state.activity = act.items || [];
+        state.activity = normalizeActivity(act.items || act);
       } catch (_) {}
     }
 

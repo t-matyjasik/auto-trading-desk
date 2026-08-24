@@ -26,3 +26,7 @@ Pola czytane przez desk:
 - `sl`, `tp1`/`tp`, `leverage_planned`, `timestamp_warsaw`
 
 Publikacja: OFF.
+
+
+Also accepted: top-level JSON array; fields `status`/`title`/`detail` (mapped to action/reason).
+Actions: HUNT, CANDIDATE, SKIP, BLOCKED, FILL, REDUCE, …

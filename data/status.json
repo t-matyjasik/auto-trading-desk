@@ -1,12 +1,12 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-24T09:38:27Z",
+  "updated_at": "2026-08-24T10:01:37Z",
   "phase": {
-    "id": "live-small",
-    "label": "LIVE_SMALL",
+    "id": "hunt-first-position",
+    "label": "HUNT_FIRST_POSITION",
     "live_orders": true,
-    "note": "Equity live · Pages ON"
+    "note": "Hunt first position ON · feed decyzji · Telegram ON · equity live"
   },
   "okx": {
     "flag": 0,
@@ -31,8 +31,8 @@
       "id": "orkiestrator",
       "name": "Orkiestrator",
       "role": "Koordynacja fazy i GO",
-      "status": "ACTIVE",
-      "detail": "Plan: jutro live po 1k"
+      "status": "HUNT",
+      "detail": "Hunt first position ON"
     },
     {
       "id": "market-scout",
@@ -67,7 +67,7 @@
       "name": "Dashboard",
       "role": "War Room UI",
       "status": "ONLINE",
-      "detail": "LIVE_SMALL · equity overlay okx_equity.json · Pages ON"
+      "detail": "HUNT feed · equity live · Telegram ON · Pages sync"
     }
   ],
   "performance": {
@@ -89,11 +89,11 @@
   },
   "strategy": {
     "name": "TC-PULL + MR-FADE",
-    "status": "LIVE_SMALL_BESSENT_WATCH",
+    "status": "HUNT_FIRST_POSITION",
     "active": [
       "TC-PULL"
     ],
-    "note": "START Tomasz. Szukamy edge pod Bessent ~20:00. R 0.25–0.50%. Desk → live equity ASAP.",
+    "note": "HUNT first position ON. TC-PULL primary. Pre-Bessent caution. START Tomasz. Szukamy edge pod Bessent ~20:00. R 0.25–0.50%. Desk → live equity ASAP.",
     "regime": {
       "label": "TREND",
       "bias": "long",
