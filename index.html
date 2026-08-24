@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="gated">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/ops.css" />
+  <script src="./js/gate.js"></script>
 </head>
 <body>
   <div class="desk" id="app">
@@ -157,21 +158,37 @@
       </section>
     </div>
 
-    <section class="panel">
+    <section class="panel" id="panel-activity">
       <div class="panel-head">
-        <h2>Logi zleceń / próby</h2>
+        <h2>Feed decyzji</h2>
+        <span class="chip" id="chip-activity-count">0</span>
+      </div>
+      <div class="feed" id="activity-feed">
+        <div class="empty">Brak decyzji Orkiestratora</div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-orders">
+      <div class="panel-head">
+        <h2>Zlecenia Executor</h2>
         <span class="chip" id="chip-orders-count">0</span>
       </div>
       <div class="table-wrap">
         <table class="data" id="table-orders">
           <thead>
             <tr>
-              <th>Plik</th>
+              <th>Czas</th>
+              <th>Akcja</th>
+              <th>Instrument</th>
+              <th>Strona</th>
               <th>Status</th>
+              <th>Teza</th>
+              <th>Risk</th>
+              <th>Invalidacja</th>
             </tr>
           </thead>
           <tbody id="tbody-orders">
-            <tr class="empty-row"><td colspan="2">Brak logów</td></tr>
+            <tr class="empty-row"><td colspan="8">Brak logów zleceń</td></tr>
           </tbody>
         </table>
       </div>

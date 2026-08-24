@@ -1,4 +1,6 @@
 {
+  "generated_at": "2026-08-24T09:20:36.315806+00:00",
+  "note": "Static snapshot for GitHub Pages — no secrets. Refresh by re-running publish from dashboard.",
   "research": [
     {
       "path": "research/market/2026-08-23_1834_market.md",
@@ -43,20 +45,107 @@
       "mtime": "2026-08-24T07:09:06Z"
     }
   ],
-  "lessons": [],
-  "updated_at": "2026-08-24T07:35:18Z",
   "orders": [
     {
-      "path": "logs/orders/2026-08-23_190051_SOL-USDT-SWAP_BLOCKED_no_demo_key.md",
-      "status": "BLOCKED_no_demo_key"
-    },
-    {
-      "path": "logs/orders/2026-08-23_190051_ETH-USDT-SWAP_BLOCKED_no_demo_key.md",
-      "status": "BLOCKED_no_demo_key"
-    },
-    {
+      "name": "2026-08-23_190051_EXECUTOR_OKX_summary_BLOCKED.json::SOL-USDT-SWAP",
+      "kind": "order",
+      "mtime": "2026-08-23T17:00:51.472142+00:00",
       "path": "logs/orders/2026-08-23_190051_EXECUTOR_OKX_summary_BLOCKED.json",
-      "status": "BLOCKED"
+      "status": "skipped",
+      "instId": "SOL-USDT-SWAP",
+      "side": "LONG",
+      "action": "skipped",
+      "comment_pl": "TEZA: SOL RS vs BTC w conditional risk-on; kontynuacja ku 100 przy utrzymaniu >93 | RISK: SL 93 / R~0.75% / lev5 | INVALIDACJA: close <93 lub BTC <75500 silnie",
+      "teza": "SOL RS vs BTC w conditional risk-on; kontynuacja ku 100 przy utrzymaniu >93",
+      "risk": "SL 93 / R~0.75% / lev5",
+      "invalidacja": "close <93 lub BTC <75500 silnie",
+      "sl": 93.0,
+      "tp": null
+    },
+    {
+      "name": "2026-08-23_190051_EXECUTOR_OKX_summary_BLOCKED.json::ETH-USDT-SWAP",
+      "kind": "order",
+      "mtime": "2026-08-23T17:00:51.472142+00:00",
+      "path": "logs/orders/2026-08-23_190051_EXECUTOR_OKX_summary_BLOCKED.json",
+      "status": "skipped",
+      "instId": "ETH-USDT-SWAP",
+      "side": "LONG",
+      "action": "skipped",
+      "comment_pl": "TEZA: ETH siła + napływy ETF; bias long w risk-on | RISK: SL 2385 / R~0.75% / lev4 | INVALIDACJA: close <2385 lub utrata struktury po weekendowej konsolidacji",
+      "teza": "ETH siła + napływy ETF; bias long w risk-on",
+      "risk": "SL 2385 / R~0.75% / lev4",
+      "invalidacja": "close <2385 lub utrata struktury po weekendowej konsolidacji",
+      "sl": 2385.0,
+      "tp": null
+    },
+    {
+      "name": "2026-08-23_190051_ETH-USDT-SWAP_BLOCKED_no_demo_key.json::ETH-USDT-SWAP",
+      "kind": "order",
+      "mtime": "2026-08-23T17:00:51.471936+00:00",
+      "path": "logs/orders/2026-08-23_190051_ETH-USDT-SWAP_BLOCKED_no_demo_key.json",
+      "status": "skipped",
+      "instId": "ETH-USDT-SWAP",
+      "side": "LONG",
+      "action": "skipped",
+      "comment_pl": "TEZA: ETH siła + napływy ETF; bias long w risk-on | RISK: SL 2385 / R~0.75% / lev4 | INVALIDACJA: close <2385 lub utrata struktury po weekendowej konsolidacji",
+      "teza": "ETH siła + napływy ETF; bias long w risk-on",
+      "risk": "SL 2385 / R~0.75% / lev4",
+      "invalidacja": "close <2385 lub utrata struktury po weekendowej konsolidacji",
+      "sl": 2385.0,
+      "tp": null
+    },
+    {
+      "name": "2026-08-23_190051_SOL-USDT-SWAP_BLOCKED_no_demo_key.json::SOL-USDT-SWAP",
+      "kind": "order",
+      "mtime": "2026-08-23T17:00:51.471684+00:00",
+      "path": "logs/orders/2026-08-23_190051_SOL-USDT-SWAP_BLOCKED_no_demo_key.json",
+      "status": "skipped",
+      "instId": "SOL-USDT-SWAP",
+      "side": "LONG",
+      "action": "skipped",
+      "comment_pl": "TEZA: SOL RS vs BTC w conditional risk-on; kontynuacja ku 100 przy utrzymaniu >93 | RISK: SL 93 / R~0.75% / lev5 | INVALIDACJA: close <93 lub BTC <75500 silnie",
+      "teza": "SOL RS vs BTC w conditional risk-on; kontynuacja ku 100 przy utrzymaniu >93",
+      "risk": "SL 93 / R~0.75% / lev5",
+      "invalidacja": "close <93 lub BTC <75500 silnie",
+      "sl": 93.0,
+      "tp": null
+    }
+  ],
+  "activity": [
+    {
+      "id": "act-20260824-111834-blocked-news",
+      "ts": "2026-08-24T11:18:34+0200",
+      "actor": "Orkiestrator",
+      "action": "BLOCKED",
+      "reason_code": "NEWS_GATE_BESSENT",
+      "reason": "TC-PULL BLOCKED_NEWS do Bessent ~20:00 CEST (Hormuz watch). R MASTER 0.25–0.50%. Zero live.",
+      "context": {
+        "regime": "TREND",
+        "bias": "long",
+        "funding": "+0.01%",
+        "tc_pull": "BLOCKED_NEWS",
+        "mr_fade": "OFF",
+        "pullback_zones": {
+          "BTC": "76.0k",
+          "ETH": "2390-2425",
+          "SOL": "92.3-93.8"
+        }
+      }
+    },
+    {
+      "id": "2026-08-24T0852_news_gate",
+      "ts": "2026-08-24T08:52:19+02:00",
+      "actor": "Orkiestrator",
+      "action": "BLOCKED",
+      "reason_code": "NEWS_GATE",
+      "reason": "FLAT do Bessent ~20:00 CEST — tc_pull=BLOCKED_NEWS",
+      "context": {
+        "regime": "TREND",
+        "funding": "OK",
+        "tc_pull": "BLOCKED_NEWS",
+        "mr_fade": "OFF"
+      },
+      "source": "status.json / news_scout"
     }
   ]
 }

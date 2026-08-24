@@ -1,0 +1,5 @@
+
+.publish_password_local
+.env
+**/.env
+**/credentials*

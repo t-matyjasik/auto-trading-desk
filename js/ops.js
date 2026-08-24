@@ -10,6 +10,7 @@
     status: null,
     research: [],
     orders: [],
+    activity: [],
     summary: "",
     mode: "static",
   };
@@ -126,18 +127,28 @@
       const api = await tryFetch("/api/files");
       state.research = api.research || [];
       state.orders = api.orders || [];
+      state.activity = api.activity || [];
       state.mode = "api";
     } catch (_) {
       try {
         const f = await tryFetch("./data/files.json");
         state.research = f.research || [];
         state.orders = f.orders || [];
+        state.activity = f.activity || [];
         state.mode = "static";
       } catch (__) {
         state.research = [];
         state.orders = [];
+        state.activity = [];
         state.mode = "file";
       }
+    }
+    // activity.json fallback merge
+    if (!state.activity.length) {
+      try {
+        const act = await tryFetch("./data/activity.json");
+        state.activity = act.items || [];
+      } catch (_) {}
     }
 
     try {
@@ -383,23 +394,85 @@
       })
       .join("");
 
+    // Feed decyzji
+    const feed = $("#activity-feed");
+    const acts = state.activity || [];
+    $("#chip-activity-count").textContent = String(acts.length);
+    if (feed) {
+      if (!acts.length) {
+        feed.innerHTML = '<div class="empty">Brak decyzji Orkiestratora</div>';
+      } else {
+        feed.innerHTML = acts
+          .slice(0, 40)
+          .map((a) => {
+            const action = String(a.action || "NOTE").toUpperCase();
+            const ctx = a.context
+              ? Object.entries(a.context)
+                  .map(([k, v]) => k + "=" + v)
+                  .join(" · ")
+              : "";
+            return (
+              '<div class="feed-item">' +
+              '<div class="feed-top">' +
+              '<span class="feed-actor">' +
+              escapeHtml(a.actor || "Orkiestrator") +
+              "</span>" +
+              statusBadge(action) +
+              (a.reason_code
+                ? '<span class="badge">' + escapeHtml(a.reason_code) + "</span>"
+                : "") +
+              (a.instrument
+                ? '<span class="mono">' + escapeHtml(a.instrument) + "</span>"
+                : "") +
+              '<span class="feed-time">' +
+              escapeHtml(fmtTime(a.ts) || String(a.ts || "—")) +
+              "</span></div>" +
+              '<div class="feed-reason">' +
+              escapeHtml(a.reason || "—") +
+              "</div>" +
+              (ctx ? '<div class="feed-context">' + escapeHtml(ctx) + "</div>" : "") +
+              "</div>"
+            );
+          })
+          .join("");
+      }
+    }
+
     $("#chip-orders-count").textContent = String(state.orders.length);
     const ot = $("#tbody-orders");
     if (!state.orders.length) {
-      ot.innerHTML = '<tr class="empty-row"><td colspan="2">Brak logów zleceń</td></tr>';
+      ot.innerHTML = '<tr class="empty-row"><td colspan="8">Brak logów zleceń</td></tr>';
     } else {
       ot.innerHTML = state.orders
         .map((o) => {
-          const path = o.path || o.name || "—";
-          const short = String(path).split("/").pop();
+          const action = o.action || (String(o.status || "").toUpperCase().includes("BLOCK") ? "skipped" : "—");
           return (
-            "<tr><td class=\"mono\" title=\"" +
-            escapeHtml(path) +
-            "\">" +
-            escapeHtml(short) +
-            "</td><td>" +
+            "<tr>" +
+            '<td class="mono">' +
+            escapeHtml(fmtTime(o.mtime) || "—") +
+            "</td>" +
+            "<td>" +
+            statusBadge(String(action).toUpperCase()) +
+            "</td>" +
+            '<td class="mono">' +
+            escapeHtml(o.instId || "—") +
+            "</td>" +
+            "<td>" +
+            escapeHtml(o.side || "—") +
+            "</td>" +
+            "<td>" +
             statusBadge(o.status || "—") +
-            "</td></tr>"
+            "</td>" +
+            '<td class="wrap">' +
+            escapeHtml(o.teza || o.comment_pl || "—") +
+            "</td>" +
+            '<td class="wrap">' +
+            escapeHtml(o.risk || "—") +
+            "</td>" +
+            '<td class="wrap">' +
+            escapeHtml(o.invalidacja || "—") +
+            "</td>" +
+            "</tr>"
           );
         })
         .join("");

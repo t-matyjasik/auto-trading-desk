@@ -78,8 +78,11 @@
     "note": "Brak fillów. Paper BLOCKED_no_demo_key. Live po 1k USD — metryki wypełnią się z logów Executor."
   },
   "publication": {
-    "enabled": false,
-    "label": "OFF"
+    "enabled": true,
+    "label": "OFF",
+    "channel": "github-pages",
+    "url": "https://t-matyjasik.github.io/auto-trading-desk/",
+    "mode": "password_gate"
   },
   "strategy": {
     "name": "TC-PULL + MR-FADE",
