@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T10:09:28.821676+00:00",
+  "generated_at": "2026-08-24T10:14:04.918525+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -46,6 +46,38 @@
     }
   ],
   "orders": [
+    {
+      "name": "2026-08-24_121313_ADA-USDT-SWAP_BLOCKED_NO_TRADE_PERM.json::ADA-USDT-SWAP",
+      "kind": "order",
+      "mtime": "2026-08-24T10:13:13.745453+00:00",
+      "path": "logs/orders/2026-08-24_121313_ADA-USDT-SWAP_BLOCKED_NO_TRADE_PERM.json",
+      "status": "BLOCKED_NO_TRADE_PERM",
+      "instId": "ADA-USDT-SWAP",
+      "side": "buy",
+      "action": "skipped",
+      "comment_pl": "TEZA: TC-PULL long ADA — NIE WEJŚCIE | BLOCKED: 50124 + 51155",
+      "teza": "TC-PULL long ADA — NIE WEJŚCIE",
+      "risk": "—",
+      "invalidacja": "—",
+      "sl": null,
+      "tp": null
+    },
+    {
+      "name": "2026-08-24_121236_ADA-USDT-SWAP_GO1.json::ADA-USDT-SWAP",
+      "kind": "order",
+      "mtime": "2026-08-24T10:12:36.538861+00:00",
+      "path": "logs/orders/2026-08-24_121236_ADA-USDT-SWAP_GO1.json",
+      "status": "error",
+      "instId": "ADA-USDT-SWAP",
+      "side": "long",
+      "action": "open",
+      "comment_pl": "TEZA: TC-PULL long ADA pullback→reclaim EMA20 4H | RISK: SL 0.2108 / R~0.25% / size 2.7 ct / lev 4x | INVALIDACJA: close 4H < 0.2108 lub utrata +DI vs −DI | REGIME: ADX46 TREND UP | SCORE: FUND+0.01 OK / NEWS CAUTION REDUCE / PORT≤2%",
+      "teza": "TC-PULL long ADA pullback→reclaim EMA20 4H",
+      "risk": "SL 0.2108 / R~0.25% / size 2.7 ct / lev 4x",
+      "invalidacja": "close 4H < 0.2108 lub utrata +DI vs −DI",
+      "sl": 0.2108,
+      "tp": null
+    },
     {
       "name": "2026-08-23_190051_EXECUTOR_OKX_summary_BLOCKED.json::SOL-USDT-SWAP",
       "kind": "order",
@@ -112,6 +144,22 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-24T1213_blocked_ada",
+      "ts": "2026-08-24T12:13:36+02:00",
+      "actor": "Orkiestrator",
+      "action": "BLOCKED",
+      "reason_code": "OKX_PERM",
+      "reason": "ADA GO#1 blocked: API 50124 no trade perm for market + USDC-only (0 USDT), convert 51155 compliance. Czeka na Tomasza. Market Scout SUPPORT tezy.",
+      "instrument": "ADA-USDT-SWAP",
+      "context": {
+        "api_code": "50124",
+        "usdt": 0,
+        "usdc": 1000,
+        "key_label": "G-BOT Auto Trading",
+        "market_scout": "SUPPORT"
+      }
+    },
     {
       "id": "2026-08-24T1208_go_ada",
       "ts": "2026-08-24T12:08:48+02:00",

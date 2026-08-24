@@ -1,19 +1,20 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-24T10:09:28Z",
+  "updated_at": "2026-08-24T10:14:04Z",
   "phase": {
-    "id": "hunt-go1-ada",
-    "label": "GO#1_ADA_PENDING_FILL",
-    "live_orders": true,
-    "note": "GO #1 ADA-USDT-SWAP long TC-PULL · SL 0.2108 · R~0.25% · lev4 · 2.7ct · czekamy na fill"
+    "id": "blocked-awaiting-tomasz-okx",
+    "label": "BLOCKED_AWAITING_TOMSZ_OKX",
+    "live_orders": false,
+    "note": "ADA GO#1 BLOCKED: API 50124 (brak trade futures) + 0 USDT/1000 USDC (51155). Zero pozycji."
   },
   "okx": {
     "flag": 0,
     "mode": "live_small",
-    "label": "LIVE_SMALL",
-    "executor": "ARMED",
-    "live_trading": true
+    "label": "BLOCKED_API",
+    "executor": "BLOCKED",
+    "live_trading": true,
+    "last_error": "50124+51155"
   },
   "paper": {
     "label": "LIVE_OKX",
@@ -21,7 +22,7 @@
     "equity_usd": 1000.0,
     "pnl_usd": 0.0,
     "pnl_pct": 0.0,
-    "note": "Live OKX equity=1000.0 available=n/a · 0 pos · flag=0",
+    "note": "Equity ~1000 USDC ale 0 USDT — SWAP potrzebuje USDT. API key: włącz trade na futures/market.",
     "equity_source": "okx_equity.json",
     "equity_live": true,
     "equity_updated_at": "2026-08-24T09:38:27.238683+00:00"
@@ -31,8 +32,8 @@
       "id": "orkiestrator",
       "name": "Orkiestrator",
       "role": "Koordynacja fazy i GO",
-      "status": "HUNT",
-      "detail": "Hunt first position ON"
+      "status": "BLOCKED_WAIT",
+      "detail": "Czeka na Tomasza: OKX API trade + USDT"
     },
     {
       "id": "market-scout",
@@ -59,8 +60,8 @@
       "id": "executor",
       "name": "Executor",
       "role": "Zlecenia OKX",
-      "status": "ARMED",
-      "detail": "LIVE_SMALL · pisz data/okx_equity.json"
+      "status": "BLOCKED",
+      "detail": "50124 no trade + 51155 no USDT"
     },
     {
       "id": "dashboard",
@@ -78,7 +79,7 @@
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
     "unrealized_pnl_usd": 0.0,
-    "note": "PENDING FILL: ADA-USDT-SWAP long TC-PULL SL0.2108 R~0.25% lev4 size2.7ct — desk+TG on fill"
+    "note": "ADA GO#1 BLOCKED — zero fill / zero pozycji. Czeka na OKX perms + USDT."
   },
   "publication": {
     "enabled": true,
@@ -89,7 +90,7 @@
   },
   "strategy": {
     "name": "TC-PULL + MR-FADE",
-    "status": "GO1_ADA_TC_PULL",
+    "status": "BLOCKED_AWAITING_TOMSZ_OKX",
     "active": [
       "TC-PULL"
     ],
@@ -110,9 +111,9 @@
     },
     "setup": {
       "tc_pull": {
-        "status": "GO",
+        "status": "BLOCKED",
         "signal": "ADA-USDT-SWAP",
-        "detail": "GO #1 long SL 0.2108 R~0.25% lev4 size 2.7ct — pending fill"
+        "detail": "GO#1 blocked: OKX 50124 (no trade) + convert 51155 (0 USDT)"
       },
       "mr_fade": {
         "status": "OFF",
