@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T10:14:04.918525+00:00",
+  "generated_at": "2026-08-24T10:22:51.542442+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -46,6 +46,38 @@
     }
   ],
   "orders": [
+    {
+      "name": "2026-08-24_122210_ADA-USD_UM_XPERP_GO1.json::ADA-USD_UM_XPERP-310404",
+      "kind": "order",
+      "mtime": "2026-08-24T10:22:10.874679+00:00",
+      "path": "logs/orders/2026-08-24_122210_ADA-USD_UM_XPERP_GO1.json",
+      "status": "filled",
+      "instId": "ADA-USD_UM_XPERP-310404",
+      "side": "long",
+      "action": "open_scale",
+      "comment_pl": "TEZA: TC-PULL long ADA X-perp USDC pullback→reclaim EMA20 4H | RISK: SL 0.2108 / R~0.25% / lev4 | INVALIDACJA: close <0.2108 | REGIME: ADX TREND | UNIVERSE: USD_UM_XPERP only",
+      "teza": "TC-PULL long ADA X-perp USDC pullback→reclaim EMA20 4H",
+      "risk": "SL 0.2108 / R~0.25% / lev4",
+      "invalidacja": "close <0.2108",
+      "sl": 0.2108,
+      "tp": null
+    },
+    {
+      "name": "2026-08-24_121507_ADA-USDT-SWAP_GO1_retry.json::—",
+      "kind": "order",
+      "mtime": "2026-08-24T10:15:07.350171+00:00",
+      "path": "logs/orders/2026-08-24_121507_ADA-USDT-SWAP_GO1_retry.json",
+      "status": "—",
+      "instId": "—",
+      "side": "—",
+      "action": "—",
+      "comment_pl": null,
+      "teza": "—",
+      "risk": "—",
+      "invalidacja": "—",
+      "sl": null,
+      "tp": null
+    },
     {
       "name": "2026-08-24_121313_ADA-USDT-SWAP_BLOCKED_NO_TRADE_PERM.json::ADA-USDT-SWAP",
       "kind": "order",
@@ -144,6 +176,23 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-24T1222_fill_ada_xperp",
+      "ts": "2026-08-24T12:22:25+02:00",
+      "actor": "Orkiestrator",
+      "action": "FILL",
+      "reason_code": "GO",
+      "reason": "ADA X-perp long FILL 26 ct @~0.22075 SL 0.2108 TP2 0.2437 R~0.25% lev4 USDC. Universe=USD_UM_XPERP only.",
+      "instrument": "ADA-USD_UM_XPERP-310404",
+      "context": {
+        "pos": 26,
+        "avg": 0.22075,
+        "sl": 0.2108,
+        "tp2": 0.2437,
+        "lev": 4,
+        "ccy": "USDC"
+      }
+    },
     {
       "id": "2026-08-24T1213_blocked_ada",
       "ts": "2026-08-24T12:13:36+02:00",
