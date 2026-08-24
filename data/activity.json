@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-08-24T09:36:15.852483+00:00",
+  "updated_at": "2026-08-24T09:37:41.214388+00:00",
   "items": [
+    {
+      "id": "act-20260824-113626-flat-bessent",
+      "ts": "2026-08-24T11:36:26+0200",
+      "actor": "Orkiestrator",
+      "action": "SKIP",
+      "reason_code": "BESSENT_PRE_EVENT_FLAT",
+      "reason": "LIVE_SMALL armed. Equity 1000 USDC. Przed Bessent ~20:00: FLAT (playbook). Po headline A–D → setup. R 0.25–0.50%.",
+      "context": {
+        "equity_usd": 1000,
+        "positions": 0,
+        "adx4h": "BTC57 ETH53 SOL46 TREND",
+        "event": "Bessent 20:00 CEST"
+      }
+    },
     {
       "id": "act-20260824-112901-start",
       "ts": "2026-08-24T11:29:01+0200",
