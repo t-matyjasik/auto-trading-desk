@@ -355,3 +355,35 @@ body {
   white-space: normal; min-width: 140px; max-width: 260px;
   font-size: 0.78rem; line-height: 1.35;
 }
+
+/* Equity refresh */
+.kpi-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+.kpi-label-row .kpi-label { margin: 0; }
+.btn-equity {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 7px;
+  border: 1px solid var(--line-soft, #2a3a4d);
+  background: var(--panel-2, #121821);
+  color: var(--blue, #6ea8fe);
+  cursor: pointer;
+  line-height: 1.2;
+}
+.btn-equity:hover { border-color: var(--blue, #6ea8fe); }
+.btn-equity:disabled { opacity: 0.55; cursor: wait; }
+.btn-equity.is-static { color: var(--muted, #9aa7b5); }
+.kpi-meta {
+  margin-top: 6px;
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 0.66rem;
+  color: var(--muted, #9aa7b5);
+}

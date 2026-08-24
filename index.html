@@ -31,10 +31,14 @@
     </header>
 
     <section class="kpis" aria-label="Kluczowe metryki">
-      <article class="kpi">
-        <div class="kpi-label">Equity</div>
+      <article class="kpi kpi-equity-card">
+        <div class="kpi-label-row">
+          <div class="kpi-label">Equity</div>
+          <button type="button" class="btn btn-equity" id="btn-equity-refresh" title="Odśwież equity OKX">ODŚWIEŻ</button>
+        </div>
         <div class="kpi-value" id="kpi-equity">—</div>
         <div class="kpi-hint" id="kpi-equity-hint">start —</div>
+        <div class="kpi-meta" id="kpi-equity-updated">ostatnia aktualizacja: —</div>
       </article>
       <article class="kpi">
         <div class="kpi-label">Zysk (PnL)</div>

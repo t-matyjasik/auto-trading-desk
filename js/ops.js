@@ -312,6 +312,11 @@
 
   function render() {
     const s = state.status || defaultStatus();
+    const eqBtn = $("#btn-equity-refresh");
+    if (eqBtn) {
+      if (state.mode === "api") eqBtn.classList.remove("is-static");
+      else eqBtn.classList.add("is-static");
+    }
     const p = perf(s);
     const open = Array.isArray(p.open_positions) ? p.open_positions : [];
     // Live: equity TYLKO z okx_equity.json / equity_live — nigdy sztywne 1000 jako "live".
@@ -362,6 +367,17 @@
         (liveEq || (state.okx_equity && state.okx_equity.equity_usd != null) ? "live OKX · " : "") +
         "start " + fmtMoney(start);
     }
+    const eqTs =
+      (state.okx_equity && (state.okx_equity.updated_at || state.okx_equity.ts)) ||
+      s.paper?.equity_updated_at ||
+      null;
+    const eqMeta = $("#kpi-equity-updated");
+    if (eqMeta) {
+      eqMeta.textContent =
+        "ostatnia aktualizacja: " + (eqTs ? fmtTime(eqTs) || String(eqTs) : "—") +
+        (state.mode === "api" ? " · lokalny OKX" : " · snapshot Pages");
+    }
+
 
     const pnlEl = $("#kpi-pnl");
     pnlEl.textContent =
@@ -573,7 +589,66 @@
   }
 
   async function boot() {
-    $("#btn-refresh")?.addEventListener("click", () => loadAll());
+    
+  async function refreshEquity() {
+    const btn = $("#btn-equity-refresh");
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = "…";
+    }
+    try {
+      if (state.mode === "api") {
+        const res = await fetch("/api/equity/refresh", {
+          method: "POST",
+          cache: "no-store",
+          headers: { "Content-Type": "application/json" },
+        });
+        const live = await res.json();
+        if (res.status === 429) {
+          const meta = $("#kpi-equity-updated");
+          if (meta) meta.textContent = "rate-limit — spróbuj za " + (live.retry_after_s || 10) + "s";
+          return;
+        }
+        if (live && live.ok && live.equity_usd != null) {
+          state.okx_equity = live;
+          state.status = applyOkxEquity(state.status || defaultStatus(), live);
+          render();
+          return;
+        }
+        throw new Error(live && live.error ? live.error : "refresh_failed");
+      }
+      // Pages / static: cache-bust JSON only — never call OKX with secrets from browser
+      const eq = await tryFetch("./data/okx_equity.json?t=" + Date.now());
+      state.okx_equity = eq;
+      state.status = applyOkxEquity(state.status || defaultStatus(), eq);
+      render();
+      const meta = $("#kpi-equity-updated");
+      if (meta) {
+        meta.textContent =
+          "ostatnia aktualizacja: " +
+          (fmtTime(eq.updated_at || eq.ts) || "—") +
+          " · snapshot (pełny live OKX = lokalny serve.py :8765)";
+      }
+    } catch (e) {
+      const meta = $("#kpi-equity-updated");
+      if (meta) {
+        meta.textContent =
+          state.mode === "api"
+            ? "błąd odświeżenia equity"
+            : "snapshot Pages — pełny live OKX = lokalny serve.py :8765";
+      }
+    } finally {
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = "ODŚWIEŻ";
+        if (state.mode !== "api") btn.classList.add("is-static");
+        else btn.classList.remove("is-static");
+      }
+    }
+  }
+
+  $("#btn-refresh")?.addEventListener("click", () => loadAll());
+  $("#btn-equity-refresh")?.addEventListener("click", () => refreshEquity());
     await loadAll();
     setInterval(loadAll, 12000);
   }
