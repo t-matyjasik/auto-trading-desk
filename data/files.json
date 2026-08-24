@@ -1,0 +1,62 @@
+{
+  "research": [
+    {
+      "path": "research/market/2026-08-23_1834_market.md",
+      "kind": "market",
+      "title": "Market brief — 2026-08-23 18:35",
+      "mtime": "2026-08-23T16:35:00Z"
+    },
+    {
+      "path": "research/news/2026-08-23_1835_news.md",
+      "kind": "news",
+      "title": "News research — 2026-08-23 ~18:35 CEST",
+      "mtime": "2026-08-23T16:36:00Z"
+    },
+    {
+      "path": "research/market/2026-08-24_okx_live_factors.md",
+      "kind": "market",
+      "title": "OKX live factors — 2026-08-24",
+      "mtime": "2026-08-24T06:48:47Z"
+    },
+    {
+      "path": "research/market/2026-08-24_tv_regime.md",
+      "kind": "market",
+      "title": "TV / OKX regime 4H — 2026-08-24",
+      "mtime": "2026-08-24T06:54:23Z"
+    },
+    {
+      "path": "research/news/2026-08-24_strategy_news_factors.md",
+      "kind": "news",
+      "title": "Strategy news factors — 2026-08-24",
+      "mtime": "2026-08-24T06:53:10Z"
+    },
+    {
+      "path": "research/news/2026-08-24_0900_news.md",
+      "kind": "news",
+      "title": "News research — 2026-08-24 ~09:00 CEST",
+      "mtime": "2026-08-24T07:04:57Z"
+    },
+    {
+      "path": "research/market/2026-08-24_0900_market.md",
+      "kind": "market",
+      "title": "Market brief 09:00 — 2026-08-24",
+      "mtime": "2026-08-24T07:09:06Z"
+    }
+  ],
+  "lessons": [],
+  "updated_at": "2026-08-24T07:35:18Z",
+  "orders": [
+    {
+      "path": "logs/orders/2026-08-23_190051_SOL-USDT-SWAP_BLOCKED_no_demo_key.md",
+      "status": "BLOCKED_no_demo_key"
+    },
+    {
+      "path": "logs/orders/2026-08-23_190051_ETH-USDT-SWAP_BLOCKED_no_demo_key.md",
+      "status": "BLOCKED_no_demo_key"
+    },
+    {
+      "path": "logs/orders/2026-08-23_190051_EXECUTOR_OKX_summary_BLOCKED.json",
+      "status": "BLOCKED"
+    }
+  ]
+}

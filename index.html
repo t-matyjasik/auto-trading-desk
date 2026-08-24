@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Auto Trading — desk OKX (equity, pozycje, win rate, PnL)" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Auto Trading</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/ops.css" />
+</head>
+<body>
+  <div class="desk" id="app">
+    <header class="top">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Auto Trading</h1>
+          <p class="sub" id="brand-sub">OKX · lokalnie · publikacja OFF</p>
+        </div>
+      </div>
+      <div class="top-meta">
+        <span class="pill warn" id="chip-phase"><span class="dot"></span><span class="pill-text">—</span></span>
+        <span class="pill" id="chip-okx"><span class="dot blue"></span><span class="pill-text">OKX</span></span>
+        <span class="pill muted" id="chip-pub">publikacja OFF</span>
+        <span class="pill muted" id="chip-updated">—</span>
+        <button type="button" class="btn" id="btn-refresh">Odśwież</button>
+      </div>
+    </header>
+
+    <section class="kpis" aria-label="Kluczowe metryki">
+      <article class="kpi">
+        <div class="kpi-label">Equity</div>
+        <div class="kpi-value" id="kpi-equity">—</div>
+        <div class="kpi-hint" id="kpi-equity-hint">start —</div>
+      </article>
+      <article class="kpi">
+        <div class="kpi-label">Zysk (PnL)</div>
+        <div class="kpi-value" id="kpi-pnl">—</div>
+        <div class="kpi-hint" id="kpi-pnl-hint">realized + unrealized</div>
+      </article>
+      <article class="kpi">
+        <div class="kpi-label">Win rate</div>
+        <div class="kpi-value" id="kpi-win">—</div>
+        <div class="kpi-hint" id="kpi-win-hint">0W / 0L</div>
+      </article>
+      <article class="kpi">
+        <div class="kpi-label">Pozycje otwarte</div>
+        <div class="kpi-value" id="kpi-open">0</div>
+        <div class="kpi-hint" id="kpi-open-hint">live orders OFF</div>
+      </article>
+    </section>
+
+    <section class="panel strategy-panel" id="strategy-panel" aria-label="Strategia">
+      <div class="panel-head">
+        <h2>Strategia</h2>
+        <span class="chip" id="chip-strategy-status">STANDBY</span>
+      </div>
+      <div class="strategy-body">
+        <div class="strategy-title" id="strategy-name">TC-PULL + MR-FADE</div>
+        <div class="strategy-grid">
+          <div class="strategy-card">
+            <div class="kpi-label">Regime</div>
+            <div class="strategy-value" id="strategy-regime">—</div>
+            <div class="kpi-hint" id="strategy-regime-hint">brak danych</div>
+          </div>
+          <div class="strategy-card">
+            <div class="kpi-label">Funding</div>
+            <div class="strategy-value" id="strategy-funding">—</div>
+            <div class="kpi-hint" id="strategy-funding-hint">brak danych</div>
+          </div>
+          <div class="strategy-card">
+            <div class="kpi-label">TC-PULL</div>
+            <div class="strategy-value" id="strategy-tc">STANDBY</div>
+            <div class="kpi-hint" id="strategy-tc-hint">—</div>
+          </div>
+          <div class="strategy-card">
+            <div class="kpi-label">MR-FADE</div>
+            <div class="strategy-value" id="strategy-mr">STANDBY</div>
+            <div class="kpi-hint" id="strategy-mr-hint">—</div>
+          </div>
+        </div>
+        <div class="strategy-extra" id="strategy-extra">
+          <div class="strategy-extra-row">
+            <span class="kpi-label">News gate</span>
+            <span class="strategy-extra-val" id="strategy-news">—</span>
+          </div>
+          <div class="strategy-extra-row">
+            <span class="kpi-label">Pullback zones</span>
+            <span class="strategy-extra-val mono" id="strategy-zones">—</span>
+          </div>
+          <div class="strategy-extra-row">
+            <span class="kpi-label">Live fit</span>
+            <span class="strategy-extra-val mono" id="strategy-livefit">—</span>
+          </div>
+        </div>
+        <p class="strategy-note" id="strategy-note"></p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Pozycje otwarte</h2>
+        <span class="chip" id="chip-open-count">0</span>
+      </div>
+      <div class="table-wrap">
+        <table class="data" id="table-open">
+          <thead>
+            <tr>
+              <th>Instrument</th>
+              <th>Strona</th>
+              <th>Size</th>
+              <th>Wejście</th>
+              <th>Mark</th>
+              <th>uPnL</th>
+              <th>SL / TP</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-open">
+            <tr class="empty-row"><td colspan="8">Brak otwartych pozycji</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="grid-2">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Wynik systemu</h2>
+        </div>
+        <dl class="stats" id="stats-perf">
+          <div><dt>Zrealizowany PnL</dt><dd id="stat-realized">—</dd></div>
+          <div><dt>Niezrealizowany PnL</dt><dd id="stat-unrealized">—</dd></div>
+          <div><dt>Zamknięte trade’y</dt><dd id="stat-closed">—</dd></div>
+          <div><dt>Wygrane / przegrane</dt><dd id="stat-wl">—</dd></div>
+          <div><dt>Kapitał start</dt><dd id="stat-start">—</dd></div>
+          <div class="span-2"><dt>Notatka</dt><dd id="stat-note">—</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Status systemu</h2>
+          <span class="chip" id="chip-live-lock">live: OFF</span>
+        </div>
+        <dl class="stats">
+          <div><dt>Faza</dt><dd id="sys-phase">—</dd></div>
+          <div><dt>OKX</dt><dd id="sys-okx">—</dd></div>
+          <div><dt>Executor</dt><dd id="sys-executor">—</dd></div>
+          <div><dt>Live trading</dt><dd id="sys-live">nie</dd></div>
+        </dl>
+        <div class="agents-label">Załoga</div>
+        <div class="agents" id="agents"></div>
+      </section>
+    </div>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Logi zleceń / próby</h2>
+        <span class="chip" id="chip-orders-count">0</span>
+      </div>
+      <div class="table-wrap">
+        <table class="data" id="table-orders">
+          <thead>
+            <tr>
+              <th>Plik</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-orders">
+            <tr class="empty-row"><td colspan="2">Brak logów</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="grid-2">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Research</h2>
+          <span class="chip" id="chip-research-count">0</span>
+        </div>
+        <ul class="list" id="list-research">
+          <li class="empty">Brak research</li>
+        </ul>
+      </section>
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Daily summary</h2>
+        </div>
+        <pre class="summary" id="daily-summary">Ładowanie…</pre>
+      </section>
+    </div>
+
+    <footer class="foot">
+      <span>Auto Trading · OKX · zero fake PnL · publikacja OFF</span>
+      <span id="foot-mode">refresh ~12s</span>
+    </footer>
+  </div>
+  <script src="js/ops.js"></script>
+</body>
+</html>

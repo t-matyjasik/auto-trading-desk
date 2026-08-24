@@ -1,0 +1,143 @@
+{
+  "project": "Auto Trading OKX",
+  "desk": "Auto Trading",
+  "updated_at": "2026-08-24T07:35:18Z",
+  "phase": {
+    "id": "waiting-funds-live",
+    "label": "WAITING_FUNDS_LIVE_TOMORROW",
+    "live_orders": false,
+    "note": "Demo off · jutro live po 1k · zero publikacji"
+  },
+  "okx": {
+    "flag": 0,
+    "mode": "live_pending",
+    "label": "WAITING_FUNDS_LIVE_TOMORROW",
+    "executor": "STANDBY",
+    "live_trading": false
+  },
+  "paper": {
+    "label": "WAITING_FUNDS → LIVE",
+    "start_usd": 1000,
+    "equity_usd": 1000,
+    "pnl_usd": 0,
+    "pnl_pct": 0,
+    "note": "Demo off. Czekamy na 1k USD jutro, potem live. Historia: BLOCKED_no_demo_key."
+  },
+  "agents": [
+    {
+      "id": "orkiestrator",
+      "name": "Orkiestrator",
+      "role": "Koordynacja fazy i GO",
+      "status": "ACTIVE",
+      "detail": "Plan: jutro live po 1k"
+    },
+    {
+      "id": "market-scout",
+      "name": "Market Scout",
+      "role": "Briefy rynku",
+      "status": "ACTIVE",
+      "detail": "Brief: 2026-08-24_0900_market.md"
+    },
+    {
+      "id": "news-scout",
+      "name": "News Scout",
+      "role": "Briefy newsów",
+      "status": "ACTIVE",
+      "detail": "Brief: 2026-08-24_0900_news.md"
+    },
+    {
+      "id": "risk-lessons",
+      "name": "Risk Lessons",
+      "role": "Wnioski po SL",
+      "status": "STANDBY",
+      "detail": "Czeka na pliki w lessons/"
+    },
+    {
+      "id": "executor",
+      "name": "Executor",
+      "role": "Zlecenia OKX",
+      "status": "STANDBY",
+      "detail": "WAITING_FUNDS_LIVE_TOMORROW · demo off"
+    },
+    {
+      "id": "dashboard",
+      "name": "Dashboard",
+      "role": "War Room UI",
+      "status": "ONLINE",
+      "detail": "daily_summary 2026-08-24 09:00 · STANDBY_NEWS_GATE · publikacja off"
+    }
+  ],
+  "performance": {
+    "open_positions": [],
+    "closed_trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate_pct": null,
+    "realized_pnl_usd": 0,
+    "unrealized_pnl_usd": 0,
+    "note": "Brak fillów. Paper BLOCKED_no_demo_key. Live po 1k USD — metryki wypełnią się z logów Executor."
+  },
+  "publication": {
+    "enabled": false,
+    "label": "OFF"
+  },
+  "strategy": {
+    "name": "TC-PULL + MR-FADE",
+    "status": "STANDBY_NEWS_GATE",
+    "active": [
+      "TC-PULL"
+    ],
+    "note": "09:00 research: TREND long ADX~48-59. BLOCKED_NEWS do Bessent~20:00. MR OFF. Zero live.",
+    "regime": {
+      "label": "TREND",
+      "bias": "long",
+      "source": "market_0900_wilder_adx4h",
+      "updated_at": "2026-08-24T09:09:43+0200",
+      "detail": "ADX BTC59.1 ETH53.5 SOL47.6; funding +0.01%; OI BTC+3.9% ETH-4.7% SOL+1.2%"
+    },
+    "funding": {
+      "label": "OK",
+      "value": 0.0001,
+      "source": "okx_0900",
+      "updated_at": "2026-08-24T09:09:43+0200",
+      "detail": "+0.01% next 18:00"
+    },
+    "setup": {
+      "tc_pull": {
+        "status": "BLOCKED_NEWS",
+        "signal": "WAIT_PULLBACK_ZONES",
+        "detail": "Zones: BTC~76.0k EMA20; ETH 2390-2425; SOL 92.3-93.8. News FLAT do Bessent~20:00. No chase."
+      },
+      "mr_fade": {
+        "status": "OFF",
+        "signal": null,
+        "detail": "ADX>>20 majors"
+      }
+    },
+    "news_gate": {
+      "label": "NOT_CLEARED",
+      "until": "2026-08-24T20:00:00+02:00",
+      "source": "news_scout",
+      "updated_at": "2026-08-24T08:52:19+0200"
+    },
+    "live_fit": {
+      "BTC": "TC-PULL_WATCH",
+      "ETH": "SKIP_LATE",
+      "SOL": "CAUTION_CROWDED_LONG",
+      "updated_at": "2026-08-24T08:53:10+0200",
+      "source": "okx_live_factors+tv_regime+news_gate"
+    },
+    "pullback_zones": {
+      "BTC": "76.0k (4H EMA20); 1H 76.8-77.2k",
+      "ETH": "2390-2425",
+      "SOL": "92.3-93.8",
+      "updated_at": "2026-08-24T08:54:40+0200",
+      "source": "tv_regime_okx_candles"
+    },
+    "research_0900": {
+      "market": "2026-08-24_0900_market.md",
+      "news": "2026-08-24_0900_news.md",
+      "updated_at": "2026-08-24T09:09:43+0200"
+    }
+  }
+}
