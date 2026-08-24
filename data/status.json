@@ -1,12 +1,12 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-24T09:29:47Z",
+  "updated_at": "2026-08-24T09:38:27Z",
   "phase": {
     "id": "live-small",
     "label": "LIVE_SMALL",
     "live_orders": true,
-    "note": "Live small ON · equity z data/okx_equity.json · publikacja Pages ON"
+    "note": "Equity live · Pages ON"
   },
   "okx": {
     "flag": 0,
@@ -16,13 +16,15 @@
     "live_trading": true
   },
   "paper": {
-    "label": "LIVE_OKX_WAITING_EQUITY",
+    "label": "LIVE_OKX",
     "start_usd": 1000,
-    "equity_usd": null,
-    "pnl_usd": null,
-    "pnl_pct": null,
-    "note": "Equity z data/okx_equity.json gdy Executor zapisze — do tego czasu KPI nie pokazuje sztywnego 1000 jako live.",
-    "equity_source": "okx_equity.json"
+    "equity_usd": 1000.0,
+    "pnl_usd": 0.0,
+    "pnl_pct": 0.0,
+    "note": "Live OKX equity=1000.0 available=n/a · 0 pos · flag=0",
+    "equity_source": "okx_equity.json",
+    "equity_live": true,
+    "equity_updated_at": "2026-08-24T09:38:27.238683+00:00"
   },
   "agents": [
     {
@@ -75,8 +77,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": 0,
-    "note": "Live: performance/equity z okx_equity.json + logs/orders. Zero fikcji."
+    "unrealized_pnl_usd": 0.0,
+    "note": "Live from okx_equity.json — 0 open positions"
   },
   "publication": {
     "enabled": true,
