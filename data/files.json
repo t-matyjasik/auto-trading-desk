@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T17:40:16.502886+00:00",
+  "generated_at": "2026-08-24T17:58:57.913522+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -348,6 +348,23 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-24T1955_bessent_class_b",
+      "ts": "2026-08-24T19:55:00+02:00",
+      "actor": "Orkiestrator",
+      "action": "NOTE",
+      "reason_code": "BESSENT_CLASS_B",
+      "reason": "Bessent PC WRAP CLASS B warning shot (CNN 19:34). LIVE_SMALL: ADA only. BTC limit canceled 19:40. Zero nowych pozycji do 20:30.",
+      "instrument": null,
+      "context": {
+        "class": "B",
+        "source": "CNN 19:34",
+        "window": "19:55–20:30",
+        "ada": "open",
+        "btc_limit": "canceled",
+        "new_entries": "blocked_until_2030"
+      }
+    },
     {
       "id": "2026-08-24T193943_btc_cancel",
       "ts": "2026-08-24T19:39:43+02:00",
