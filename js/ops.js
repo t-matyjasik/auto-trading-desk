@@ -303,10 +303,18 @@
     const s = state.status || defaultStatus();
     const p = perf(s);
     const open = Array.isArray(p.open_positions) ? p.open_positions : [];
-    const liveEq = s.paper?.equity_live === true || (state.okx_equity && state.okx_equity.equity_usd != null);
-    const equityRaw = liveEq ? s.paper?.equity_usd : (state.okx_equity && state.okx_equity.equity_usd != null ? state.okx_equity.equity_usd : s.paper?.equity_usd);
-    const equityNum = equityRaw == null || equityRaw === "" ? null : Number(equityRaw);
-    const equity = equityNum != null && !Number.isNaN(equityNum) ? equityNum : null;
+    // Live: equity TYLKO z okx_equity.json / equity_live — nigdy sztywne 1000 jako "live".
+    let equity = null;
+    if (state.okx_equity && state.okx_equity.equity_usd != null && state.okx_equity.equity_usd !== "") {
+      equity = Number(state.okx_equity.equity_usd);
+    } else if (s.paper?.equity_live && s.paper?.equity_usd != null && s.paper?.equity_usd !== "") {
+      equity = Number(s.paper.equity_usd);
+    } else if (!(s.okx && s.okx.live_trading)) {
+      const fallback = s.paper?.equity_usd;
+      equity = fallback == null || fallback === "" ? null : Number(fallback);
+    }
+    if (equity != null && Number.isNaN(equity)) equity = null;
+    const liveEq = equity != null && !!(s.okx && s.okx.live_trading);
     const start = Number(s.paper?.start_usd ?? 1000);
     const pnl = Number(
       s.paper?.pnl_usd ?? Number(p.realized_pnl_usd || 0) + Number(p.unrealized_pnl_usd || 0)

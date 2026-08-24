@@ -16,11 +16,11 @@
     "live_trading": true
   },
   "paper": {
-    "label": "LIVE_OKX",
+    "label": "LIVE_OKX_WAITING_EQUITY",
     "start_usd": 1000,
-    "equity_usd": 1000,
-    "pnl_usd": 0,
-    "pnl_pct": 0,
+    "equity_usd": null,
+    "pnl_usd": null,
+    "pnl_pct": null,
     "note": "Equity z data/okx_equity.json gdy Executor zapisze — do tego czasu KPI nie pokazuje sztywnego 1000 jako live.",
     "equity_source": "okx_equity.json"
   },
