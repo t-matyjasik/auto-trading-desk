@@ -1,6 +1,31 @@
 {
-  "updated_at": "2026-08-24T16:46:41.487444+00:00",
+  "updated_at": "2026-08-24T17:04:23.926776+00:00",
   "items": [
+    {
+      "id": "2026-08-24T190320_intc_short_fill",
+      "ts": "2026-08-24T19:03:20+02:00",
+      "actor": "Orkiestrator",
+      "action": "FILL",
+      "reason_code": "INTC_SHORT",
+      "reason": "INTC X-perp SHORT FILL 19 @87.44 · margin~166 · notional~1660 · R~2.99% · lev10 isolated · SL 88.94 TP 84.22 · ord 3861732578647314432. ADA+BTC limit untouched.",
+      "instrument": "INTC-USD_UM_XPERP-310627",
+      "context": {
+        "side": "short",
+        "size": 19,
+        "avg": 87.44,
+        "sl": 88.94,
+        "tp": 84.22,
+        "margin_usd": 166,
+        "notional_usd": 1660,
+        "r_pct": 2.99,
+        "lev": 10,
+        "mode": "isolated",
+        "ordId": "3861732578647314432",
+        "algoId": "3861732578622844928",
+        "ada": "untouched",
+        "btc_limit": "untouched"
+      }
+    },
     {
       "id": "2026-08-24T184543_btc_rescale",
       "ts": "2026-08-24T18:45:43+02:00",

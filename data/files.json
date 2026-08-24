@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T16:46:41.487074+00:00",
+  "generated_at": "2026-08-24T17:04:23.926323+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -106,6 +106,22 @@
     }
   ],
   "orders": [
+    {
+      "name": "2026-08-24_190320_INTC-USD_UM_XPERP-310627_SHORT_filled.json::INTC-USD_UM_XPERP-310627",
+      "kind": "order",
+      "mtime": "2026-08-24T17:03:20.438281+00:00",
+      "path": "logs/orders/2026-08-24_190320_INTC-USD_UM_XPERP-310627_SHORT_filled.json",
+      "status": "filled",
+      "instId": "INTC-USD_UM_XPERP-310627",
+      "side": "sell",
+      "action": "—",
+      "comment_pl": "TEZA: TREND DOWN ADX~55 extEMA20~-2.4% półprzewodniki | RISK: bounce pre-Bessent + thin vs crypto / R≤3% | INVALIDACJA: break nad SL strukturalny EMA20/swingH 4H | REGIME: event_vol_caution | SCORE: Tomasz xStocks hunt pre-19:45",
+      "teza": "TREND DOWN ADX~55 extEMA20~-2.4% półprzewodniki",
+      "risk": "bounce pre-Bessent + thin vs crypto / R≤3%",
+      "invalidacja": "break nad SL strukturalny EMA20/swingH 4H",
+      "sl": 88.94266,
+      "tp": 84.22468
+    },
     {
       "name": "2026-08-24_184543_BTC-USD_UM_XPERP-310404_RESCALE_submitted_limit.json::BTC-USD_UM_XPERP-310404",
       "kind": "order",
@@ -300,6 +316,31 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-24T190320_intc_short_fill",
+      "ts": "2026-08-24T19:03:20+02:00",
+      "actor": "Orkiestrator",
+      "action": "FILL",
+      "reason_code": "INTC_SHORT",
+      "reason": "INTC X-perp SHORT FILL 19 @87.44 · margin~166 · notional~1660 · R~2.99% · lev10 isolated · SL 88.94 TP 84.22 · ord 3861732578647314432. ADA+BTC limit untouched.",
+      "instrument": "INTC-USD_UM_XPERP-310627",
+      "context": {
+        "side": "short",
+        "size": 19,
+        "avg": 87.44,
+        "sl": 88.94,
+        "tp": 84.22,
+        "margin_usd": 166,
+        "notional_usd": 1660,
+        "r_pct": 2.99,
+        "lev": 10,
+        "mode": "isolated",
+        "ordId": "3861732578647314432",
+        "algoId": "3861732578622844928",
+        "ada": "untouched",
+        "btc_limit": "untouched"
+      }
+    },
     {
       "id": "2026-08-24T184543_btc_rescale",
       "ts": "2026-08-24T18:45:43+02:00",
