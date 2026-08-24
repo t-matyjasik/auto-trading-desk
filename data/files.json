@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T10:01:54.550196+00:00",
+  "generated_at": "2026-08-24T10:09:28.821676+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -112,6 +112,58 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-24T1208_go_ada",
+      "ts": "2026-08-24T12:08:48+02:00",
+      "actor": "Orkiestrator",
+      "action": "GO",
+      "reason_code": "SCORECARD",
+      "reason": "TC-PULL ADA long — universe hunt. SL 0.2108, R~0.25% (news CAUTION REDUCE), lev4, 2.7ct. GO do Executora.",
+      "instrument": "ADA-USDT-SWAP",
+      "context": {
+        "side": "long",
+        "sl": 0.2108,
+        "tp1": 0.2352,
+        "r_pct": 0.25,
+        "lev": 4,
+        "contracts": 2.7,
+        "adx": 46.21
+      }
+    },
+    {
+      "id": "act-20260824-120600-universe-hunt",
+      "ts": "2026-08-24T12:06:00+0200",
+      "type": "decision",
+      "status": "HUNT",
+      "title": "Universe hunt scan",
+      "detail": "Scanned 60 liquid USDT-SWAP. ARMED_PULL=10 SHORT=2 watch=10. Top: BOME, FIL, XAG.",
+      "actor": "Orkiestrator",
+      "action": "HUNT",
+      "reason_code": "UNIVERSE_SCAN",
+      "reason": "Scanned 60 liquid USDT-SWAP. ARMED_PULL=10 SHORT=2 watch=10. Top: BOME, FIL, XAG.",
+      "context": {
+        "top3": [
+          {
+            "inst": "BOME-USDT-SWAP",
+            "score": "ARMED_PULL",
+            "dist_ema20": -0.033
+          },
+          {
+            "inst": "FIL-USDT-SWAP",
+            "score": "ARMED_PULL",
+            "dist_ema20": 0.22
+          },
+          {
+            "inst": "XAG-USDT-SWAP",
+            "score": "ARMED_PULL",
+            "dist_ema20": 0.379
+          }
+        ],
+        "filter": "top60_of_113_above_$5M",
+        "event_vol_caution": "pre_Bessent"
+      },
+      "source": "hunt_universe_scan.py"
+    },
     {
       "id": "act-20260824-113626-flat-bessent",
       "ts": "2026-08-24T11:36:26+0200",

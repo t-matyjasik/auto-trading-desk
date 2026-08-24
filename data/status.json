@@ -1,12 +1,12 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-24T10:01:37Z",
+  "updated_at": "2026-08-24T10:09:28Z",
   "phase": {
-    "id": "hunt-first-position",
-    "label": "HUNT_FIRST_POSITION",
+    "id": "hunt-go1-ada",
+    "label": "GO#1_ADA_PENDING_FILL",
     "live_orders": true,
-    "note": "Hunt first position ON · feed decyzji · Telegram ON · equity live"
+    "note": "GO #1 ADA-USDT-SWAP long TC-PULL · SL 0.2108 · R~0.25% · lev4 · 2.7ct · czekamy na fill"
   },
   "okx": {
     "flag": 0,
@@ -78,7 +78,7 @@
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
     "unrealized_pnl_usd": 0.0,
-    "note": "Live from okx_equity.json — 0 open positions"
+    "note": "PENDING FILL: ADA-USDT-SWAP long TC-PULL SL0.2108 R~0.25% lev4 size2.7ct — desk+TG on fill"
   },
   "publication": {
     "enabled": true,
@@ -89,7 +89,7 @@
   },
   "strategy": {
     "name": "TC-PULL + MR-FADE",
-    "status": "HUNT_FIRST_POSITION",
+    "status": "GO1_ADA_TC_PULL",
     "active": [
       "TC-PULL"
     ],
@@ -110,9 +110,9 @@
     },
     "setup": {
       "tc_pull": {
-        "status": "ARMED_EVENT",
-        "signal": "BESSENT_SCENARIOS",
-        "detail": "Owner START. Przed 20:00: research+armed; full size dopiero po scorecard/scenariuszu — nie blind chase."
+        "status": "GO",
+        "signal": "ADA-USDT-SWAP",
+        "detail": "GO #1 long SL 0.2108 R~0.25% lev4 size 2.7ct — pending fill"
       },
       "mr_fade": {
         "status": "OFF",
