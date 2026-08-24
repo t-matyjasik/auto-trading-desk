@@ -1,6 +1,30 @@
 {
-  "updated_at": "2026-08-24T18:20:12.373832+00:00",
+  "updated_at": "2026-08-24T18:30:32.382151+00:00",
   "items": [
+    {
+      "id": "2026-08-24T202952_hype_long_fill",
+      "ts": "2026-08-24T20:29:52+02:00",
+      "actor": "Orkiestrator",
+      "action": "FILL",
+      "reason_code": "HYPE_LONG",
+      "reason": "HYPE X-perp LONG FILL 76 @77.36 · margin~58.8 · notional~587 · R~2.24% · lev10 isolated · SL 74.367 TP 83.18 · ord 3861906789902815232. ADA untouched.",
+      "instrument": "HYPE-USD_UM_XPERP-310523",
+      "context": {
+        "side": "long",
+        "size": 76,
+        "avg": 77.36,
+        "sl": 74.367,
+        "tp": 83.18,
+        "margin_usd": 58.8,
+        "notional_usd": 587,
+        "r_pct": 2.24,
+        "lev": 10,
+        "mode": "isolated",
+        "ordId": "3861906789902815232",
+        "algoId": "3861906789878345728",
+        "ada": "untouched"
+      }
+    },
     {
       "id": "2026-08-24T2019_bessent_post_headline_b",
       "ts": "2026-08-24T20:19:00+02:00",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T18:20:12.373317+00:00",
+  "generated_at": "2026-08-24T18:30:32.381588+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -106,6 +106,22 @@
     }
   ],
   "orders": [
+    {
+      "name": "2026-08-24_202952_HYPE-USD_UM_XPERP-310523_LONG_filled.json::HYPE-USD_UM_XPERP-310523",
+      "kind": "order",
+      "mtime": "2026-08-24T18:29:52.417713+00:00",
+      "path": "logs/orders/2026-08-24_202952_HYPE-USD_UM_XPERP-310523_LONG_filled.json",
+      "status": "filled",
+      "instId": "HYPE-USD_UM_XPERP-310523",
+      "side": "buy",
+      "action": "—",
+      "comment_pl": "TEZA: TC-PULL HYPE po Bessent CLASS B | extEMA20 -0.33% pull ADX~60 UP | RISK: alt-beta + szeroki ATR 3.8% / R≤3% | INVALIDACJA: break pod SL swingL/~1ATR | REGIME: post-20:30 | ADA bez dokładek; RAM/BTC skip",
+      "teza": "TC-PULL HYPE po Bessent CLASS B",
+      "risk": "alt-beta + szeroki ATR 3.8% / R≤3%",
+      "invalidacja": "break pod SL swingL/~1ATR",
+      "sl": 74.36741,
+      "tp": 83.18018
+    },
     {
       "name": "2026-08-24_201149_ADA-USD_UM_XPERP-310404_CLEAN_clean_ok.json::ADA-USD_UM_XPERP-310404",
       "kind": "order",
@@ -380,6 +396,30 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-24T202952_hype_long_fill",
+      "ts": "2026-08-24T20:29:52+02:00",
+      "actor": "Orkiestrator",
+      "action": "FILL",
+      "reason_code": "HYPE_LONG",
+      "reason": "HYPE X-perp LONG FILL 76 @77.36 · margin~58.8 · notional~587 · R~2.24% · lev10 isolated · SL 74.367 TP 83.18 · ord 3861906789902815232. ADA untouched.",
+      "instrument": "HYPE-USD_UM_XPERP-310523",
+      "context": {
+        "side": "long",
+        "size": 76,
+        "avg": 77.36,
+        "sl": 74.367,
+        "tp": 83.18,
+        "margin_usd": 58.8,
+        "notional_usd": 587,
+        "r_pct": 2.24,
+        "lev": 10,
+        "mode": "isolated",
+        "ordId": "3861906789902815232",
+        "algoId": "3861906789878345728",
+        "ada": "untouched"
+      }
+    },
     {
       "id": "2026-08-24T2019_bessent_post_headline_b",
       "ts": "2026-08-24T20:19:00+02:00",
