@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-24T17:58:57.867654+00:00",
+  "updated_at": "2026-08-24T18:06:45.321080+00:00",
   "source": "okx_api_ro",
-  "equity_usd": 994.9798665,
+  "equity_usd": 995.3958664999999,
   "start_usd": 1000.0,
-  "available_usd": 989.3066664999999,
-  "pnl_usd": -5.0201,
-  "pnl_pct": -0.502,
+  "available_usd": 989.6810664999999,
+  "pnl_usd": -4.6041,
+  "pnl_pct": -0.4604,
   "realized_pnl_usd": null,
-  "unrealized_pnl_usd": -0.664,
+  "unrealized_pnl_usd": -0.248,
   "open_positions": [
     {
       "instId": "ADA-USD_UM_XPERP-310404",
       "side": "net",
       "size": 26.0,
       "avgPx": "0.2207538461538462",
-      "upl": -0.6640000000000079,
+      "upl": -0.2480000000000104,
       "lever": "10"
     }
   ],

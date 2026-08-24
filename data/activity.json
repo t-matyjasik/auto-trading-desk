@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-08-24T17:58:57.914310+00:00",
+  "updated_at": "2026-08-24T18:06:45.368969+00:00",
   "items": [
+    {
+      "id": "2026-08-24T200601_ada_reattach",
+      "ts": "2026-08-24T20:06:01+02:00",
+      "actor": "Orkiestrator",
+      "action": "REATTACH",
+      "reason_code": "ADA_OCO_LIVE",
+      "reason": "ADA X-perp REATTACH LIVE: OCO attachAlgoId 3861858787948113920 · SL 0.2108 TP 0.2437 sz 26. CLASS B hold, zero nowych.",
+      "instrument": "ADA-USD_UM_XPERP-310404",
+      "context": {
+        "attachAlgoId": "3861858787948113920",
+        "sl": 0.2108,
+        "tp": 0.2437,
+        "sz": 26,
+        "state": "oco_live"
+      }
+    },
     {
       "id": "2026-08-24T1955_bessent_class_b",
       "ts": "2026-08-24T19:55:00+02:00",

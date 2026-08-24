@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T17:58:57.913522+00:00",
+  "generated_at": "2026-08-24T18:06:45.368377+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -106,6 +106,22 @@
     }
   ],
   "orders": [
+    {
+      "name": "2026-08-24_200601_ADA-USD_UM_XPERP-310404_REATTACH_submitted_not_in_pending.json::ADA-USD_UM_XPERP-310404",
+      "kind": "order",
+      "mtime": "2026-08-24T18:06:01.435773+00:00",
+      "path": "logs/orders/2026-08-24_200601_ADA-USD_UM_XPERP-310404_REATTACH_submitted_not_in_pending.json",
+      "status": "submitted_not_in_pending",
+      "instId": "ADA-USD_UM_XPERP-310404",
+      "side": "—",
+      "action": "—",
+      "comment_pl": "TEZA: TC-PULL trzyma | RISK: re-attach ochrona po watch 20:04 — algo zmarło | SL 0.2108 / TP 0.2437 jeden SL+TP | size 26 bez zmian | INVALIDACJA: close <0.2108",
+      "teza": "TC-PULL trzyma",
+      "risk": "re-attach ochrona po watch 20:04 — algo zmarło",
+      "invalidacja": "close <0.2108",
+      "sl": null,
+      "tp": null
+    },
     {
       "name": "2026-08-24_193943_BTC-USD_UM_XPERP-310404_CANCEL_canceled.json::BTC-USD_UM_XPERP-310404",
       "kind": "order",
@@ -348,6 +364,22 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-24T200601_ada_reattach",
+      "ts": "2026-08-24T20:06:01+02:00",
+      "actor": "Orkiestrator",
+      "action": "REATTACH",
+      "reason_code": "ADA_OCO_LIVE",
+      "reason": "ADA X-perp REATTACH LIVE: OCO attachAlgoId 3861858787948113920 · SL 0.2108 TP 0.2437 sz 26. CLASS B hold, zero nowych.",
+      "instrument": "ADA-USD_UM_XPERP-310404",
+      "context": {
+        "attachAlgoId": "3861858787948113920",
+        "sl": 0.2108,
+        "tp": 0.2437,
+        "sz": 26,
+        "state": "oco_live"
+      }
+    },
     {
       "id": "2026-08-24T1955_bessent_class_b",
       "ts": "2026-08-24T19:55:00+02:00",
