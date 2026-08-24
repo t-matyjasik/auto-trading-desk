@@ -82,7 +82,7 @@
     "label": "OFF",
     "channel": "github-pages",
     "url": "https://t-matyjasik.github.io/auto-trading-desk/",
-    "mode": "password_gate"
+    "mode": "public"
   },
   "strategy": {
     "name": "TC-PULL + MR-FADE",
