@@ -1,6 +1,21 @@
 {
-  "updated_at": "2026-08-24T18:12:31.329917+00:00",
+  "updated_at": "2026-08-24T18:20:12.373832+00:00",
   "items": [
+    {
+      "id": "2026-08-24T2019_bessent_post_headline_b",
+      "ts": "2026-08-24T20:19:00+02:00",
+      "actor": "Orkiestrator",
+      "action": "NOTE",
+      "reason_code": "BESSENT_POST_HEADLINE_B",
+      "reason": "Bessent post-headline: CLASS B (playbook). LIVE_SMALL ADA hold. BTC flat. Zero nowych do 20:30.",
+      "context": {
+        "class": "B",
+        "phase": "post_headline",
+        "ada": "hold",
+        "btc": "flat",
+        "new_entries": "blocked_until_2030"
+      }
+    },
     {
       "id": "2026-08-24T2012_ada_clean_oco",
       "ts": "2026-08-24T20:12:00+02:00",

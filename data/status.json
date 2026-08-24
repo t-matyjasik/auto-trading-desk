@@ -1,12 +1,12 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-24T18:12:31Z",
+  "updated_at": "2026-08-24T18:20:12Z",
   "phase": {
-    "id": "bessent-class-b-ada-oco-clean",
-    "label": "BESSENT_CLASS_B",
+    "id": "bessent-post-headline-b",
+    "label": "BESSENT_POST_B",
     "live_orders": true,
-    "note": "ADA 1 OCO clean 3861858787948113920 SL0.2108 TP0.2437 sz26 · stare canceled"
+    "note": "Post-headline CLASS B · ADA hold · BTC flat · zero nowych do 20:30"
   },
   "okx": {
     "flag": 0,
@@ -21,14 +21,14 @@
   "paper": {
     "label": "LIVE_OKX",
     "start_usd": 1000,
-    "equity_usd": 995.3438664999999,
+    "equity_usd": 995.3698665,
     "pnl_usd": 0.0,
     "pnl_pct": 0.0,
     "note": "Equity ~1000 USDC ale 0 USDT — SWAP potrzebuje USDT. API key: włącz trade na futures/market.",
     "equity_source": "okx_equity.json",
     "equity_live": true,
     "equity_updated_at": "2026-08-24T09:38:27.238683+00:00",
-    "available_usd": 989.6342665
+    "available_usd": 989.6576664999999
   },
   "agents": [
     {
@@ -81,12 +81,10 @@
         "side": "net",
         "size": 26.0,
         "avgPx": "0.2207538461538462",
-        "upl": -0.3000000000000119,
+        "upl": -0.2740000000000076,
         "lever": "10",
         "sl": 0.2108,
-        "tp": 0.2437,
-        "algoId": "3861858787948113920",
-        "algos": 1
+        "tp": 0.2437
       }
     ],
     "closed_trades": 0,
@@ -94,8 +92,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": -0.3,
-    "note": "ADA only · 1 OCO live · old conditionals canceled"
+    "unrealized_pnl_usd": -0.274,
+    "note": "ADA hold only. BTC flat. CLASS B no new until 20:30."
   },
   "publication": {
     "enabled": true,
@@ -106,7 +104,7 @@
   },
   "strategy": {
     "name": "TC-PULL + MR-FADE",
-    "status": "BESSENT_CLASS_B_ADA_OCO_CLEAN",
+    "status": "BESSENT_POST_HEADLINE_B",
     "active": [
       "TC-PULL"
     ],
@@ -138,10 +136,10 @@
       }
     },
     "news_gate": {
-      "label": "CLASS_B_NO_NEW",
+      "label": "CLASS_B_POST_HEADLINE",
       "until": "2026-08-24T20:30:00+02:00",
       "source": "orkiestrator/cnn_1934",
-      "updated_at": "2026-08-24T19:55:00+02:00"
+      "updated_at": "2026-08-24T20:19:00+02:00"
     },
     "live_fit": {
       "BTC": "TC-PULL_WATCH",
