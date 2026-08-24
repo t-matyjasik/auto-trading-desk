@@ -1,32 +1,24 @@
 {
-  "updated_at": "2026-08-24T17:04:23.876588+00:00",
+  "updated_at": "2026-08-24T17:05:58.300554+00:00",
   "source": "okx_api_ro",
-  "equity_usd": 997.9808759999999,
+  "equity_usd": 995.7078664999999,
   "start_usd": 1000.0,
-  "available_usd": 636.5780759999999,
-  "pnl_usd": -2.0191,
-  "pnl_pct": -0.2019,
+  "available_usd": 799.2932664999998,
+  "pnl_usd": -4.2921,
+  "pnl_pct": -0.4292,
   "realized_pnl_usd": null,
-  "unrealized_pnl_usd": -1.154,
+  "unrealized_pnl_usd": 0.064,
   "open_positions": [
-    {
-      "instId": "INTC-USD_UM_XPERP-310627",
-      "side": "net",
-      "size": -19.0,
-      "avgPx": "87.44",
-      "upl": -1.1400000000000432,
-      "lever": "10"
-    },
     {
       "instId": "ADA-USD_UM_XPERP-310404",
       "side": "net",
       "size": 26.0,
       "avgPx": "0.2207538461538462",
-      "upl": -0.0140000000000073,
+      "upl": 0.0639999999999913,
       "lever": "10"
     }
   ],
-  "positions_count": 2,
+  "positions_count": 1,
   "currency": "USD",
   "okx_flag": "0",
   "mode": "live",

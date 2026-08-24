@@ -1,17 +1,17 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-24T17:04:23Z",
+  "updated_at": "2026-08-24T17:05:58Z",
   "phase": {
-    "id": "live-pos-ada-intc",
-    "label": "LIVE_ADA_INTC",
+    "id": "live-pos1-ada",
+    "label": "LIVE_POS1_ADA",
     "live_orders": true,
-    "note": "ADA long + INTC short FILL 19@87.44 · BTC limit untouched · X-perp USDC"
+    "note": "INTC flat (closed) · ADA long open · BTC limit untouched · pre-Bessent"
   },
   "okx": {
     "flag": 0,
     "mode": "live_small",
-    "label": "LIVE_MULTI",
+    "label": "LIVE_POS1",
     "executor": "LIVE",
     "live_trading": true,
     "last_error": "50124+51155",
@@ -21,14 +21,14 @@
   "paper": {
     "label": "LIVE_OKX",
     "start_usd": 1000,
-    "equity_usd": 997.9808759999999,
+    "equity_usd": 995.7078664999999,
     "pnl_usd": 0.0,
     "pnl_pct": 0.0,
     "note": "Equity ~1000 USDC ale 0 USDT — SWAP potrzebuje USDT. API key: włącz trade na futures/market.",
     "equity_source": "okx_equity.json",
     "equity_live": true,
     "equity_updated_at": "2026-08-24T09:38:27.238683+00:00",
-    "available_usd": 636.5780759999999
+    "available_usd": 799.2932664999998
   },
   "agents": [
     {
@@ -77,19 +77,11 @@
   "performance": {
     "open_positions": [
       {
-        "instId": "INTC-USD_UM_XPERP-310627",
-        "side": "net",
-        "size": -19.0,
-        "avgPx": "87.44",
-        "upl": -1.1400000000000432,
-        "lever": "10"
-      },
-      {
         "instId": "ADA-USD_UM_XPERP-310404",
         "side": "net",
         "size": 26.0,
         "avgPx": "0.2207538461538462",
-        "upl": -0.0140000000000073,
+        "upl": 0.0639999999999913,
         "lever": "10"
       }
     ],
@@ -98,8 +90,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": -1.154,
-    "note": "ADA long + INTC short 19@87.44 SL88.94 TP84.22 · BTC limit still live"
+    "unrealized_pnl_usd": 0.064,
+    "note": "INTC closed — not a hold. ADA open. BTC limit live."
   },
   "publication": {
     "enabled": true,
@@ -110,7 +102,7 @@
   },
   "strategy": {
     "name": "TC-PULL + MR-FADE",
-    "status": "LIVE_ADA_INTC_BTC_LIMIT",
+    "status": "LIVE_ADA_BTC_LIMIT_INTC_FLAT",
     "active": [
       "TC-PULL"
     ],

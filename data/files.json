@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T17:04:23.926323+00:00",
+  "generated_at": "2026-08-24T17:05:58.345480+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -106,6 +106,22 @@
     }
   ],
   "orders": [
+    {
+      "name": "2026-08-24_190517_INTC-USD_UM_XPERP-310627_CLOSE_closed.json::INTC-USD_UM_XPERP-310627",
+      "kind": "order",
+      "mtime": "2026-08-24T17:05:17.032456+00:00",
+      "path": "logs/orders/2026-08-24_190517_INTC-USD_UM_XPERP-310627_CLOSE_closed.json",
+      "status": "closed",
+      "instId": "INTC-USD_UM_XPERP-310627",
+      "side": "—",
+      "action": "—",
+      "comment_pl": "CLOSE: flatten pre-Bessent — teza TREND DOWN OK, event risk equity beta; nie zgadujemy mowy 19:45–20:30 | Tomasz GO",
+      "teza": "CLOSE: flatten pre-Bessent — teza TREND DOWN OK, event risk equity beta; nie zgadujemy mowy 19:45–20:30 | Tomasz GO",
+      "risk": "—",
+      "invalidacja": "—",
+      "sl": null,
+      "tp": null
+    },
     {
       "name": "2026-08-24_190320_INTC-USD_UM_XPERP-310627_SHORT_filled.json::INTC-USD_UM_XPERP-310627",
       "kind": "order",
@@ -316,6 +332,22 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-24T190517_intc_close",
+      "ts": "2026-08-24T19:05:17+02:00",
+      "actor": "Orkiestrator",
+      "action": "CLOSE",
+      "reason_code": "INTC_FLAT_PRE_BESSENT",
+      "reason": "INTC X-perp SHORT closed (Tomasz + pre-Bessent). Nie hold. ADA zostaje, BTC limit untouched. pnl=None",
+      "instrument": "INTC-USD_UM_XPERP-310627",
+      "context": {
+        "side": "short",
+        "status": "closed",
+        "ada": "open",
+        "btc_limit": "untouched",
+        "pnl": null
+      }
+    },
     {
       "id": "2026-08-24T190320_intc_short_fill",
       "ts": "2026-08-24T19:03:20+02:00",

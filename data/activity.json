@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-08-24T17:04:23.926776+00:00",
+  "updated_at": "2026-08-24T17:05:58.346037+00:00",
   "items": [
+    {
+      "id": "2026-08-24T190517_intc_close",
+      "ts": "2026-08-24T19:05:17+02:00",
+      "actor": "Orkiestrator",
+      "action": "CLOSE",
+      "reason_code": "INTC_FLAT_PRE_BESSENT",
+      "reason": "INTC X-perp SHORT closed (Tomasz + pre-Bessent). Nie hold. ADA zostaje, BTC limit untouched. pnl=None",
+      "instrument": "INTC-USD_UM_XPERP-310627",
+      "context": {
+        "side": "short",
+        "status": "closed",
+        "ada": "open",
+        "btc_limit": "untouched",
+        "pnl": null
+      }
+    },
     {
       "id": "2026-08-24T190320_intc_short_fill",
       "ts": "2026-08-24T19:03:20+02:00",
