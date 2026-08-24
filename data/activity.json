@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-08-24T10:01:38.911701+00:00",
+  "updated_at": "2026-08-24T10:01:54.550414+00:00",
   "items": [
+    {
+      "id": "act-20260824-113626-flat-bessent",
+      "ts": "2026-08-24T11:36:26+0200",
+      "actor": "Orkiestrator",
+      "action": "SKIP",
+      "reason_code": "BESSENT_PRE_EVENT_FLAT",
+      "reason": "LIVE_SMALL armed. Equity 1000 USDC. Przed Bessent ~20:00: FLAT (playbook). Po headline A–D → setup. R 0.25–0.50%.",
+      "context": {
+        "equity_usd": 1000,
+        "positions": 0,
+        "adx4h": "BTC57 ETH53 SOL46 TREND",
+        "event": "Bessent 20:00 CEST"
+      }
+    },
+    {
+      "id": "act-20260824-112901-start",
+      "ts": "2026-08-24T11:29:01+0200",
+      "actor": "Orkiestrator",
+      "action": "START_LIVE_SMALL",
+      "reason_code": "OWNER_START",
+      "reason": "Tomasz: Start. LIVE_SMALL ON. Edge pod Bessent. Dashboard live equity. R 0.25–0.50%.",
+      "context": {
+        "bessent": "~20:00 CEST",
+        "risk": "0.25-0.50%",
+        "open_max": "2%"
+      }
+    },
     {
       "id": "act-20260824-111834-blocked-news",
       "ts": "2026-08-24T11:18:34+0200",
@@ -20,6 +47,32 @@
           "SOL": "92.3-93.8"
         }
       }
+    },
+    {
+      "ts": "2026-08-24T10:00:51.833341+00:00",
+      "type": "decision",
+      "status": "HUNT",
+      "title": "Hunt first position ON",
+      "detail": "Tomasz: uruchom wszystko. LIVE_SMALL. TC-PULL primary. Pre-Bessent event_vol_caution. Waiting Market/News refresh.",
+      "source": "Orkiestrator",
+      "action": "HUNT",
+      "reason": "Hunt first position ON — Tomasz: uruchom wszystko. LIVE_SMALL. TC-PULL primary. Pre-Bessent event_vol_caution. Waiting Market/News refresh.",
+      "actor": "Orkiestrator"
+    },
+    {
+      "id": "2026-08-24T0852_news_gate",
+      "ts": "2026-08-24T08:52:19+02:00",
+      "actor": "Orkiestrator",
+      "action": "BLOCKED",
+      "reason_code": "NEWS_GATE",
+      "reason": "FLAT do Bessent ~20:00 CEST — tc_pull=BLOCKED_NEWS",
+      "context": {
+        "regime": "TREND",
+        "funding": "OK",
+        "tc_pull": "BLOCKED_NEWS",
+        "mr_fade": "OFF"
+      },
+      "source": "status.json / news_scout"
     }
   ]
 }
