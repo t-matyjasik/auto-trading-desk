@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T11:36:12.185082+00:00",
+  "generated_at": "2026-08-24T16:46:41.487074+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -106,6 +106,22 @@
     }
   ],
   "orders": [
+    {
+      "name": "2026-08-24_184543_BTC-USD_UM_XPERP-310404_RESCALE_submitted_limit.json::BTC-USD_UM_XPERP-310404",
+      "kind": "order",
+      "mtime": "2026-08-24T16:45:43.035396+00:00",
+      "path": "logs/orders/2026-08-24_184543_BTC-USD_UM_XPERP-310404_RESCALE_submitted_limit.json",
+      "status": "submitted_limit",
+      "instId": "BTC-USD_UM_XPERP-310404",
+      "side": "—",
+      "action": "—",
+      "comment_pl": "TEZA: BASE Bessent pull EMA20 | RISK: SL 75500 / R~2–2.6% @ margin~190 / lev10 | INVALIDACJA: break struktury / hawk China banks | REGIME: event_vol | TIME-STOP: cancel 19:40 CEST jeśli unfilled | RESCALE Tomasz B HARD R 3%",
+      "teza": "BASE Bessent pull EMA20",
+      "risk": "SL 75500 / R~2–2.6% @ margin~190 / lev10",
+      "invalidacja": "break struktury / hawk China banks",
+      "sl": 75500.0,
+      "tp": 78300.0
+    },
     {
       "name": "2026-08-24_131038_BTC-USD_UM_XPERP-310404_submitted_limit.json::BTC-USD_UM_XPERP-310404",
       "kind": "order",
@@ -284,6 +300,30 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-24T184543_btc_rescale",
+      "ts": "2026-08-24T18:45:43+02:00",
+      "actor": "Orkiestrator",
+      "action": "RESCALE",
+      "reason_code": "BTC_LIMIT_RESIZE",
+      "reason": "BTC X-perp RESCALE LIVE: cancel old 3861022508414373888 OK → new 3861697114062163968 live. 248 ct @76500, margin~189.7, notional~1897, R~2.48%, lev10 isolated. SL75500 TP78300 algo 3861697114037694464. ADA untouched.",
+      "instrument": "BTC-USD_UM_XPERP-310404",
+      "context": {
+        "old_ordId": "3861022508414373888",
+        "new_ordId": "3861697114062163968",
+        "algoId": "3861697114037694464",
+        "size_ct": 248,
+        "limit_px": 76500,
+        "sl": 75500,
+        "tp": 78300,
+        "margin_usd": 189.7,
+        "notional_usd": 1897,
+        "r_pct": 2.48,
+        "lev": 10,
+        "mode": "isolated",
+        "ada": "untouched"
+      }
+    },
     {
       "id": "act-20260824-124213-xperp-aggressive-hunt",
       "ts": "2026-08-24T12:42:13+0200",

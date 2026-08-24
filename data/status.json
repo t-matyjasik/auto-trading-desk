@@ -1,12 +1,12 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-24T10:22:50Z",
+  "updated_at": "2026-08-24T16:46:41Z",
   "phase": {
-    "id": "live-pos1",
-    "label": "LIVE_POS1",
+    "id": "live-pos1-btc-rescale",
+    "label": "LIVE_POS1_BTC_RESCALE",
     "live_orders": true,
-    "note": "FILL ADA X-perp long 26ct @~0.22075 SL0.2108 · universe USD_UM_XPERP USDC"
+    "note": "ADA pos untouched · BTC limit RESCALE 248ct @76500 live (R~2.48% lev10) SL75500 TP78300"
   },
   "okx": {
     "flag": 0,
@@ -90,7 +90,7 @@
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
     "unrealized_pnl_usd": -0.014,
-    "note": "LIVE_POS1: ADA-USD_UM_XPERP-310404 long 26ct SL0.2108 TP0.2437"
+    "note": "ADA X-perp open · BTC-USD_UM_XPERP limit LIVE 248ct @76500 (ord 3861697114062163968) after cancel old"
   },
   "publication": {
     "enabled": true,
@@ -101,7 +101,7 @@
   },
   "strategy": {
     "name": "TC-PULL + MR-FADE",
-    "status": "LIVE_POS1_ADA",
+    "status": "LIVE_POS1_BTC_RESCALE",
     "active": [
       "TC-PULL"
     ],
