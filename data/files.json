@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T17:05:58.345480+00:00",
+  "generated_at": "2026-08-24T17:40:16.502886+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -106,6 +106,22 @@
     }
   ],
   "orders": [
+    {
+      "name": "2026-08-24_193943_BTC-USD_UM_XPERP-310404_CANCEL_canceled.json::BTC-USD_UM_XPERP-310404",
+      "kind": "order",
+      "mtime": "2026-08-24T17:39:43.111447+00:00",
+      "path": "logs/orders/2026-08-24_193943_BTC-USD_UM_XPERP-310404_CANCEL_canceled.json",
+      "status": "canceled",
+      "instId": "BTC-USD_UM_XPERP-310404",
+      "side": "—",
+      "action": "—",
+      "comment_pl": "CANCEL 19:40 CEST: BTC LIMIT 248@76500 unfilled — no chase | teza BASE Bessent pull niewykonana | ADA nienaruszona",
+      "teza": "CANCEL 19:40 CEST: BTC LIMIT 248@76500 unfilled — no chase | teza BASE Bessent pull niewykonana | ADA nienaruszona",
+      "risk": "—",
+      "invalidacja": "—",
+      "sl": null,
+      "tp": null
+    },
     {
       "name": "2026-08-24_190517_INTC-USD_UM_XPERP-310627_CLOSE_closed.json::INTC-USD_UM_XPERP-310627",
       "kind": "order",
@@ -332,6 +348,21 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-24T193943_btc_cancel",
+      "ts": "2026-08-24T19:39:43+02:00",
+      "actor": "Orkiestrator",
+      "action": "CANCEL",
+      "reason_code": "BTC_LIMIT_TIME_STOP",
+      "reason": "BTC X-perp limit CANCELED 19:40 (time-stop). ord 3861697114062163968 fillSz=0. Opens: ADA only.",
+      "instrument": "BTC-USD_UM_XPERP-310404",
+      "context": {
+        "ordId": "3861697114062163968",
+        "fillSz": 0,
+        "status": "canceled",
+        "ada": "open"
+      }
+    },
     {
       "id": "2026-08-24T190517_intc_close",
       "ts": "2026-08-24T19:05:17+02:00",

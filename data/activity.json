@@ -1,6 +1,21 @@
 {
-  "updated_at": "2026-08-24T17:05:58.346037+00:00",
+  "updated_at": "2026-08-24T17:40:16.503357+00:00",
   "items": [
+    {
+      "id": "2026-08-24T193943_btc_cancel",
+      "ts": "2026-08-24T19:39:43+02:00",
+      "actor": "Orkiestrator",
+      "action": "CANCEL",
+      "reason_code": "BTC_LIMIT_TIME_STOP",
+      "reason": "BTC X-perp limit CANCELED 19:40 (time-stop). ord 3861697114062163968 fillSz=0. Opens: ADA only.",
+      "instrument": "BTC-USD_UM_XPERP-310404",
+      "context": {
+        "ordId": "3861697114062163968",
+        "fillSz": 0,
+        "status": "canceled",
+        "ada": "open"
+      }
+    },
     {
       "id": "2026-08-24T190517_intc_close",
       "ts": "2026-08-24T19:05:17+02:00",

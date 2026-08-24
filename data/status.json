@@ -1,12 +1,12 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-24T17:05:58Z",
+  "updated_at": "2026-08-24T17:40:16Z",
   "phase": {
     "id": "live-pos1-ada",
     "label": "LIVE_POS1_ADA",
     "live_orders": true,
-    "note": "INTC flat (closed) · ADA long open · BTC limit untouched · pre-Bessent"
+    "note": "BTC limit canceled 19:40 fillSz=0 · ADA long only · pre-Bessent"
   },
   "okx": {
     "flag": 0,
@@ -21,14 +21,14 @@
   "paper": {
     "label": "LIVE_OKX",
     "start_usd": 1000,
-    "equity_usd": 995.7078664999999,
+    "equity_usd": 995.1358664999999,
     "pnl_usd": 0.0,
     "pnl_pct": 0.0,
     "note": "Equity ~1000 USDC ale 0 USDT — SWAP potrzebuje USDT. API key: włącz trade na futures/market.",
     "equity_source": "okx_equity.json",
     "equity_live": true,
     "equity_updated_at": "2026-08-24T09:38:27.238683+00:00",
-    "available_usd": 799.2932664999998
+    "available_usd": 989.4470664999999
   },
   "agents": [
     {
@@ -81,7 +81,7 @@
         "side": "net",
         "size": 26.0,
         "avgPx": "0.2207538461538462",
-        "upl": 0.0639999999999913,
+        "upl": -0.5080000000000107,
         "lever": "10"
       }
     ],
@@ -90,8 +90,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": 0.064,
-    "note": "INTC closed — not a hold. ADA open. BTC limit live."
+    "unrealized_pnl_usd": -0.508,
+    "note": "ADA only. BTC limit canceled unfilled. INTC already flat."
   },
   "publication": {
     "enabled": true,
@@ -102,7 +102,7 @@
   },
   "strategy": {
     "name": "TC-PULL + MR-FADE",
-    "status": "LIVE_ADA_BTC_LIMIT_INTC_FLAT",
+    "status": "LIVE_ADA_ONLY",
     "active": [
       "TC-PULL"
     ],
