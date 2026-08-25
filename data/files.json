@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T07:34:18.237581+00:00",
+  "generated_at": "2026-08-25T11:03:05.346607+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -172,6 +172,38 @@
     }
   ],
   "orders": [
+    {
+      "name": "20260825_121421_nbis_sl.json::NBIS-USD_UM_XPERP-310711",
+      "kind": "order",
+      "mtime": "2026-08-25T10:14:21.377344+00:00",
+      "path": "logs/orders/20260825_121421_nbis_sl.json",
+      "status": "closed",
+      "instId": "NBIS-USD_UM_XPERP-310711",
+      "side": "—",
+      "action": "SL_FILL",
+      "comment_pl": "NBIS SHORT SL. Teza compute/AI infra przy średniej. Invalidacja last>222.73. Close 9.2@222.78 realized ~-49.2 USDC.",
+      "teza": "NBIS SHORT SL. Teza compute/AI infra przy średniej. Invalidacja last>222.73. Close 9.2@222.78 realized ~-49.2 USDC.",
+      "risk": "—",
+      "invalidacja": "—",
+      "sl": null,
+      "tp": null
+    },
+    {
+      "name": "20260825_101610_amd_sl.json::AMD-USD_UM_XPERP-310711",
+      "kind": "order",
+      "mtime": "2026-08-25T08:16:10.953265+00:00",
+      "path": "logs/orders/20260825_101610_amd_sl.json",
+      "status": "closed",
+      "instId": "AMD-USD_UM_XPERP-310711",
+      "side": "buy",
+      "action": "SL_FILL",
+      "comment_pl": "AMD SHORT SL. Teza: trend w dół przy średniej. Invalidacja: last > 468.6. Wyszło: trigger SL, close 4.4@466.37, realized ~-22.9 USDC. Algo nie umarły — odpaliły.",
+      "teza": "AMD SHORT SL. Teza: trend w dół przy średniej. Invalidacja: last > 468.6. Wyszło: trigger SL, close 4.4@466.37, realized ~-22.9 USDC. Algo nie umarły — odpaliły.",
+      "risk": "—",
+      "invalidacja": "—",
+      "sl": null,
+      "tp": null
+    },
     {
       "name": "20260825_090722_nbis_short.json::NBIS-USD_UM_XPERP-310711",
       "kind": "order",
@@ -542,6 +574,30 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-25T121421_nbis_sl",
+      "ts": "2026-08-25T12:14:21+02:00",
+      "actor": "Orkiestrator",
+      "action": "SL",
+      "reason_code": "NBIS_SL",
+      "reason": "NBIS X-perp SHORT closed on SL. Nie hold. Opens: HYPE + ADA + SKHYNIX.",
+      "instrument": "NBIS-USD_UM_XPERP-310711",
+      "context": {
+        "status": "sl_closed"
+      }
+    },
+    {
+      "id": "2026-08-25T101610_amd_sl",
+      "ts": "2026-08-25T10:16:10+02:00",
+      "actor": "Orkiestrator",
+      "action": "SL",
+      "reason_code": "AMD_SL",
+      "reason": "AMD X-perp SHORT closed on SL. Nie hold. Zostają HYPE/ADA/SKHYNIX.",
+      "instrument": "AMD-USD_UM_XPERP-310711",
+      "context": {
+        "status": "sl_closed"
+      }
+    },
     {
       "id": "2026-08-24T202952_hype_long_fill",
       "ts": "2026-08-24T20:29:52+02:00",

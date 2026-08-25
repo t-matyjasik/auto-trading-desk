@@ -1,6 +1,30 @@
 {
-  "updated_at": "2026-08-25T07:34:18.238097+00:00",
+  "updated_at": "2026-08-25T11:03:05.347122+00:00",
   "items": [
+    {
+      "id": "2026-08-25T121421_nbis_sl",
+      "ts": "2026-08-25T12:14:21+02:00",
+      "actor": "Orkiestrator",
+      "action": "SL",
+      "reason_code": "NBIS_SL",
+      "reason": "NBIS X-perp SHORT closed on SL. Nie hold. Opens: HYPE + ADA + SKHYNIX.",
+      "instrument": "NBIS-USD_UM_XPERP-310711",
+      "context": {
+        "status": "sl_closed"
+      }
+    },
+    {
+      "id": "2026-08-25T101610_amd_sl",
+      "ts": "2026-08-25T10:16:10+02:00",
+      "actor": "Orkiestrator",
+      "action": "SL",
+      "reason_code": "AMD_SL",
+      "reason": "AMD X-perp SHORT closed on SL. Nie hold. Zostają HYPE/ADA/SKHYNIX.",
+      "instrument": "AMD-USD_UM_XPERP-310711",
+      "context": {
+        "status": "sl_closed"
+      }
+    },
     {
       "id": "2026-08-24T202952_hype_long_fill",
       "ts": "2026-08-24T20:29:52+02:00",
