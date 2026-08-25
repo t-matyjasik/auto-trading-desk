@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T11:38:48.366982+00:00",
+  "generated_at": "2026-08-25T15:03:52.501133+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -202,6 +202,22 @@
     }
   ],
   "orders": [
+    {
+      "name": "20260825_161435_xau_long.json::XAU-USD_UM_XPERP-310502",
+      "kind": "order",
+      "mtime": "2026-08-25T14:14:35.530802+00:00",
+      "path": "logs/orders/20260825_161435_xau_long.json",
+      "status": "filled",
+      "instId": "XAU-USD_UM_XPERP-310502",
+      "side": "buy",
+      "action": "FILL",
+      "comment_pl": "TEZA: reclaim EMA po dumpie Confidence 89.4 vs 90.3 (soft USD) | RISK: whip 16:00, cienki xperp | SL 4600 R~0.8% | MULTI-TP 120/120/60 | INVALIDACJA: last < 4600 | nie chip | fill 300@4624.63 isolated 10x | po TP1 SL reszty na BE ~4626",
+      "teza": "reclaim EMA po dumpie Confidence 89.4 vs 90.3 (soft USD)",
+      "risk": "whip 16:00, cienki xperp",
+      "invalidacja": "last < 4600",
+      "sl": 4600,
+      "tp": null
+    },
     {
       "name": "20260825_121421_nbis_sl.json::NBIS-USD_UM_XPERP-310711",
       "kind": "order",
@@ -604,6 +620,27 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-25T161435_xau_long",
+      "ts": "2026-08-25T16:14:35+02:00",
+      "actor": "Orkiestrator",
+      "action": "FILL",
+      "reason_code": "XAU_LONG",
+      "reason": "XAU X-perp LONG FILL 300 @4624.63 SL 4600. 17:00 desk: 4 pos HYPE L · ADA L · SKHYNIX S · XAU L. 1700 research jeszcze nie wpadł.",
+      "instrument": "XAU-USD_UM_XPERP-310502",
+      "context": {
+        "side": "long",
+        "size": 300,
+        "avg": 4624.63,
+        "sl": 4600,
+        "held": [
+          "HYPE",
+          "ADA",
+          "SKHYNIX",
+          "XAU"
+        ]
+      }
+    },
     {
       "id": "2026-08-25T1305_goskip",
       "ts": "2026-08-25T13:05:00+02:00",

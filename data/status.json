@@ -1,17 +1,17 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-25T11:38:48Z",
+  "updated_at": "2026-08-25T15:03:52Z",
   "phase": {
-    "id": "live-hype-ada-skhynix",
-    "label": "LIVE_HYPE_ADA_SKHYNIX",
+    "id": "live-4-xau",
+    "label": "LIVE_4_XAU",
     "live_orders": true,
-    "note": "13:00: 3 pos HYPE/ADA/SKHYNIX · AMD+NBIS SL closed · equity live"
+    "note": "17:00: HYPE L · ADA L · SKHYNIX S · XAU L 300@4624.63 SL4600"
   },
   "okx": {
     "flag": 0,
     "mode": "live_small",
-    "label": "LIVE_3",
+    "label": "LIVE_4",
     "executor": "LIVE",
     "live_trading": true,
     "last_error": "50124+51155",
@@ -21,14 +21,14 @@
   "paper": {
     "label": "LIVE_OKX",
     "start_usd": 1000,
-    "equity_usd": 914.7485710333509,
+    "equity_usd": 931.378576283351,
     "pnl_usd": -81.6054,
     "pnl_pct": 0.0,
     "note": "Equity ~1000 USDC ale 0 USDT — SWAP potrzebuje USDT. API key: włącz trade na futures/market.",
     "equity_source": "okx_equity.json",
     "equity_live": true,
-    "equity_updated_at": "2026-08-25T11:38:48.312512+00:00",
-    "available_usd": 694.8306395691404
+    "equity_updated_at": "2026-08-25T15:03:39.156617+00:00",
+    "available_usd": 554.3917948191404
   },
   "agents": [
     {
@@ -77,28 +77,40 @@
   "performance": {
     "open_positions": [
       {
+        "instId": "XAU-USD_UM_XPERP-310502",
+        "side": "long",
+        "size": 300.0,
+        "avgPx": "4624.6316666666666668",
+        "upl": 2.90049999999992,
+        "lever": "10",
+        "sl": 4600
+      },
+      {
         "instId": "SKHYNIX-USD_UM_XPERP-310704",
         "side": "net",
         "size": -1.62,
         "avgPx": "1209.6890000000000003",
-        "upl": -32.336820000000024,
-        "lever": "10"
+        "upl": -16.622819999999948,
+        "lever": "10",
+        "sl": 1241
       },
       {
         "instId": "HYPE-USD_UM_XPERP-310523",
         "side": "net",
         "size": 46.0,
         "avgPx": "77.3608421052631579",
-        "upl": 15.065726315789446,
-        "lever": "10"
+        "upl": 14.946126315789463,
+        "lever": "10",
+        "sl": 77.36
       },
       {
         "instId": "ADA-USD_UM_XPERP-310404",
         "side": "net",
         "size": 26.0,
         "avgPx": "0.2207538461538462",
-        "upl": -0.3260000000000091,
-        "lever": "10"
+        "upl": -1.4440000000000086,
+        "lever": "10",
+        "sl": 0.2108
       }
     ],
     "closed_trades": 0,
@@ -106,8 +118,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": -17.5971,
-    "note": "13:32 watch · HYPE/ADA/SKHYNIX · AMD/NBIS SL"
+    "unrealized_pnl_usd": -0.2202,
+    "note": "4 pos: HYPE L, ADA L, SKHYNIX S, XAU L 300@4624.63 SL4600"
   },
   "publication": {
     "enabled": true,

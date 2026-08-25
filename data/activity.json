@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-08-25T11:38:48.367620+00:00",
+  "updated_at": "2026-08-25T15:03:52.501787+00:00",
   "items": [
+    {
+      "id": "2026-08-25T161435_xau_long",
+      "ts": "2026-08-25T16:14:35+02:00",
+      "actor": "Orkiestrator",
+      "action": "FILL",
+      "reason_code": "XAU_LONG",
+      "reason": "XAU X-perp LONG FILL 300 @4624.63 SL 4600. 17:00 desk: 4 pos HYPE L · ADA L · SKHYNIX S · XAU L. 1700 research jeszcze nie wpadł.",
+      "instrument": "XAU-USD_UM_XPERP-310502",
+      "context": {
+        "side": "long",
+        "size": 300,
+        "avg": 4624.63,
+        "sl": 4600,
+        "held": [
+          "HYPE",
+          "ADA",
+          "SKHYNIX",
+          "XAU"
+        ]
+      }
+    },
     {
       "id": "2026-08-25T1305_goskip",
       "ts": "2026-08-25T13:05:00+02:00",

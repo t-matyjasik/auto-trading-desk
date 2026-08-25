@@ -1,20 +1,28 @@
 {
-  "updated_at": "2026-08-25T11:38:48.312512+00:00",
+  "updated_at": "2026-08-25T15:03:39.156617+00:00",
   "source": "okx_api_ro",
-  "equity_usd": 914.7485710333509,
+  "equity_usd": 931.378576283351,
   "start_usd": 1000.0,
-  "available_usd": 694.8306395691404,
-  "pnl_usd": -85.2514,
-  "pnl_pct": -8.5251,
+  "available_usd": 554.3917948191404,
+  "pnl_usd": -68.6214,
+  "pnl_pct": -6.8621,
   "realized_pnl_usd": null,
-  "unrealized_pnl_usd": -17.5971,
+  "unrealized_pnl_usd": -0.2202,
   "open_positions": [
+    {
+      "instId": "XAU-USD_UM_XPERP-310502",
+      "side": "net",
+      "size": 300.0,
+      "avgPx": "4624.6316666666666668",
+      "upl": 2.90049999999992,
+      "lever": "10"
+    },
     {
       "instId": "SKHYNIX-USD_UM_XPERP-310704",
       "side": "net",
       "size": -1.62,
       "avgPx": "1209.6890000000000003",
-      "upl": -32.336820000000024,
+      "upl": -16.622819999999948,
       "lever": "10"
     },
     {
@@ -22,7 +30,7 @@
       "side": "net",
       "size": 46.0,
       "avgPx": "77.3608421052631579",
-      "upl": 15.065726315789446,
+      "upl": 14.946126315789463,
       "lever": "10"
     },
     {
@@ -30,11 +38,11 @@
       "side": "net",
       "size": 26.0,
       "avgPx": "0.2207538461538462",
-      "upl": -0.3260000000000091,
+      "upl": -1.4440000000000086,
       "lever": "10"
     }
   ],
-  "positions_count": 3,
+  "positions_count": 4,
   "currency": "USD",
   "okx_flag": "0",
   "mode": "live",
