@@ -1,7 +1,7 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-25T15:03:52Z",
+  "updated_at": "2026-08-25T15:35:51Z",
   "phase": {
     "id": "live-4-xau",
     "label": "LIVE_4_XAU",
@@ -21,14 +21,14 @@
   "paper": {
     "label": "LIVE_OKX",
     "start_usd": 1000,
-    "equity_usd": 931.378576283351,
+    "equity_usd": 928.8970269833507,
     "pnl_usd": -81.6054,
     "pnl_pct": 0.0,
     "note": "Equity ~1000 USDC ale 0 USDT — SWAP potrzebuje USDT. API key: włącz trade na futures/market.",
     "equity_source": "okx_equity.json",
     "equity_live": true,
-    "equity_updated_at": "2026-08-25T15:03:39.156617+00:00",
-    "available_usd": 554.3917948191404
+    "equity_updated_at": "2026-08-25T15:35:51.723562+00:00",
+    "available_usd": 612.9978255191404
   },
   "agents": [
     {
@@ -78,10 +78,10 @@
     "open_positions": [
       {
         "instId": "XAU-USD_UM_XPERP-310502",
-        "side": "long",
-        "size": 300.0,
+        "side": "net",
+        "size": 180.0,
         "avgPx": "4624.6316666666666668",
-        "upl": 2.90049999999992,
+        "upl": 5.502299999999887,
         "lever": "10",
         "sl": 4600
       },
@@ -90,7 +90,7 @@
         "side": "net",
         "size": -1.62,
         "avgPx": "1209.6890000000000003",
-        "upl": -16.622819999999948,
+        "upl": -26.715419999999977,
         "lever": "10",
         "sl": 1241
       },
@@ -99,7 +99,7 @@
         "side": "net",
         "size": 46.0,
         "avgPx": "77.3608421052631579",
-        "upl": 14.946126315789463,
+        "upl": 16.712526315789464,
         "lever": "10",
         "sl": 77.36
       },
@@ -108,7 +108,7 @@
         "side": "net",
         "size": 26.0,
         "avgPx": "0.2207538461538462",
-        "upl": -1.4440000000000086,
+        "upl": -1.392000000000007,
         "lever": "10",
         "sl": 0.2108
       }
@@ -118,8 +118,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": -0.2202,
-    "note": "4 pos: HYPE L, ADA L, SKHYNIX S, XAU L 300@4624.63 SL4600"
+    "unrealized_pnl_usd": -5.8926,
+    "note": "17:32 watch · 4 pos HYPE/ADA/SKHYNIX/XAU · NVDA pause"
   },
   "publication": {
     "enabled": true,

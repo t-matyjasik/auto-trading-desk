@@ -1,7 +1,19 @@
 {
-  "generated_at": "2026-08-25T15:03:52.501133+00:00",
+  "generated_at": "2026-08-25T15:35:51.776394+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
+    {
+      "path": "research/market/2026-08-25_1700_xperp100.md",
+      "kind": "market",
+      "title": "2026-08-25 1700 xperp100",
+      "mtime": "2026-08-25T15:18:17Z"
+    },
+    {
+      "path": "research/market/2026-08-25_1700_market.md",
+      "kind": "market",
+      "title": "2026-08-25 1700 market",
+      "mtime": "2026-08-25T15:18:15Z"
+    },
     {
       "path": "research/market/2026-08-25_1300_goskip.md",
       "kind": "market",
@@ -121,6 +133,18 @@
       "kind": "market",
       "title": "2026-08-23 1834 market",
       "mtime": "2026-08-23T16:37:55Z"
+    },
+    {
+      "path": "research/news/2026-08-25_1700_overlay.md",
+      "kind": "news",
+      "title": "2026-08-25 1700 overlay",
+      "mtime": "2026-08-25T15:05:05Z"
+    },
+    {
+      "path": "research/news/2026-08-25_1700_news.md",
+      "kind": "news",
+      "title": "2026-08-25 1700 news",
+      "mtime": "2026-08-25T15:05:05Z"
     },
     {
       "path": "research/news/2026-08-25_1300_news.md",
