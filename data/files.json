@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-08-25T11:03:05.346607+00:00",
+  "generated_at": "2026-08-25T11:38:48.366982+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
+    {
+      "path": "research/market/2026-08-25_1300_goskip.md",
+      "kind": "market",
+      "title": "2026-08-25 1300 goskip",
+      "mtime": "2026-08-25T11:08:52Z"
+    },
+    {
+      "path": "research/market/2026-08-25_1300_market.md",
+      "kind": "market",
+      "title": "2026-08-25 1300 market",
+      "mtime": "2026-08-25T11:06:03Z"
+    },
+    {
+      "path": "research/market/2026-08-25_1300_xperp100.md",
+      "kind": "market",
+      "title": "2026-08-25 1300 xperp100",
+      "mtime": "2026-08-25T11:04:40Z"
+    },
     {
       "path": "research/market/2026-08-25_0900_xperp100.md",
       "kind": "market",
@@ -103,6 +121,18 @@
       "kind": "market",
       "title": "2026-08-23 1834 market",
       "mtime": "2026-08-23T16:37:55Z"
+    },
+    {
+      "path": "research/news/2026-08-25_1300_news.md",
+      "kind": "news",
+      "title": "2026-08-25 1300 news",
+      "mtime": "2026-08-25T11:06:39Z"
+    },
+    {
+      "path": "research/news/2026-08-25_1300_overlay.md",
+      "kind": "news",
+      "title": "2026-08-25 1300 overlay",
+      "mtime": "2026-08-25T11:02:40Z"
     },
     {
       "path": "research/news/2026-08-25_0900_overlay.md",
@@ -574,6 +604,22 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-25T1305_goskip",
+      "ts": "2026-08-25T13:05:00+02:00",
+      "actor": "Orkiestrator",
+      "action": "SKIP",
+      "reason_code": "NVDA_PAUSE_CHIP_SHORTS",
+      "reason": "SKIP 13:00: no new chip/AI shorts until NVDA ER; no BTC/ETH long; hold HYPE ADA SKHYNIX. AMD+NBIS SL dnia.",
+      "context": {
+        "held": [
+          "HYPE",
+          "ADA",
+          "SKHYNIX"
+        ],
+        "pause_until": "NVDA 26.08 AMC"
+      }
+    },
     {
       "id": "2026-08-25T121421_nbis_sl",
       "ts": "2026-08-25T12:14:21+02:00",

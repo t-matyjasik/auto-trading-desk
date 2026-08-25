@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-08-25T11:03:05.347122+00:00",
+  "updated_at": "2026-08-25T11:38:48.367620+00:00",
   "items": [
+    {
+      "id": "2026-08-25T1305_goskip",
+      "ts": "2026-08-25T13:05:00+02:00",
+      "actor": "Orkiestrator",
+      "action": "SKIP",
+      "reason_code": "NVDA_PAUSE_CHIP_SHORTS",
+      "reason": "SKIP 13:00: no new chip/AI shorts until NVDA ER; no BTC/ETH long; hold HYPE ADA SKHYNIX. AMD+NBIS SL dnia.",
+      "context": {
+        "held": [
+          "HYPE",
+          "ADA",
+          "SKHYNIX"
+        ],
+        "pause_until": "NVDA 26.08 AMC"
+      }
+    },
     {
       "id": "2026-08-25T121421_nbis_sl",
       "ts": "2026-08-25T12:14:21+02:00",
