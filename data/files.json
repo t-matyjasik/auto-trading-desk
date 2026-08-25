@@ -1,7 +1,37 @@
 {
-  "generated_at": "2026-08-24T18:30:32.381588+00:00",
+  "generated_at": "2026-08-25T07:05:39.921036+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
+    {
+      "path": "research/market/2026-08-25_0900_market.md",
+      "kind": "market",
+      "title": "2026-08-25 0900 market",
+      "mtime": "2026-08-25T07:05:12Z"
+    },
+    {
+      "path": "research/market/2026-08-25_0800_xperp100.md",
+      "kind": "market",
+      "title": "2026-08-25 0800 xperp100",
+      "mtime": "2026-08-25T06:09:21Z"
+    },
+    {
+      "path": "research/market/2026-08-24_1922_full_scan_50plus.md",
+      "kind": "market",
+      "title": "2026-08-24 1922 full scan 50plus",
+      "mtime": "2026-08-24T17:25:13Z"
+    },
+    {
+      "path": "research/market/2026-08-24_1859_xperp_equity_imitations.md",
+      "kind": "market",
+      "title": "2026-08-24 1859 xperp equity imitations",
+      "mtime": "2026-08-24T17:01:56Z"
+    },
+    {
+      "path": "research/market/2026-08-24_1845_bessent_refresh.md",
+      "kind": "market",
+      "title": "2026-08-24 1845 bessent refresh",
+      "mtime": "2026-08-24T16:51:57Z"
+    },
     {
       "path": "research/market/2026-08-24_xperp_aggressive_hunt.md",
       "kind": "market",
@@ -69,6 +99,30 @@
       "mtime": "2026-08-23T16:37:55Z"
     },
     {
+      "path": "research/news/2026-08-25_0900_news.md",
+      "kind": "news",
+      "title": "2026-08-25 0900 news",
+      "mtime": "2026-08-25T07:04:41Z"
+    },
+    {
+      "path": "research/news/2026-08-24_1935_bessent_update.md",
+      "kind": "news",
+      "title": "2026-08-24 1935 bessent update",
+      "mtime": "2026-08-24T17:36:28Z"
+    },
+    {
+      "path": "research/news/2026-08-24_1915_bessent_update.md",
+      "kind": "news",
+      "title": "2026-08-24 1915 bessent update",
+      "mtime": "2026-08-24T17:15:51Z"
+    },
+    {
+      "path": "research/news/2026-08-24_1859_xstocks_hunt.md",
+      "kind": "news",
+      "title": "2026-08-24 1859 xstocks hunt",
+      "mtime": "2026-08-24T17:00:26Z"
+    },
+    {
       "path": "research/news/2026-08-24_1300_bessent_preposition.md",
       "kind": "news",
       "title": "2026-08-24 1300 bessent preposition",
@@ -106,6 +160,70 @@
     }
   ],
   "orders": [
+    {
+      "name": "20260825_081532_amd_short.json::AMD-USD_UM_XPERP-310711",
+      "kind": "order",
+      "mtime": "2026-08-25T06:15:32.379504+00:00",
+      "path": "logs/orders/20260825_081532_amd_short.json",
+      "status": "filled",
+      "instId": "AMD-USD_UM_XPERP-310711",
+      "side": "sell",
+      "action": "FILL",
+      "comment_pl": "TEZA: silny trend w dół, cena przy średniej | RISK: fade porannego dołka | SL 468.6 R~3.0% (~30.7 USDC, fill 461.63) | MULTI-TP 40/40/20 1.76/1.76/0.88 | INVALIDACJA: last > SL 468.6 | fill 4.4@461.63 isolated 10x",
+      "teza": "silny trend w dół, cena przy średniej",
+      "risk": "fade porannego dołka",
+      "invalidacja": "last > SL 468.6",
+      "sl": 468.6,
+      "tp": null
+    },
+    {
+      "name": "20260825_081532_skhynix_short.json::SKHYNIX-USD_UM_XPERP-310704",
+      "kind": "order",
+      "mtime": "2026-08-25T06:15:32.379267+00:00",
+      "path": "logs/orders/20260825_081532_skhynix_short.json",
+      "status": "filled",
+      "instId": "SKHYNIX-USD_UM_XPERP-310704",
+      "side": "sell",
+      "action": "FILL",
+      "comment_pl": "TEZA: RAM short przy średniej po wczorajszym CHASE | RISK: US premarket, odbicie RAM | SL 1241 R~4.96% (~50.7 USDC) | MULTI-TP 40/40/20 0.648/0.648/0.324 | INVALIDACJA: last > SL 1241 | fill 1.62@1209.689 isolated 10x",
+      "teza": "RAM short przy średniej po wczorajszym CHASE",
+      "risk": "US premarket, odbicie RAM",
+      "invalidacja": "last > SL 1241",
+      "sl": 1241.0,
+      "tp": null
+    },
+    {
+      "name": "2026-08-25_081022_ADA-USD_UM_XPERP-310404_SPLIT_50_50.json::ADA-USD_UM_XPERP-310404",
+      "kind": "order",
+      "mtime": "2026-08-25T06:10:22.720298+00:00",
+      "path": "logs/orders/2026-08-25_081022_ADA-USD_UM_XPERP-310404_SPLIT_50_50.json",
+      "status": "split_live",
+      "instId": "ADA-USD_UM_XPERP-310404",
+      "side": "—",
+      "action": "—",
+      "comment_pl": "TEZA: ADA long zostaje | RISK: SL 0.2108 na całość | 50/50 min lot=1 pozwala 13+13 TP1 0.2308 / TP2 0.2437 | size 26 bez zmian",
+      "teza": "ADA long zostaje",
+      "risk": "SL 0.2108 na całość",
+      "invalidacja": "—",
+      "sl": null,
+      "tp": null
+    },
+    {
+      "name": "2026-08-25_081022_HYPE-USD_UM_XPERP-310523_MULTI_TP_tp1_filled.json::HYPE-USD_UM_XPERP-310523",
+      "kind": "order",
+      "mtime": "2026-08-25T06:10:22.720089+00:00",
+      "path": "logs/orders/2026-08-25_081022_HYPE-USD_UM_XPERP-310523_MULTI_TP_tp1_filled.json",
+      "status": "tp1_filled_remain_protected",
+      "instId": "HYPE-USD_UM_XPERP-310523",
+      "side": "—",
+      "action": "—",
+      "comment_pl": "TEZA: HYPE long struktura | RISK: SL 74.37 do TP1, po TP1 SL reszty BE 77.36 | multi-TP 40/40/20 | INVALIDACJA: close < BE po TP1 | TP1 FILL 30@80.80 pnl~+10.3 | TP2 83.18 / runner 16 bez TP",
+      "teza": "HYPE long struktura",
+      "risk": "SL 74.37 do TP1, po TP1 SL reszty BE 77.36",
+      "invalidacja": "close < BE po TP1",
+      "sl": null,
+      "tp": null
+    },
     {
       "name": "2026-08-24_202952_HYPE-USD_UM_XPERP-310523_LONG_filled.json::HYPE-USD_UM_XPERP-310523",
       "kind": "order",

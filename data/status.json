@@ -1,7 +1,7 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-24T18:30:32Z",
+  "updated_at": "2026-08-25T07:05:39Z",
   "phase": {
     "id": "live-ada-hype",
     "label": "LIVE_ADA_HYPE",
@@ -21,14 +21,14 @@
   "paper": {
     "label": "LIVE_OKX",
     "start_usd": 1000,
-    "equity_usd": 995.7550952999999,
+    "equity_usd": 1000.3772927300001,
     "pnl_usd": 0.0,
     "pnl_pct": 0.0,
     "note": "Equity ~1000 USDC ale 0 USDT — SWAP potrzebuje USDT. API key: włącz trade na futures/market.",
     "equity_source": "okx_equity.json",
     "equity_live": true,
-    "equity_updated_at": "2026-08-24T09:38:27.238683+00:00",
-    "available_usd": 930.8034553
+    "equity_updated_at": "2026-08-25T07:05:39.871757+00:00",
+    "available_usd": 564.0417948257895
   },
   "agents": [
     {
@@ -77,11 +77,27 @@
   "performance": {
     "open_positions": [
       {
+        "instId": "AMD-USD_UM_XPERP-310711",
+        "side": "net",
+        "size": -4.4,
+        "avgPx": "461.6320454545454548",
+        "upl": -13.41100000000006,
+        "lever": "10"
+      },
+      {
+        "instId": "SKHYNIX-USD_UM_XPERP-310704",
+        "side": "net",
+        "size": -1.62,
+        "avgPx": "1209.6890000000000003",
+        "upl": -7.793819999999874,
+        "lever": "10"
+      },
+      {
         "instId": "HYPE-USD_UM_XPERP-310523",
         "side": "net",
-        "size": 76.0,
+        "size": 46.0,
         "avgPx": "77.3608421052631579",
-        "upl": 0.4267999999999973,
+        "upl": 16.965526315789496,
         "lever": "10",
         "sl": 74.367,
         "tp": 83.18,
@@ -92,7 +108,7 @@
         "side": "net",
         "size": 26.0,
         "avgPx": "0.2207538461538462",
-        "upl": -0.0140000000000073,
+        "upl": 1.0519999999999907,
         "lever": "10",
         "sl": 0.2108,
         "tp": 0.2437
@@ -103,8 +119,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": 0.4128,
-    "note": "ADA + HYPE long. BTC flat."
+    "unrealized_pnl_usd": -3.1873,
+    "note": "0900 refresh · pos=4 · equity live"
   },
   "publication": {
     "enabled": true,

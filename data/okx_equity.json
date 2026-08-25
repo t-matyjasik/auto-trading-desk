@@ -1,20 +1,36 @@
 {
-  "updated_at": "2026-08-24T18:30:32.334391+00:00",
+  "updated_at": "2026-08-25T07:05:39.871757+00:00",
   "source": "okx_api_ro",
-  "equity_usd": 995.7550952999999,
+  "equity_usd": 1000.3772927300001,
   "start_usd": 1000.0,
-  "available_usd": 930.8034553,
-  "pnl_usd": -4.2449,
-  "pnl_pct": -0.4245,
+  "available_usd": 564.0417948257895,
+  "pnl_usd": 0.3773,
+  "pnl_pct": 0.0377,
   "realized_pnl_usd": null,
-  "unrealized_pnl_usd": 0.4128,
+  "unrealized_pnl_usd": -3.1873,
   "open_positions": [
+    {
+      "instId": "AMD-USD_UM_XPERP-310711",
+      "side": "net",
+      "size": -4.4,
+      "avgPx": "461.6320454545454548",
+      "upl": -13.41100000000006,
+      "lever": "10"
+    },
+    {
+      "instId": "SKHYNIX-USD_UM_XPERP-310704",
+      "side": "net",
+      "size": -1.62,
+      "avgPx": "1209.6890000000000003",
+      "upl": -7.793819999999874,
+      "lever": "10"
+    },
     {
       "instId": "HYPE-USD_UM_XPERP-310523",
       "side": "net",
-      "size": 76.0,
+      "size": 46.0,
       "avgPx": "77.3608421052631579",
-      "upl": 0.4267999999999973,
+      "upl": 16.965526315789496,
       "lever": "10"
     },
     {
@@ -22,11 +38,11 @@
       "side": "net",
       "size": 26.0,
       "avgPx": "0.2207538461538462",
-      "upl": -0.0140000000000073,
+      "upl": 1.0519999999999907,
       "lever": "10"
     }
   ],
-  "positions_count": 2,
+  "positions_count": 4,
   "currency": "USD",
   "okx_flag": "0",
   "mode": "live",
