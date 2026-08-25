@@ -1,7 +1,7 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-25T07:05:39Z",
+  "updated_at": "2026-08-25T07:34:18Z",
   "phase": {
     "id": "live-ada-hype",
     "label": "LIVE_ADA_HYPE",
@@ -21,14 +21,14 @@
   "paper": {
     "label": "LIVE_OKX",
     "start_usd": 1000,
-    "equity_usd": 1000.3772927300001,
+    "equity_usd": 1009.1221229800002,
     "pnl_usd": 0.0,
     "pnl_pct": 0.0,
     "note": "Equity ~1000 USDC ale 0 USDT — SWAP potrzebuje USDT. API key: włącz trade na futures/market.",
     "equity_source": "okx_equity.json",
     "equity_live": true,
-    "equity_updated_at": "2026-08-25T07:05:39.871757+00:00",
-    "available_usd": 564.0417948257895
+    "equity_updated_at": "2026-08-25T07:34:18.196791+00:00",
+    "available_usd": 362.70317507578943
   },
   "agents": [
     {
@@ -77,11 +77,19 @@
   "performance": {
     "open_positions": [
       {
+        "instId": "NBIS-USD_UM_XPERP-310711",
+        "side": "net",
+        "size": -9.2,
+        "avgPx": "217.5803804347826087",
+        "upl": 0.7394999999998958,
+        "lever": "10"
+      },
+      {
         "instId": "AMD-USD_UM_XPERP-310711",
         "side": "net",
         "size": -4.4,
         "avgPx": "461.6320454545454548",
-        "upl": -13.41100000000006,
+        "upl": -12.44299999999994,
         "lever": "10"
       },
       {
@@ -89,7 +97,7 @@
         "side": "net",
         "size": -1.62,
         "avgPx": "1209.6890000000000003",
-        "upl": -7.793819999999874,
+        "upl": -0.9898199999997996,
         "lever": "10"
       },
       {
@@ -97,7 +105,7 @@
         "side": "net",
         "size": 46.0,
         "avgPx": "77.3608421052631579",
-        "upl": 16.965526315789496,
+        "upl": 18.474326315789444,
         "lever": "10",
         "sl": 74.367,
         "tp": 83.18,
@@ -108,7 +116,7 @@
         "side": "net",
         "size": 26.0,
         "avgPx": "0.2207538461538462",
-        "upl": 1.0519999999999907,
+        "upl": 0.8699999999999891,
         "lever": "10",
         "sl": 0.2108,
         "tp": 0.2437
@@ -119,8 +127,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": -3.1873,
-    "note": "0900 refresh · pos=4 · equity live"
+    "unrealized_pnl_usd": 6.651,
+    "note": "0900 watch · live positions from OKX · PnL not invented"
   },
   "publication": {
     "enabled": true,

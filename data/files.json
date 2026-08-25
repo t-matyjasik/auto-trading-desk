@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-08-25T07:05:39.921036+00:00",
+  "generated_at": "2026-08-25T07:34:18.237581+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
+    {
+      "path": "research/market/2026-08-25_0900_xperp100.md",
+      "kind": "market",
+      "title": "2026-08-25 0900 xperp100",
+      "mtime": "2026-08-25T07:07:37Z"
+    },
     {
       "path": "research/market/2026-08-25_0900_market.md",
       "kind": "market",
@@ -99,6 +105,12 @@
       "mtime": "2026-08-23T16:37:55Z"
     },
     {
+      "path": "research/news/2026-08-25_0900_overlay.md",
+      "kind": "news",
+      "title": "2026-08-25 0900 overlay",
+      "mtime": "2026-08-25T07:06:02Z"
+    },
+    {
       "path": "research/news/2026-08-25_0900_news.md",
       "kind": "news",
       "title": "2026-08-25 0900 news",
@@ -160,6 +172,22 @@
     }
   ],
   "orders": [
+    {
+      "name": "20260825_090722_nbis_short.json::NBIS-USD_UM_XPERP-310711",
+      "kind": "order",
+      "mtime": "2026-08-25T07:07:22.569570+00:00",
+      "path": "logs/orders/20260825_090722_nbis_short.json",
+      "status": "filled",
+      "instId": "NBIS-USD_UM_XPERP-310711",
+      "side": "sell",
+      "action": "FILL",
+      "comment_pl": "TEZA: compute/AI infra short przy średniej | RISK: NVDA earnings śr 26.08 AMC + US Consumer Confidence dziś 16:00 | SL 222.73 R~4.73% (~47.4 USDC, cap 20% margin) | MULTI-TP 40/40/20 3.68/3.68/1.84 | INVALIDACJA: last > SL 222.73 | fill 9.2@217.58 isolated 10x | po TP1 SL reszty na BE",
+      "teza": "compute/AI infra short przy średniej",
+      "risk": "NVDA earnings śr 26.08 AMC + US Consumer Confidence dziś 16:00",
+      "invalidacja": "last > SL 222.73",
+      "sl": 222.73,
+      "tp": null
+    },
     {
       "name": "20260825_081532_amd_short.json::AMD-USD_UM_XPERP-310711",
       "kind": "order",

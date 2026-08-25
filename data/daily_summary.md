@@ -1,21 +1,22 @@
-# Podsumowanie research — 2026-08-24 ~13:32 CEST
+# Podsumowanie research — 2026-08-25 ~09:32 CEST
 
-Źródła: hunt 12:00 + X-perp aggressive 12:46 · news Bessent 12:00/13:00 · ADA recheck 12:12. **LIVE_POS1**. Publikacja Pages ON. PnL tylko z logów/OKX (nie fikcja).
+Źródła: `0900_market` · `0900_news` · `0900_overlay` · `0900_xperp100` (145 tickerów). Universe **USD_UM_XPERP / USDC**. PnL tylko z logów/OKX.
 
 ## Bias
-**LIVE_SMALL + event_vol_caution (Bessent ~20:00).** Hawkish *język* już w cenie; hawkish *narzędzia vs Chiny* jeszcze nie. News 13:00: absolutny FLAT do 20:00 = częściowy błąd vs „zagrać POD”. Universe egzekucji: **USD_UM_XPERP / USDC** (nie USDT-SWAP).
+**B-soft strawiony** (Bessent CLASS B): oil fade, crypto hold = conditional risk-on. BTC/ETH/SOL **CHASE** (+4/+2/+7%) — nie gonić. RAM/compute short teza żywa; **nie dokładaj** przed NVDA 26.08 AMC. Kalendarz: Consumer Confidence dziś 16:00 · PCE+NVDA śr · Warsh pt.
 
-## Live (logi Executor)
-- **FILL** ADA-USD_UM_XPERP-310404 long **26 ct** @~0.22075 · SL 0.2108 · TP 0.2437 · R~0.25% · lev4 USDC.
-- **FIX** ADA: czysty SL+TP (bez duplikatu).
-- **LIMIT LIVE** BTC-USD_UM_XPERP-310404 size **24** @76500 · SL 75500 · TP 78300 · lev10 · R~0.25% · mark~77709 · `submitted_limit` / Order placed.
-- GO#1 ADA-USDT-SWAP wcześniej **BLOCKED** (50124 + 51155) — ominięte X-perp USDC.
-- Equity z `okx_equity.json` (launchd) — nie sztywne 1000.
+## Snapshot 09:00 X-perp
+- BTC ~80.7k +4.2% · ETH ~2506 +1.9% · SOL ~101 +6.8% — CHASE
+- ADA ARMED long ~0.225 · HYPE CHASE ~81 (held, SL BE po TP1)
+- SKHYNIX/AMD/NBIS ARMED short przy EMA
 
-## Hunt / snapshot
-- 12:00 majors (USDT-SWAP research): BTC ~77.6k +1.3% · ETH ~2475 +2.5% · SOL ~94.9 +1.5% · funding ~+0.01% · 4H TREND (ADX BTC~58 ETH~53 SOL~46).
-- X-perp hunt 12:46: 146 live / 89 liquid; movers VIRTUAL/PENGU/PROS; ARMED m.in. BILL, SUI, MOODENG (research only).
-- News 12:00 verdict **CAUTION** (brak świeżego CEX hack / ETF shock). 13:00: BASE hawk-words ~50–55% · HAWK named banks ~25–30% · DOVE ~15–20%.
+## Live (logi Executor, nie fikcja)
+- **ADA** long 26 · split 50/50 TP1 0.2308 / TP2 0.2437 · SL 0.2108
+- **HYPE** long — TP1 FILL 30@80.80 pnl~+10.3 · remain 46 SL BE 77.36
+- **AMD** short FILL 4.4@461.63 SL 468.6
+- **SKHYNIX** short FILL 1.62@1209.69 SL 1241
+- **NBIS** short FILL 9.2@217.58 SL 222.73 (rano 09:07)
+- INTC wczoraj flat (~−2.65). BTC limit canceled 19:40.
 
-## Paper/Live
-LIVE_SMALL X-perp USDC. Zero fikcyjnych PnL. Bessent okno ~19:00–20:30 CEST.
+## News
+Bessent wrap: warning shot / cure period, brak named China banks. Hormuz tanker hit (UKMTO) = status quo. Overlay: news **nie kasuje** short RAM; bounce KR + NVDA HBM = squeeze risk.
