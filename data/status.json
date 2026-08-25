@@ -1,7 +1,7 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-25T15:35:51Z",
+  "updated_at": "2026-08-25T15:37:57Z",
   "phase": {
     "id": "live-4-xau",
     "label": "LIVE_4_XAU",
@@ -83,7 +83,10 @@
         "avgPx": "4624.6316666666666668",
         "upl": 5.502299999999887,
         "lever": "10",
-        "sl": 4600
+        "sl": 4600,
+        "note": "po TP1 · 180 = 120+60 · SL→BE w toku",
+        "size_after_tp1": 180,
+        "tp1_cut": 120
       },
       {
         "instId": "SKHYNIX-USD_UM_XPERP-310704",
@@ -119,7 +122,7 @@
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
     "unrealized_pnl_usd": -5.8926,
-    "note": "17:32 watch · 4 pos HYPE/ADA/SKHYNIX/XAU · NVDA pause"
+    "note": "XAU 180 = po TP1 (120 ścięte), reszta 120+60, SL→BE w toku · HYPE/ADA/SKHYNIX"
   },
   "publication": {
     "enabled": true,

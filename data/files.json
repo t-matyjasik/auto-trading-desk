@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T15:35:51.776394+00:00",
+  "generated_at": "2026-08-25T15:37:57.557649+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -644,6 +644,28 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-25T1737_xau_tp1",
+      "ts": "2026-08-25T17:37:57+02:00",
+      "actor": "Orkiestrator",
+      "action": "REDUCE",
+      "reason_code": "XAU_TP1",
+      "reason": "XAU TP1: 120 ścięte. Size 180 = reszta 120+60 (nie błąd). SL reszty → BE w toku. HYPE/ADA/SKHYNIX untouched.",
+      "instrument": "XAU-USD_UM_XPERP-310502",
+      "context": {
+        "side": "long",
+        "size_before": 300,
+        "size_after": 180,
+        "cut": 120,
+        "remain": {
+          "tp2": 120,
+          "runner": 60
+        },
+        "sl": "BE_in_progress",
+        "entry": 4624.63,
+        "note": "180 = po TP1, nie mismatch"
+      }
+    },
     {
       "id": "2026-08-25T161435_xau_long",
       "ts": "2026-08-25T16:14:35+02:00",

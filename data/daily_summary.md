@@ -9,7 +9,7 @@ Scarce (BTC/XAU) nadal bid, ale **chip bounce** przed NVDA — nie dokładaj sho
 - **HYPE** L 46 SL BE · CHASE ~81
 - **ADA** L 26 · WEAK_BELOW EMA (~0.215, −1.8% vs EMA20) — bez dokładek, pilnuj SL 0.2108
 - **SKHYNIX** S 1.62 SL 1241 · ARMED (KR bounce +0.4% — teza żywa, mniej komfort)
-- **XAU** L 300 @4624.63 SL 4600 · ARMED ~4632 — soft Conf wspiera; nie add
+- **XAU** L **180** @4624.63 (po TP1, 120 ścięte; reszta 120+60) · SL → BE w toku — nie add
 
 ## Snapshot
 BTC ~79.2k ARMED · ETH ~2470 · SOL ~98 · NVDA ER blocker nadal. HYPE unlock ~29.08 time-stop.
