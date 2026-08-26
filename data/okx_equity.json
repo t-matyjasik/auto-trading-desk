@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-26T11:07:20.373342+00:00",
+  "updated_at": "2026-08-26T15:04:27.180874+00:00",
   "source": "okx_api_ro",
-  "equity_usd": 905.5361613791665,
+  "equity_usd": 901.8001613791665,
   "start_usd": 1000.0,
   "available_usd": 883.7554524107455,
-  "pnl_usd": -94.4638,
-  "pnl_pct": -9.4464,
+  "pnl_usd": -98.1998,
+  "pnl_pct": -9.82,
   "realized_pnl_usd": null,
-  "unrealized_pnl_usd": 9.4675,
+  "unrealized_pnl_usd": 5.7347,
   "open_positions": [
     {
       "instId": "HYPE-USD_UM_XPERP-310523",
       "side": "net",
       "size": 16.0,
       "avgPx": "77.3608421052631579",
-      "upl": 9.467452631578954,
+      "upl": 5.734652631578934,
       "lever": "10"
     }
   ],

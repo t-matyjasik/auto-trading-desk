@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T11:07:20.443663+00:00",
+  "generated_at": "2026-08-26T15:04:27.245307+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -151,6 +151,12 @@
       "kind": "market",
       "title": "2026-08-23 1834 market",
       "mtime": "2026-08-23T16:37:55Z"
+    },
+    {
+      "path": "research/news/2026-08-26_1700_news.md",
+      "kind": "news",
+      "title": "2026-08-26 1700 news",
+      "mtime": "2026-08-26T15:04:15Z"
     },
     {
       "path": "research/news/2026-08-26_1300_news.md",
@@ -754,6 +760,23 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-26T1700_desk",
+      "ts": "2026-08-26T17:00:00+02:00",
+      "actor": "Orkiestrator",
+      "action": "SYNC",
+      "reason_code": "DESK_1700",
+      "reason": "Desk 17:00: 1 pos HYPE L 16 SL 77.36. Freeze nowych. NVDA ER ~22:20 tło. Publikacja ON.",
+      "context": {
+        "held": [
+          "HYPE"
+        ],
+        "size": 16,
+        "sl": 77.36,
+        "freeze_new": true,
+        "nvda_er": "22:20 CEST"
+      }
+    },
     {
       "id": "2026-08-26T1300_desk",
       "ts": "2026-08-26T13:00:00+02:00",

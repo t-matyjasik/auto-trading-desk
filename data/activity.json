@@ -1,6 +1,23 @@
 {
-  "updated_at": "2026-08-26T11:07:20.444558+00:00",
+  "updated_at": "2026-08-26T15:04:27.246085+00:00",
   "items": [
+    {
+      "id": "2026-08-26T1700_desk",
+      "ts": "2026-08-26T17:00:00+02:00",
+      "actor": "Orkiestrator",
+      "action": "SYNC",
+      "reason_code": "DESK_1700",
+      "reason": "Desk 17:00: 1 pos HYPE L 16 SL 77.36. Freeze nowych. NVDA ER ~22:20 tło. Publikacja ON.",
+      "context": {
+        "held": [
+          "HYPE"
+        ],
+        "size": 16,
+        "sl": 77.36,
+        "freeze_new": true,
+        "nvda_er": "22:20 CEST"
+      }
+    },
     {
       "id": "2026-08-26T1300_desk",
       "ts": "2026-08-26T13:00:00+02:00",

@@ -1,20 +1,12 @@
-# Podsumowanie research — 2026-08-26 ~13:00 CEST
+# Podsumowanie research — 2026-08-26 ~17:00 CEST
 
-Źródła: `1300_market` · `1300_news` + XAU SL 10:15. Universe X-perp USDC. PnL z OKX/logów — zero fikcji.
+Źródła: snapshot 17:00 (brief 1700 jeszcze nie wpadł) + `1300_market`/`1300_news`. Universe X-perp USDC. PnL z OKX/logów.
 
 ## Bias
-**FREEZE Tomasza — zero GO / zero pitch.** PCE 14:30, NVDA ER ~22:20. Chip shorts PAUSE. Archive only.
+**FREEZE Tomasza — zero GO.** NVDA ER ~22:20 tło. Chip shorts PAUSE. XAU/ADA/SKHY FLAT — zero revenge.
 
 ## Held
-- **HYPE** L **16** SL 77.36 · last 83.44 · **CHASE** (+4.3% vs EMA20) — nie add
-
-## Zamknięte
-- **XAU SL** 10:15: 180 @4623.83 VWAP (trigger 4625, nogi 120+60) · realized **−0.56** · nie re-entry
-- **SKHYNIX SL** 02:18 · **−52.2** · zero revenge
-- **ADA SL** 22:42 wczoraj · **−2.59** · zero revenge
-
-## Snapshot
-BTC ~78.7k ARMED · ETH ~2470 · XAU spot ~4622 (FLAT, ARMED ale freeze). NVDA blocker.
+- **HYPE** L **16** SL 77.36 (runner po TP2) — jedyna otwarta
 
 ## Live
-Equity **905.54** (-94.5 / -9.4%), 1 pozycja. Publikacja Pages ON.
+Equity **901.80** (-98.2 / -9.8%), 1 pozycja. Publikacja Pages ON.
