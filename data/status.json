@@ -1,7 +1,7 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-26T07:05:27Z",
+  "updated_at": "2026-08-26T07:08:03Z",
   "phase": {
     "id": "live-4-xau",
     "label": "LIVE_4_XAU",
@@ -104,7 +104,7 @@
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
     "unrealized_pnl_usd": 10.4298,
-    "note": "09:00 26.08 · 2 pos HYPE16/XAU180 · SKHY SL noc ~−52 · ADA SL wczoraj"
+    "note": "09:00 26.08 · 2 pos HYPE16/XAU180 · SKHY SL 02:18 −52.2 @1241.31 · ADA SL wczoraj"
   },
   "publication": {
     "enabled": true,

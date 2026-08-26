@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T07:05:27.705604+00:00",
+  "generated_at": "2026-08-26T07:08:03.436729+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -232,6 +232,22 @@
     }
   ],
   "orders": [
+    {
+      "name": "20260826_021800_skhynix_sl.json::SKHYNIX-USD_UM_XPERP-310704",
+      "kind": "order",
+      "mtime": "2026-08-26T07:08:03.400780+00:00",
+      "path": "logs/orders/20260826_021800_skhynix_sl.json",
+      "status": "closed",
+      "instId": "SKHYNIX-USD_UM_XPERP-310704",
+      "side": "buy",
+      "action": "SL_FILL",
+      "comment_pl": "TEZA: RAM short | RISK: SL 1241 | INVALIDACJA: last > 1241 | SL FILL 1.62@1241.31 trigger 1241 · realized ~−52.2 (gross −51.23 fee −1.01) · zero revenge",
+      "teza": "RAM short",
+      "risk": "SL 1241",
+      "invalidacja": "last > 1241",
+      "sl": null,
+      "tp": null
+    },
     {
       "name": "20260825_212135_hype_tp2.json::HYPE-USD_UM_XPERP-310523",
       "kind": "order",
@@ -715,17 +731,31 @@
       }
     },
     {
-      "id": "2026-08-25Tskhynix_sl",
-      "ts": "2026-08-26T00:10:00+02:00",
+      "id": "2026-08-26T021800_skhynix_sl",
+      "ts": "2026-08-26T02:18:00+02:00",
       "actor": "Orkiestrator",
       "action": "SL",
       "reason_code": "SKHYNIX_SL",
-      "reason": "SKHYNIX SHORT SL overnight @1241 ~−52 USDC. Nie hold. Opens: HYPE + XAU.",
+      "reason": "SKHYNIX SHORT SL 1.62 @1241.31 (trigger 1241), nogi 0.648+0.648+0.324. Realized −52.2 (gross −51.23 fee −1.01). Zero revenge. FLAT.",
       "instrument": "SKHYNIX-USD_UM_XPERP-310704",
       "context": {
         "status": "sl_closed",
+        "size": 1.62,
+        "fill": 1241.31,
         "sl": 1241,
-        "pnl_est_usdc": -52
+        "legs": [
+          0.648,
+          0.648,
+          0.324
+        ],
+        "ordIds": [
+          "3865508393986002944",
+          "3865508393986002945",
+          "3865508393986002946"
+        ],
+        "realized_usdc": -52.2,
+        "gross_usdc": -51.23,
+        "fee_usdc": -1.01
       }
     },
     {

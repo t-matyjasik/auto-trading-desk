@@ -12,7 +12,7 @@ Event day: PCE 14:30, NVDA ER ~22:20. **PAUSE** nowych chip/AI shorts. FLAT nowy
 ## Noc / wczoraj
 - **HYPE TP2** 21:21: 30 @83.17 · realized **+17.30**
 - **ADA SL** 22:42: 26 @0.2109 · realized **−2.59** · zero revenge
-- **SKHYNIX SL** overnight @1241 · ~**−52** USDC (Orkiestrator; brak logu fill)
+- **SKHYNIX SL** 02:18: 1.62 @1241.31 (trigger 1241) · nogi 0.648+0.648+0.324 · realized **−52.2** (gross −51.23 fee −1.01) · zero revenge
 - **XAU** SL → BE 4625 (17:43)
 
 ## Live
