@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T07:37:36.021110+00:00",
+  "generated_at": "2026-08-26T09:19:49.890622+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -244,6 +244,22 @@
     }
   ],
   "orders": [
+    {
+      "name": "20260826_101500_xau_sl.json::XAU-USD_UM_XPERP-310502",
+      "kind": "order",
+      "mtime": "2026-08-26T09:19:49.830013+00:00",
+      "path": "logs/orders/20260826_101500_xau_sl.json",
+      "status": "closed",
+      "instId": "XAU-USD_UM_XPERP-310502",
+      "side": "sell",
+      "action": "SL_FILL",
+      "comment_pl": "TEZA: reclaim EMA | po TP1 SL BE 4625 | INVALIDACJA: last < 4625 | SL FILL 180 @~4623.8–4624.7 trigger 4625 · realized reszty ~−0.56 · book: tylko HYPE 16 · Tomasz freeze nowych",
+      "teza": "reclaim EMA",
+      "risk": "—",
+      "invalidacja": "last < 4625",
+      "sl": null,
+      "tp": null
+    },
     {
       "name": "20260826_021800_skhynix_sl.json::SKHYNIX-USD_UM_XPERP-310704",
       "kind": "order",
@@ -726,6 +742,30 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-26T101500_xau_sl",
+      "ts": "2026-08-26T10:15:00+02:00",
+      "actor": "Orkiestrator",
+      "action": "SL",
+      "reason_code": "XAU_SL",
+      "reason": "XAU LONG SL 180 @~4623.8–4624.7 (trigger 4625). Realized reszty ~−0.56. Book: tylko HYPE 16 SL 77.36. Tomasz freeze nowych.",
+      "instrument": "XAU-USD_UM_XPERP-310502",
+      "context": {
+        "status": "sl_closed",
+        "size": 180,
+        "fill_range": [
+          4623.8,
+          4624.7
+        ],
+        "sl": 4625,
+        "entry": 4624.63,
+        "realized_usdc": -0.56,
+        "held": [
+          "HYPE"
+        ],
+        "freeze_new": true
+      }
+    },
     {
       "id": "2026-08-26T0900_desk",
       "ts": "2026-08-26T09:00:00+02:00",

@@ -1,7 +1,7 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-26T07:37:35Z",
+  "updated_at": "2026-08-26T09:19:49Z",
   "phase": {
     "id": "live-4-xau",
     "label": "LIVE_4_XAU",
@@ -11,7 +11,7 @@
   "okx": {
     "flag": 0,
     "mode": "live_small",
-    "label": "LIVE_2",
+    "label": "LIVE_1",
     "executor": "LIVE",
     "live_trading": true,
     "last_error": "50124+51155",
@@ -21,14 +21,14 @@
   "paper": {
     "label": "LIVE_OKX",
     "start_usd": 1000.0,
-    "equity_usd": 905.6613030691664,
-    "pnl_usd": -94.3387,
-    "pnl_pct": -9.4339,
-    "note": "LIVE_2 · HYPE+XAU · equity z OKX",
+    "equity_usd": 902.8209613791665,
+    "pnl_usd": -97.179,
+    "pnl_pct": -9.7179,
+    "note": "LIVE_1 · tylko HYPE · freeze nowych",
     "equity_source": "okx_equity.json",
     "equity_live": true,
-    "equity_updated_at": "2026-08-26T07:37:35.974514+00:00",
-    "available_usd": 801.0718274607455
+    "equity_updated_at": "2026-08-26T09:19:49.829183+00:00",
+    "available_usd": 883.7554524107455
   },
   "agents": [
     {
@@ -77,25 +77,14 @@
   "performance": {
     "open_positions": [
       {
-        "instId": "XAU-USD_UM_XPERP-310502",
-        "side": "net",
-        "size": 180.0,
-        "avgPx": "4624.6316666666666668",
-        "upl": 1.6322999999998866,
-        "lever": "10",
-        "sl": 4625,
-        "tp": 4678,
-        "note": "po TP1 · 180=120+60 · SL BE 4625"
-      },
-      {
         "instId": "HYPE-USD_UM_XPERP-310523",
         "side": "net",
         "size": 16.0,
         "avgPx": "77.3608421052631579",
-        "upl": 7.3874526315789355,
+        "upl": 6.7522526315789495,
         "lever": "10",
         "sl": 77.36,
-        "note": "runner 16 po TP2"
+        "note": "runner 16 · jedyna otwarta · freeze nowych"
       }
     ],
     "closed_trades": 0,
@@ -103,8 +92,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": 9.0198,
-    "note": "09:32 watch · 2 pos HYPE16 CHASE / XAU180 ARMED · NVDA pause"
+    "unrealized_pnl_usd": 6.7523,
+    "note": "XAU SL 10:15 −0.56 · book HYPE 16 · Tomasz freeze nowych"
   },
   "publication": {
     "enabled": true,

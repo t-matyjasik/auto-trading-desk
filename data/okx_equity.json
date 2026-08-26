@@ -1,32 +1,24 @@
 {
-  "updated_at": "2026-08-26T07:37:35.974514+00:00",
+  "updated_at": "2026-08-26T09:19:49.829183+00:00",
   "source": "okx_api_ro",
-  "equity_usd": 905.6613030691664,
+  "equity_usd": 902.8209613791665,
   "start_usd": 1000.0,
-  "available_usd": 801.0718274607455,
-  "pnl_usd": -94.3387,
-  "pnl_pct": -9.4339,
+  "available_usd": 883.7554524107455,
+  "pnl_usd": -97.179,
+  "pnl_pct": -9.7179,
   "realized_pnl_usd": null,
-  "unrealized_pnl_usd": 9.0198,
+  "unrealized_pnl_usd": 6.7523,
   "open_positions": [
-    {
-      "instId": "XAU-USD_UM_XPERP-310502",
-      "side": "net",
-      "size": 180.0,
-      "avgPx": "4624.6316666666666668",
-      "upl": 1.6322999999998866,
-      "lever": "10"
-    },
     {
       "instId": "HYPE-USD_UM_XPERP-310523",
       "side": "net",
       "size": 16.0,
       "avgPx": "77.3608421052631579",
-      "upl": 7.3874526315789355,
+      "upl": 6.7522526315789495,
       "lever": "10"
     }
   ],
-  "positions_count": 2,
+  "positions_count": 1,
   "currency": "USD",
   "okx_flag": "0",
   "mode": "live",

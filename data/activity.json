@@ -1,6 +1,30 @@
 {
-  "updated_at": "2026-08-26T07:37:36.021775+00:00",
+  "updated_at": "2026-08-26T09:19:49.891787+00:00",
   "items": [
+    {
+      "id": "2026-08-26T101500_xau_sl",
+      "ts": "2026-08-26T10:15:00+02:00",
+      "actor": "Orkiestrator",
+      "action": "SL",
+      "reason_code": "XAU_SL",
+      "reason": "XAU LONG SL 180 @~4623.8–4624.7 (trigger 4625). Realized reszty ~−0.56. Book: tylko HYPE 16 SL 77.36. Tomasz freeze nowych.",
+      "instrument": "XAU-USD_UM_XPERP-310502",
+      "context": {
+        "status": "sl_closed",
+        "size": 180,
+        "fill_range": [
+          4623.8,
+          4624.7
+        ],
+        "sl": 4625,
+        "entry": 4624.63,
+        "realized_usdc": -0.56,
+        "held": [
+          "HYPE"
+        ],
+        "freeze_new": true
+      }
+    },
     {
       "id": "2026-08-26T0900_desk",
       "ts": "2026-08-26T09:00:00+02:00",
