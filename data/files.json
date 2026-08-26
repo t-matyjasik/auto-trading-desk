@@ -1,7 +1,19 @@
 {
-  "generated_at": "2026-08-26T07:08:03.436729+00:00",
+  "generated_at": "2026-08-26T07:37:36.021110+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
+    {
+      "path": "research/market/2026-08-26_0900_xperp100.md",
+      "kind": "market",
+      "title": "2026-08-26 0900 xperp100",
+      "mtime": "2026-08-26T07:06:01Z"
+    },
+    {
+      "path": "research/market/2026-08-26_0900_market.md",
+      "kind": "market",
+      "title": "2026-08-26 0900 market",
+      "mtime": "2026-08-26T07:06:00Z"
+    },
     {
       "path": "research/market/2026-08-25_1700_xperp100.md",
       "kind": "market",

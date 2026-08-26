@@ -1,7 +1,7 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-26T07:08:03Z",
+  "updated_at": "2026-08-26T07:37:35Z",
   "phase": {
     "id": "live-4-xau",
     "label": "LIVE_4_XAU",
@@ -21,13 +21,13 @@
   "paper": {
     "label": "LIVE_OKX",
     "start_usd": 1000.0,
-    "equity_usd": 907.0713030691664,
-    "pnl_usd": -92.9287,
-    "pnl_pct": -9.2929,
+    "equity_usd": 905.6613030691664,
+    "pnl_usd": -94.3387,
+    "pnl_pct": -9.4339,
     "note": "LIVE_2 · HYPE+XAU · equity z OKX",
     "equity_source": "okx_equity.json",
     "equity_live": true,
-    "equity_updated_at": "2026-08-26T07:05:27.643525+00:00",
+    "equity_updated_at": "2026-08-26T07:37:35.974514+00:00",
     "available_usd": 801.0718274607455
   },
   "agents": [
@@ -77,25 +77,25 @@
   "performance": {
     "open_positions": [
       {
-        "instId": "HYPE-USD_UM_XPERP-310523",
-        "side": "net",
-        "size": 16.0,
-        "avgPx": "77.3608421052631579",
-        "upl": 7.9154526315789555,
-        "lever": "10",
-        "sl": 77.36,
-        "note": "runner 16 po TP2"
-      },
-      {
         "instId": "XAU-USD_UM_XPERP-310502",
         "side": "net",
         "size": 180.0,
         "avgPx": "4624.6316666666666668",
-        "upl": 2.514299999999985,
+        "upl": 1.6322999999998866,
         "lever": "10",
         "sl": 4625,
         "tp": 4678,
         "note": "po TP1 · 180=120+60 · SL BE 4625"
+      },
+      {
+        "instId": "HYPE-USD_UM_XPERP-310523",
+        "side": "net",
+        "size": 16.0,
+        "avgPx": "77.3608421052631579",
+        "upl": 7.3874526315789355,
+        "lever": "10",
+        "sl": 77.36,
+        "note": "runner 16 po TP2"
       }
     ],
     "closed_trades": 0,
@@ -103,8 +103,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": 10.4298,
-    "note": "09:00 26.08 · 2 pos HYPE16/XAU180 · SKHY SL 02:18 −52.2 @1241.31 · ADA SL wczoraj"
+    "unrealized_pnl_usd": 9.0198,
+    "note": "09:32 watch · 2 pos HYPE16 CHASE / XAU180 ARMED · NVDA pause"
   },
   "publication": {
     "enabled": true,

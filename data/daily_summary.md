@@ -1,19 +1,22 @@
-# Podsumowanie research — 2026-08-26 ~09:00 CEST
+# Podsumowanie research — 2026-08-26 ~09:32 CEST
 
-Źródła: `0900_news` + logi nocy (HYPE TP2, ADA SL, XAU BE, SKHYNIX SL). Universe X-perp USDC. PnL z OKX/logów — zero fikcji.
+Źródła: `0900_market` · `0900_xperp100` · `0900_news` + logi nocy. Universe X-perp USDC. PnL z OKX/logów — zero fikcji.
 
 ## Bias
-Event day: PCE 14:30, NVDA ER ~22:20. **PAUSE** nowych chip/AI shorts. FLAT nowych do PCE. XAU teza żywa, SL ciasny (4625 vs spot ~4637).
+Event day: PCE 14:30, NVDA ER ~22:20. **PAUSE** chip/AI shorts. ZERO egzekucji. Nie chase (HYPE CHASE, ADA revenge CHASE). XAU teza żywa, SL ciasny.
 
-## Held ~09:00
-- **HYPE** L **16** SL 77.36 (po TP2; unlock 29.08 — nie add)
-- **XAU** L **180** @4624.63 SL **4625** TP 4678 (po TP1; reszta 120+60)
+## Held ~09:05
+- **HYPE** L **16** SL 77.36 · last 81.65 · **CHASE** (+2.6% vs EMA20) — nie add
+- **XAU** L **180** @4624.63 SL **4625** TP 4678 · last 4637.60 · **ARMED** — bufor ~12 USD do SL
 
 ## Noc / wczoraj
 - **HYPE TP2** 21:21: 30 @83.17 · realized **+17.30**
 - **ADA SL** 22:42: 26 @0.2109 · realized **−2.59** · zero revenge
-- **SKHYNIX SL** 02:18: 1.62 @1241.31 (trigger 1241) · nogi 0.648+0.648+0.324 · realized **−52.2** (gross −51.23 fee −1.01) · zero revenge
+- **SKHYNIX SL** 02:18: 1.62 @1241.31 · realized **−52.2** · zero revenge
 - **XAU** SL → BE 4625 (17:43)
 
+## Snapshot
+BTC ~78.8k ARMED (−2.2%) · ETH ~2457 · SOL ~96.6. SKHY RANGE po SL. NVDA blocker nadal.
+
 ## Live
-Equity **907.07** (-92.9 / -9.3%), 2 pozycje. Publikacja Pages ON.
+Equity **905.66** (-94.3 / -9.4%), 2 pozycje. Publikacja Pages ON.
