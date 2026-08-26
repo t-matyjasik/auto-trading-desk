@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T15:37:57.557649+00:00",
+  "generated_at": "2026-08-26T07:05:27.705604+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
     {
@@ -135,6 +135,12 @@
       "mtime": "2026-08-23T16:37:55Z"
     },
     {
+      "path": "research/news/2026-08-26_0900_news.md",
+      "kind": "news",
+      "title": "2026-08-26 0900 news",
+      "mtime": "2026-08-26T07:04:25Z"
+    },
+    {
       "path": "research/news/2026-08-25_1700_overlay.md",
       "kind": "news",
       "title": "2026-08-25 1700 overlay",
@@ -226,6 +232,54 @@
     }
   ],
   "orders": [
+    {
+      "name": "20260825_212135_hype_tp2.json::HYPE-USD_UM_XPERP-310523",
+      "kind": "order",
+      "mtime": "2026-08-25T20:45:16.989123+00:00",
+      "path": "logs/orders/20260825_212135_hype_tp2.json",
+      "status": "—",
+      "instId": "HYPE-USD_UM_XPERP-310523",
+      "side": "long",
+      "action": "—",
+      "comment_pl": "TP2 FILL 30ct vs TP 83.18, fill 83.159-83.19 VWAP 83.17. OCO 30 zniknął. Zostaje runner 16 SL 77.36. Zero nowych zleceń.",
+      "teza": "TP2 FILL 30ct vs TP 83.18, fill 83.159-83.19 VWAP 83.17. OCO 30 zniknął. Zostaje runner 16 SL 77.36. Zero nowych zleceń.",
+      "risk": "—",
+      "invalidacja": "—",
+      "sl": null,
+      "tp": 83.18
+    },
+    {
+      "name": "20260825_224244_ada_sl.json::ADA-USD_UM_XPERP-310404",
+      "kind": "order",
+      "mtime": "2026-08-25T20:43:46.533749+00:00",
+      "path": "logs/orders/20260825_224244_ada_sl.json",
+      "status": "—",
+      "instId": "ADA-USD_UM_XPERP-310404",
+      "side": "long",
+      "action": "—",
+      "comment_pl": "SL fill obu OCO 13+13. Trigger SL 0.2108, fill 0.2109 (slip +0.0001). Nie TP (0.2308/0.2437). Nie reczne. Zero revenge. HOLD zakonczone — FLAT. Watch routine delete.",
+      "teza": "SL fill obu OCO 13+13. Trigger SL 0.2108, fill 0.2109 (slip +0.0001). Nie TP (0.2308/0.2437). Nie reczne. Zero revenge. HOLD zakonczone — FLAT. Watch routine delete.",
+      "risk": "—",
+      "invalidacja": "—",
+      "sl": 0.2108,
+      "tp": null
+    },
+    {
+      "name": "20260825_174324_xau_tp1_be.json::XAU-USD_UM_XPERP-310502",
+      "kind": "order",
+      "mtime": "2026-08-25T15:43:24.352378+00:00",
+      "path": "logs/orders/20260825_174324_xau_tp1_be.json",
+      "status": "protected",
+      "instId": "XAU-USD_UM_XPERP-310502",
+      "side": "—",
+      "action": "SL_TO_BE",
+      "comment_pl": "TEZA: reclaim EMA | po TP1 SL reszty BE 4625 (entry 4624.63) | TP2 4678 nietknięty | runner 60 SL-only BE | ADA HOLD",
+      "teza": "reclaim EMA",
+      "risk": "—",
+      "invalidacja": "—",
+      "sl": null,
+      "tp": null
+    },
     {
       "name": "20260825_161435_xau_long.json::XAU-USD_UM_XPERP-310502",
       "kind": "order",
@@ -644,6 +698,87 @@
     }
   ],
   "activity": [
+    {
+      "id": "2026-08-26T0900_desk",
+      "ts": "2026-08-26T09:00:00+02:00",
+      "actor": "Orkiestrator",
+      "action": "SYNC",
+      "reason_code": "DESK_0900",
+      "reason": "Desk 9:00 26.08: equity ~906 (−9.4%), 2 pos. HYPE L 16 SL 77.36 · XAU L 180 SL 4625 TP 4678. Noc: SKHYNIX SL @1241 ~−52; ADA SL wczoraj. Publikacja ON.",
+      "context": {
+        "held": [
+          "HYPE",
+          "XAU"
+        ],
+        "equity_usd": 906,
+        "pnl_pct": -9.4
+      }
+    },
+    {
+      "id": "2026-08-25Tskhynix_sl",
+      "ts": "2026-08-26T00:10:00+02:00",
+      "actor": "Orkiestrator",
+      "action": "SL",
+      "reason_code": "SKHYNIX_SL",
+      "reason": "SKHYNIX SHORT SL overnight @1241 ~−52 USDC. Nie hold. Opens: HYPE + XAU.",
+      "instrument": "SKHYNIX-USD_UM_XPERP-310704",
+      "context": {
+        "status": "sl_closed",
+        "sl": 1241,
+        "pnl_est_usdc": -52
+      }
+    },
+    {
+      "id": "2026-08-25T224244_ada_sl",
+      "ts": "2026-08-25T22:42:44+02:00",
+      "actor": "Orkiestrator",
+      "action": "SL",
+      "reason_code": "ADA_SL",
+      "reason": "ADA LONG SL 26 @0.2109 vs 0.22075 (trigger 0.2108). Realized −2.59 USDC. Zero revenge. FLAT.",
+      "instrument": "ADA-USD_UM_XPERP-310404",
+      "context": {
+        "status": "sl_closed",
+        "size": 26,
+        "fill": 0.2109,
+        "sl": 0.2108,
+        "realized_usdc": -2.5894
+      }
+    },
+    {
+      "id": "2026-08-25T212135_hype_tp2",
+      "ts": "2026-08-25T21:21:35+02:00",
+      "actor": "Orkiestrator",
+      "action": "REDUCE",
+      "reason_code": "HYPE_TP2",
+      "reason": "HYPE TP2 FILL 30 @83.17 (TP 83.18). Realized +17.30. Zostaje runner 16 SL 77.36.",
+      "instrument": "HYPE-USD_UM_XPERP-310523",
+      "context": {
+        "side": "long",
+        "cut": 30,
+        "size_after": 16,
+        "fill": 83.17,
+        "sl": 77.36,
+        "realized_usdc": 17.303
+      }
+    },
+    {
+      "id": "2026-08-25T174324_xau_be",
+      "ts": "2026-08-25T17:43:24+02:00",
+      "actor": "Orkiestrator",
+      "action": "PROTECT",
+      "reason_code": "XAU_SL_BE",
+      "reason": "XAU po TP1: SL reszty 180 → BE 4625 (120+60). TP2 4678 live. Nie mismatch size.",
+      "instrument": "XAU-USD_UM_XPERP-310502",
+      "context": {
+        "size": 180,
+        "sl": 4625,
+        "tp": 4678,
+        "remain": {
+          "tp2": 120,
+          "runner": 60
+        }
+      }
+    },
     {
       "id": "2026-08-25T1737_xau_tp1",
       "ts": "2026-08-25T17:37:57+02:00",

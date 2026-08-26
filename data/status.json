@@ -1,7 +1,7 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-25T15:37:57Z",
+  "updated_at": "2026-08-26T07:05:27Z",
   "phase": {
     "id": "live-4-xau",
     "label": "LIVE_4_XAU",
@@ -11,7 +11,7 @@
   "okx": {
     "flag": 0,
     "mode": "live_small",
-    "label": "LIVE_4",
+    "label": "LIVE_2",
     "executor": "LIVE",
     "live_trading": true,
     "last_error": "50124+51155",
@@ -20,15 +20,15 @@
   },
   "paper": {
     "label": "LIVE_OKX",
-    "start_usd": 1000,
-    "equity_usd": 928.8970269833507,
-    "pnl_usd": -81.6054,
-    "pnl_pct": 0.0,
-    "note": "Equity ~1000 USDC ale 0 USDT — SWAP potrzebuje USDT. API key: włącz trade na futures/market.",
+    "start_usd": 1000.0,
+    "equity_usd": 907.0713030691664,
+    "pnl_usd": -92.9287,
+    "pnl_pct": -9.2929,
+    "note": "LIVE_2 · HYPE+XAU · equity z OKX",
     "equity_source": "okx_equity.json",
     "equity_live": true,
-    "equity_updated_at": "2026-08-25T15:35:51.723562+00:00",
-    "available_usd": 612.9978255191404
+    "equity_updated_at": "2026-08-26T07:05:27.643525+00:00",
+    "available_usd": 801.0718274607455
   },
   "agents": [
     {
@@ -77,43 +77,25 @@
   "performance": {
     "open_positions": [
       {
+        "instId": "HYPE-USD_UM_XPERP-310523",
+        "side": "net",
+        "size": 16.0,
+        "avgPx": "77.3608421052631579",
+        "upl": 7.9154526315789555,
+        "lever": "10",
+        "sl": 77.36,
+        "note": "runner 16 po TP2"
+      },
+      {
         "instId": "XAU-USD_UM_XPERP-310502",
         "side": "net",
         "size": 180.0,
         "avgPx": "4624.6316666666666668",
-        "upl": 5.502299999999887,
+        "upl": 2.514299999999985,
         "lever": "10",
-        "sl": 4600,
-        "note": "po TP1 · 180 = 120+60 · SL→BE w toku",
-        "size_after_tp1": 180,
-        "tp1_cut": 120
-      },
-      {
-        "instId": "SKHYNIX-USD_UM_XPERP-310704",
-        "side": "net",
-        "size": -1.62,
-        "avgPx": "1209.6890000000000003",
-        "upl": -26.715419999999977,
-        "lever": "10",
-        "sl": 1241
-      },
-      {
-        "instId": "HYPE-USD_UM_XPERP-310523",
-        "side": "net",
-        "size": 46.0,
-        "avgPx": "77.3608421052631579",
-        "upl": 16.712526315789464,
-        "lever": "10",
-        "sl": 77.36
-      },
-      {
-        "instId": "ADA-USD_UM_XPERP-310404",
-        "side": "net",
-        "size": 26.0,
-        "avgPx": "0.2207538461538462",
-        "upl": -1.392000000000007,
-        "lever": "10",
-        "sl": 0.2108
+        "sl": 4625,
+        "tp": 4678,
+        "note": "po TP1 · 180=120+60 · SL BE 4625"
       }
     ],
     "closed_trades": 0,
@@ -121,8 +103,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": -5.8926,
-    "note": "XAU 180 = po TP1 (120 ścięte), reszta 120+60, SL→BE w toku · HYPE/ADA/SKHYNIX"
+    "unrealized_pnl_usd": 10.4298,
+    "note": "09:00 26.08 · 2 pos HYPE16/XAU180 · SKHY SL noc ~−52 · ADA SL wczoraj"
   },
   "publication": {
     "enabled": true,

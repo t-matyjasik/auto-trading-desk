@@ -1,48 +1,32 @@
 {
-  "updated_at": "2026-08-25T15:36:29.422748+00:00",
+  "updated_at": "2026-08-26T07:05:27.643525+00:00",
   "source": "okx_api_ro",
-  "equity_usd": 928.213426983351,
+  "equity_usd": 907.0713030691664,
   "start_usd": 1000.0,
-  "available_usd": 612.9276255191404,
-  "pnl_usd": -71.7866,
-  "pnl_pct": -7.1787,
+  "available_usd": 801.0718274607455,
+  "pnl_usd": -92.9287,
+  "pnl_pct": -9.2929,
   "realized_pnl_usd": null,
-  "unrealized_pnl_usd": -6.5022,
+  "unrealized_pnl_usd": 10.4298,
   "open_positions": [
     {
       "instId": "XAU-USD_UM_XPERP-310502",
       "side": "net",
       "size": 180.0,
       "avgPx": "4624.6316666666666668",
-      "upl": 6.150299999999952,
-      "lever": "10"
-    },
-    {
-      "instId": "SKHYNIX-USD_UM_XPERP-310704",
-      "side": "net",
-      "size": -1.62,
-      "avgPx": "1209.6890000000000003",
-      "upl": -27.412019999999714,
+      "upl": 2.514299999999985,
       "lever": "10"
     },
     {
       "instId": "HYPE-USD_UM_XPERP-310523",
       "side": "net",
-      "size": 46.0,
+      "size": 16.0,
       "avgPx": "77.3608421052631579",
-      "upl": 16.229526315789446,
-      "lever": "10"
-    },
-    {
-      "instId": "ADA-USD_UM_XPERP-310404",
-      "side": "net",
-      "size": 26.0,
-      "avgPx": "0.2207538461538462",
-      "upl": -1.4700000000000057,
+      "upl": 7.9154526315789555,
       "lever": "10"
     }
   ],
-  "positions_count": 4,
+  "positions_count": 2,
   "currency": "USD",
   "okx_flag": "0",
   "mode": "live",
