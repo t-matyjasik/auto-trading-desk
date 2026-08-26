@@ -1,7 +1,7 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-26T09:19:49Z",
+  "updated_at": "2026-08-26T11:07:20Z",
   "phase": {
     "id": "live-4-xau",
     "label": "LIVE_4_XAU",
@@ -21,13 +21,13 @@
   "paper": {
     "label": "LIVE_OKX",
     "start_usd": 1000.0,
-    "equity_usd": 902.8209613791665,
-    "pnl_usd": -97.179,
-    "pnl_pct": -9.7179,
+    "equity_usd": 905.5361613791665,
+    "pnl_usd": -94.4638,
+    "pnl_pct": -9.4464,
     "note": "LIVE_1 · tylko HYPE · freeze nowych",
     "equity_source": "okx_equity.json",
     "equity_live": true,
-    "equity_updated_at": "2026-08-26T09:19:49.829183+00:00",
+    "equity_updated_at": "2026-08-26T11:07:20.373342+00:00",
     "available_usd": 883.7554524107455
   },
   "agents": [
@@ -81,10 +81,10 @@
         "side": "net",
         "size": 16.0,
         "avgPx": "77.3608421052631579",
-        "upl": 6.7522526315789495,
+        "upl": 9.467452631578954,
         "lever": "10",
         "sl": 77.36,
-        "note": "runner 16 · jedyna otwarta · freeze nowych"
+        "note": "runner 16 · jedyna · freeze nowych"
       }
     ],
     "closed_trades": 0,
@@ -92,8 +92,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": 6.7523,
-    "note": "XAU SL 10:15 −0.56 · book HYPE 16 · Tomasz freeze nowych"
+    "unrealized_pnl_usd": 9.4675,
+    "note": "13:00 freeze · 1 pos HYPE16 CHASE · XAU FLAT SL −0.56"
   },
   "publication": {
     "enabled": true,

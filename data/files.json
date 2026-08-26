@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-08-26T09:19:49.890622+00:00",
+  "generated_at": "2026-08-26T11:07:20.443663+00:00",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
+    {
+      "path": "research/market/2026-08-26_1300_market.md",
+      "kind": "market",
+      "title": "2026-08-26 1300 market",
+      "mtime": "2026-08-26T11:05:58Z"
+    },
     {
       "path": "research/market/2026-08-26_0900_xperp100.md",
       "kind": "market",
@@ -147,6 +153,12 @@
       "mtime": "2026-08-23T16:37:55Z"
     },
     {
+      "path": "research/news/2026-08-26_1300_news.md",
+      "kind": "news",
+      "title": "2026-08-26 1300 news",
+      "mtime": "2026-08-26T11:03:46Z"
+    },
+    {
       "path": "research/news/2026-08-26_0900_news.md",
       "kind": "news",
       "title": "2026-08-26 0900 news",
@@ -245,17 +257,17 @@
   ],
   "orders": [
     {
-      "name": "20260826_101500_xau_sl.json::XAU-USD_UM_XPERP-310502",
+      "name": "20260826_101505_xau_sl.json::XAU-USD_UM_XPERP-310502",
       "kind": "order",
-      "mtime": "2026-08-26T09:19:49.830013+00:00",
-      "path": "logs/orders/20260826_101500_xau_sl.json",
+      "mtime": "2026-08-26T09:20:05.619134+00:00",
+      "path": "logs/orders/20260826_101505_xau_sl.json",
       "status": "closed",
       "instId": "XAU-USD_UM_XPERP-310502",
       "side": "sell",
       "action": "SL_FILL",
-      "comment_pl": "TEZA: reclaim EMA | po TP1 SL BE 4625 | INVALIDACJA: last < 4625 | SL FILL 180 @~4623.8–4624.7 trigger 4625 · realized reszty ~−0.56 · book: tylko HYPE 16 · Tomasz freeze nowych",
-      "teza": "reclaim EMA",
-      "risk": "—",
+      "comment_pl": "TEZA: XAU long reszta po TP1 | RISK: SL BE 4625 | INVALIDACJA: last < 4625 | SL FILL 180@4623.83 trigger 4625 · realized ~−0.56 (gross −0.14 fee −0.42) · zero revenge · freeze Tomasz — zero nowych pozycji",
+      "teza": "XAU long reszta po TP1",
+      "risk": "SL BE 4625",
       "invalidacja": "last < 4625",
       "sl": null,
       "tp": null
@@ -743,23 +755,45 @@
   ],
   "activity": [
     {
-      "id": "2026-08-26T101500_xau_sl",
-      "ts": "2026-08-26T10:15:00+02:00",
+      "id": "2026-08-26T1300_desk",
+      "ts": "2026-08-26T13:00:00+02:00",
+      "actor": "Orkiestrator",
+      "action": "SYNC",
+      "reason_code": "DESK_1300",
+      "reason": "Desk 13:00: equity ~905 (−9,5%), 1 pos HYPE L 16 SL 77.36. XAU FLAT (SL 10:15). Freeze nowych. Publikacja ON.",
+      "context": {
+        "held": [
+          "HYPE"
+        ],
+        "equity_usd": 905,
+        "pnl_pct": -9.5,
+        "freeze_new": true
+      }
+    },
+    {
+      "id": "2026-08-26T101505_xau_sl",
+      "ts": "2026-08-26T10:15:05+02:00",
       "actor": "Orkiestrator",
       "action": "SL",
       "reason_code": "XAU_SL",
-      "reason": "XAU LONG SL 180 @~4623.8–4624.7 (trigger 4625). Realized reszty ~−0.56. Book: tylko HYPE 16 SL 77.36. Tomasz freeze nowych.",
+      "reason": "XAU LONG SL 180 @4623.83 VWAP (4623.8–4624.7, trigger 4625), nogi 120+60. Realized −0.56 (gross −0.14 fee −0.42). Book: HYPE 16. Freeze nowych.",
       "instrument": "XAU-USD_UM_XPERP-310502",
       "context": {
         "status": "sl_closed",
         "size": 180,
+        "fill": 4623.8339,
         "fill_range": [
           4623.8,
           4624.7
         ],
         "sl": 4625,
-        "entry": 4624.63,
-        "realized_usdc": -0.56,
+        "legs": [
+          120,
+          60
+        ],
+        "realized_usdc": -0.559745,
+        "gross_usdc": -0.1436,
+        "fee_usdc": -0.416145,
         "held": [
           "HYPE"
         ],
