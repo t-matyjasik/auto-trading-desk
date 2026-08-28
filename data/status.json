@@ -1,7 +1,7 @@
 {
   "project": "Auto Trading OKX",
   "desk": "Auto Trading",
-  "updated_at": "2026-08-26T15:04:27Z",
+  "updated_at": "2026-08-28T07:47:38Z",
   "phase": {
     "id": "live-4-xau",
     "label": "LIVE_4_XAU",
@@ -21,13 +21,13 @@
   "paper": {
     "label": "LIVE_OKX",
     "start_usd": 1000.0,
-    "equity_usd": 901.8001613791665,
-    "pnl_usd": -98.1998,
-    "pnl_pct": -9.82,
+    "equity_usd": 907.4472683897212,
+    "pnl_usd": -92.5527,
+    "pnl_pct": -9.2553,
     "note": "LIVE_1 · tylko HYPE · freeze nowych",
     "equity_source": "okx_equity.json",
     "equity_live": true,
-    "equity_updated_at": "2026-08-26T15:04:27.180874+00:00",
+    "equity_updated_at": "2026-08-28T00:29:55.732905+00:00",
     "available_usd": 883.7554524107455
   },
   "agents": [
@@ -43,14 +43,14 @@
       "name": "Market Scout",
       "role": "Briefy rynku",
       "status": "ACTIVE",
-      "detail": "Brief: 2026-08-24_0900_market.md"
+      "detail": "Brief: 2026-08-28_0900_market.md"
     },
     {
       "id": "news-scout",
       "name": "News Scout",
       "role": "Briefy newsów",
       "status": "ACTIVE",
-      "detail": "Brief: 2026-08-24_0900_news.md"
+      "detail": "Brief: 2026-08-28_0900_news.md"
     },
     {
       "id": "risk-lessons",
@@ -71,7 +71,7 @@
       "name": "Dashboard",
       "role": "War Room UI",
       "status": "ONLINE",
-      "detail": "LIVE_POS1 ADA · Pages+TG sync"
+      "detail": "0900 ingest · HYPE16 freeze · Pages sync"
     }
   ],
   "performance": {
@@ -81,10 +81,10 @@
         "side": "net",
         "size": 16.0,
         "avgPx": "77.3608421052631579",
-        "upl": 5.734652631578934,
+        "upl": 11.437052631578945,
         "lever": "10",
         "sl": 77.36,
-        "note": "runner 16 · freeze nowych · NVDA ER 22:20 tło"
+        "note": "runner 16 · freeze nowych · Warsh 16:00 / opt 10:00"
       }
     ],
     "closed_trades": 0,
@@ -92,8 +92,8 @@
     "losses": 0,
     "win_rate_pct": null,
     "realized_pnl_usd": 0,
-    "unrealized_pnl_usd": 5.7347,
-    "note": "17:00 freeze · 1 pos HYPE16 · NVDA ER ~22:20 tło"
+    "unrealized_pnl_usd": 11.4371,
+    "note": "09:00 freeze · 1 pos HYPE16 · Warsh 16:00 tło"
   },
   "publication": {
     "enabled": true,

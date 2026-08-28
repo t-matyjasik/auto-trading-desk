@@ -1,7 +1,13 @@
 {
-  "generated_at": "2026-08-26T15:05:07.001765+00:00",
+  "generated_at": "2026-08-28T07:49:51Z",
   "note": "Static snapshot for GitHub Pages — no secrets.",
   "research": [
+    {
+      "path": "research/market/2026-08-28_0900_market.md",
+      "kind": "market",
+      "title": "2026-08-28 0900 market",
+      "mtime": "2026-08-28T07:22:05Z"
+    },
     {
       "path": "research/market/2026-08-26_1700_xperp100.md",
       "kind": "market",
@@ -163,6 +169,12 @@
       "kind": "market",
       "title": "2026-08-23 1834 market",
       "mtime": "2026-08-23T16:37:55Z"
+    },
+    {
+      "path": "research/news/2026-08-28_0900_news.md",
+      "kind": "news",
+      "title": "2026-08-28 0900 news",
+      "mtime": "2026-08-28T07:04:55Z"
     },
     {
       "path": "research/news/2026-08-26_1700_news.md",
